@@ -1,4 +1,4 @@
-'''
+```
 aggregator/
 ├── .github/
 │   └── workflows/
@@ -30,8 +30,7 @@ aggregator/
 ├── requirements.txt      # Python 依赖包列表
 ├── clash.ico             # 应用程序图标
 └── main.py               # 项目主入口文件
-'''
-
+```
 
 ## https://gist.github.com/PangTouY00/2efa3f1165304204299a6e091eee070f
 
