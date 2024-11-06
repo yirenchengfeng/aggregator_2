@@ -71,7 +71,9 @@ jobs:
         run: date
 
       - name: 提交更改
-        run: |                 
+        run: |
+          git config --local user.email '${{ secrets.EMAIL }}'
+          git config --local user.name '${{ secrets.NAME }}'
           git pull origin main
           git add ./data/v2ray.txt
           git add ./data/clash.yaml
