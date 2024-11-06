@@ -227,25 +227,6 @@ def assign(
     return tasks
 
 
-import os
-import sys
-import time
-import random
-import itertools
-import subprocess
-import argparse
-import yaml
-import logging
-import utils
-import executable
-import workflow
-import clash
-import subconverter
-import crawl
-import push
-
-logger = logging.getLogger(__name__)
-
 def aggregate(args: argparse.Namespace) -> None:
     """
     聚合和处理订阅
@@ -465,12 +446,6 @@ def aggregate(args: argparse.Namespace) -> None:
         if files:
             push_client = push.PushToGist(token=access_token)
 
-            # 删除现有文件
-            delete_success = push_client.delete_gist_files(gist_id)
-            if not delete_success:
-                logger.error("Failed to delete existing files in Gist.")
-                sys.exit(1)
-
             # 上传
             success = push_client.push_to(content="", push_conf=push_conf, payload={"files": files}, group="collect")
             if success:
@@ -481,47 +456,6 @@ def aggregate(args: argparse.Namespace) -> None:
     # 清理工作空间
     workflow.cleanup(workspace, [])
 
-class PushToGist:
-    def __init__(self, token: str):
-        self.token = token
-        self.headers = {
-            "Authorization": f"token {self.token}",
-            "Accept": "application/vnd.github.v3+json",
-        }
-
-    def delete_gist_files(self, gist_id: str) -> bool:
-        """
-        删除 Gist 中的所有文件
-        """
-        url = f"https://api.github.com/gists/{gist_id}"
-        response = requests.get(url, headers=self.headers)
-        if response.status_code != 200:
-            logger.error(f"Failed to get Gist files, status code: {response.status_code}")
-            return False
-
-        gist_data = response.json()
-        files = gist_data.get("files", {})
-
-        for file_name in files.keys():
-            delete_url = f"{url}/files/{file_name}"
-            delete_response = requests.delete(delete_url, headers=self.headers)
-            if delete_response.status_code != 204:
-                logger.error(f"Failed to delete file {file_name}, status code: {delete_response.status_code}")
-                return False
-
-        return True
-
-    def push_to(self, content: str, push_conf: dict, payload: dict, group: str) -> bool:
-        """
-        上传文件到 Gist
-        """
-        url = f"https://api.github.com/gists/{push_conf['gistid']}"
-        response = requests.patch(url, headers=self.headers, json=payload)
-        if response.status_code == 200:
-            return True
-        else:
-            logger.error(f"Failed to upload to Gist, status code: {response.status_code}")
-            return False
 
 # 自定义帮助格式化器类，用于格式化命令行参数帮助信息
 class CustomHelpFormatter(argparse.HelpFormatter):
