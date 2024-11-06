@@ -446,6 +446,12 @@ def aggregate(args: argparse.Namespace) -> None:
         if files:
             push_client = push.PushToGist(token=access_token)
 
+            # 删除现有文件
+            delete_success = push_client.delete_gist_files(gist_id)
+            if not delete_success:
+                logger.error("Failed to delete existing files in Gist.")
+                sys.exit(1)
+
             # 上传
             success = push_client.push_to(content="", push_conf=push_conf, payload={"files": files}, group="collect")
             if success:
