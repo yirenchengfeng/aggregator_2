@@ -5,767 +5,807 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇸🇬 新加坡-1A, server: xinjiapo.pinchela.xyz, port: 443, type: hysteria2, password: a539db11-cf96-45f5-ab39-52e69dac6316, auth: a539db11-cf96-45f5-ab39-52e69dac6316, sni: xinjiapo.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: CCi51ZAlLWstDjTH, udp: true}
-  - {name: 🇯🇵 JAPAN-SS-1A, server: 167.179.99.83, port: 8445, type: ss, cipher: aes-256-gcm, password: ede19c6d-f364-40ab-81a1-74ff7b7345b2, udp: true}
-  - {name: 🇯🇵 VLESS-日本-1G, server: 216.23.121.126, port: 4433, type: vless, uuid: b49025b8-68dc-4e7c-9ec6-04d8f42ac196, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
-  - {name: 🇺🇸 US-3-1C, server: us.wulan.sbs, port: 47223, type: vless, uuid: 51fac6e2-b354-4f1c-9371-6bb4d05d5370, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 5A-VCE, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 666fb085-e9b7-4dd6-a212-157d4949d351, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: safari, network: tcp, udp: true}
-  - {name: 🇭🇰 VLESS-香港-1G, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: b49025b8-68dc-4e7c-9ec6-04d8f42ac196, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
-  - {name: 🇯🇵 VLESS-日本-1C, server: 216.23.121.126, port: 4433, type: vless, uuid: b6bb2a6d-cda9-41ae-b614-8c0b58073884, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1F, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 2b4a4eea-4b56-4e5f-9e6e-7987fb22ef1e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇯🇵 VLESS-日本-1A, server: 216.23.121.126, port: 4433, type: vless, uuid: a539db11-cf96-45f5-ab39-52e69dac6316, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
-  - {name: 🇯🇵 日本-1G, server: rb01.pinchela.org, port: 4433, type: hysteria2, password: b49025b8-68dc-4e7c-9ec6-04d8f42ac196, auth: b49025b8-68dc-4e7c-9ec6-04d8f42ac196, sni: rb01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: PCBVPflh6MDUA3EM, udp: true}
-  - {name: 🇺🇸 US-1-1F, server: us.wulan.sbs, port: 45623, type: vless, uuid: 9487560c-9241-4b89-acb5-650146f3cdf7, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FV2026-7-7-1B, server: 101.43.62.88, port: 22001, type: vless, uuid: 478cfd0c-6d3c-48f7-8587-05785b951f44, tls: false, network: tcp, udp: true}
-  - {name: 🇭🇰 VLESS-香港-1B, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: a7664075-9026-4ed4-a5af-3b71b5325fbe, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
-  - {name: 🇺🇸 US-2-2-1E, server: mgg.vpnvvv.top, port: 45783, type: vless, uuid: 86539054-d708-4e4a-ba13-2d19161ee54a, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 US-2-1-1C, server: mgg.vpnvvv.top, port: 46754, type: vless, uuid: 51fac6e2-b354-4f1c-9371-6bb4d05d5370, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇯🇵 VLESS-日本-1B, server: 216.23.121.126, port: 4433, type: vless, uuid: a7664075-9026-4ed4-a5af-3b71b5325fbe, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
-  - {name: 🇺🇸 美国-1A, server: us01.pinchela.org, port: 4433, type: hysteria2, password: a539db11-cf96-45f5-ab39-52e69dac6316, auth: a539db11-cf96-45f5-ab39-52e69dac6316, sni: us01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: AtEhnl5SebQY1yoK, udp: true}
-  - {name: 🇯🇵 HY2-日本-1D, server: 216.23.121.126, port: 4434, type: hysteria2, password: bd2137ea-b5b7-4eef-86fb-4ce4b5970773, auth: bd2137ea-b5b7-4eef-86fb-4ce4b5970773, sni: hy2-zouter-jp.pinchela.org, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 US-4-1B, server: us.wulan.sbs, port: 56623, type: vless, uuid: fbe267b6-9ef1-4edc-bed5-ac697a061ee1, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1B, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: ee8abdb3-76fe-4989-a443-d3530a694382, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: SILICONVALLEY-01-1C, server: 144.202.98.98, port: 8444, type: vmess, uuid: d4743db7-c9b1-4c80-9a2c-502b49bc0412, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港2线-1E, server: 47.75.116.73.pinchela.xyz, port: 443, type: hysteria2, password: 3ea3eb0e-6897-4bad-90f2-79ac40a4ae78, auth: 3ea3eb0e-6897-4bad-90f2-79ac40a4ae78, sni: 47.75.116.73.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 4KonhVPIojfXekEV, udp: true}
-  - {name: 🇮🇩 印度尼西亚-1D, server: ydnxy8.215.1.126.pinchela.xyz, port: 5566, type: hysteria2, password: bd2137ea-b5b7-4eef-86fb-4ce4b5970773, auth: bd2137ea-b5b7-4eef-86fb-4ce4b5970773, sni: ydnxy8.215.1.126.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: bieaOsohYOKUTxmg, udp: true}
-  - {name: ME-GBW, server: empty.node, port: 443, type: trojan, password: 3539a3c5-762c-417b-9cd7-88c7df9ca4c8, sni: empty.node, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 VLESS-香港-1A, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: a539db11-cf96-45f5-ab39-52e69dac6316, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
-  - {name: 🇺🇸 US-2-1-1A, server: mgg.vpnvvv.top, port: 46754, type: vless, uuid: 7d9abf5d-f509-4648-8e9a-2b36344a5323, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国2线-1F, server: 198.23.187.198.pinchela.xyz, port: 8080, type: hysteria2, password: 4ca0cc2c-7637-40c7-96e9-db62193fee1f, auth: 4ca0cc2c-7637-40c7-96e9-db62193fee1f, sni: 198.23.187.198.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: RX14sGmptnOZqnEh, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1B, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: ee8abdb3-76fe-4989-a443-d3530a694382, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 香港2线-1F, server: 47.75.116.73.pinchela.xyz, port: 443, type: hysteria2, password: 4ca0cc2c-7637-40c7-96e9-db62193fee1f, auth: 4ca0cc2c-7637-40c7-96e9-db62193fee1f, sni: 47.75.116.73.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 4KonhVPIojfXekEV, udp: true}
-  - {name: 🇸🇬 新加坡-1C, server: xinjiapo.pinchela.xyz, port: 443, type: hysteria2, password: b6bb2a6d-cda9-41ae-b614-8c0b58073884, auth: b6bb2a6d-cda9-41ae-b614-8c0b58073884, sni: xinjiapo.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: CCi51ZAlLWstDjTH, udp: true}
-  - {name: 🇹🇼 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: 29ce1f32-ffb6-4115-99e5-d2a4ae9791f9, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK-2-1C, server: hk.wulan.sbs, port: 24689, type: vless, uuid: 51fac6e2-b354-4f1c-9371-6bb4d05d5370, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 US-4-1A, server: us.wulan.sbs, port: 56623, type: vless, uuid: 7d9abf5d-f509-4648-8e9a-2b36344a5323, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: SILICONVALLEY-01-1A, server: 144.202.98.98, port: 8444, type: vmess, uuid: ede19c6d-f364-40ab-81a1-74ff7b7345b2, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1C, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: f9ff3ff1-90aa-4800-9fa7-6402ef82da82, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HK-2-1E, server: hk.wulan.sbs, port: 24689, type: vless, uuid: 86539054-d708-4e4a-ba13-2d19161ee54a, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 US-2-1E, server: us.wulan.sbs, port: 45783, type: vless, uuid: 86539054-d708-4e4a-ba13-2d19161ee54a, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HK-2-1A, server: hk.wulan.sbs, port: 24689, type: vless, uuid: 7d9abf5d-f509-4648-8e9a-2b36344a5323, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 US-3-1A, server: us.wulan.sbs, port: 47223, type: vless, uuid: 7d9abf5d-f509-4648-8e9a-2b36344a5323, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 US-1-1E, server: us.wulan.sbs, port: 45623, type: vless, uuid: 86539054-d708-4e4a-ba13-2d19161ee54a, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 US-3-1B, server: us.wulan.sbs, port: 47223, type: vless, uuid: fbe267b6-9ef1-4edc-bed5-ac697a061ee1, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1E, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: b34f4f3d-6014-4ada-a770-5028d3133424, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: FV2026-7-7-1D, server: 101.43.62.88, port: 22001, type: vless, uuid: 0d4b6cd3-ddee-4b32-b9fa-099b2bd56333, tls: false, network: tcp, udp: true}
-  - {name: 🇫🇷 法国-1B, server: fg31.56.146.135.pinchela.xyz, port: 8080, type: hysteria2, password: a7664075-9026-4ed4-a5af-3b71b5325fbe, auth: a7664075-9026-4ed4-a5af-3b71b5325fbe, sni: fg31.56.146.135.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 858sILlKqRJlug5M, udp: true}
-  - {name: 🇯🇵 JAPAN-SS-1C, server: 167.179.99.83, port: 8445, type: ss, cipher: aes-256-gcm, password: d4743db7-c9b1-4c80-9a2c-502b49bc0412, udp: true}
-  - {name: 🇺🇸 US-1-1B, server: us.wulan.sbs, port: 45623, type: vless, uuid: fbe267b6-9ef1-4edc-bed5-ac697a061ee1, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇮🇩 印度尼西亚-1F, server: ydnxy8.215.1.126.pinchela.xyz, port: 5566, type: hysteria2, password: 4ca0cc2c-7637-40c7-96e9-db62193fee1f, auth: 4ca0cc2c-7637-40c7-96e9-db62193fee1f, sni: ydnxy8.215.1.126.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: bieaOsohYOKUTxmg, udp: true}
-  - {name: 🇫🇷 法国-1A, server: fg31.56.146.135.pinchela.xyz, port: 8080, type: hysteria2, password: a539db11-cf96-45f5-ab39-52e69dac6316, auth: a539db11-cf96-45f5-ab39-52e69dac6316, sni: fg31.56.146.135.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 858sILlKqRJlug5M, udp: true}
-  - {name: 🇯🇵 HY2-日本-1C, server: 216.23.121.126, port: 4434, type: hysteria2, password: b6bb2a6d-cda9-41ae-b614-8c0b58073884, auth: b6bb2a6d-cda9-41ae-b614-8c0b58073884, sni: hy2-zouter-jp.pinchela.org, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 新加坡-1F, server: xinjiapo.pinchela.xyz, port: 443, type: hysteria2, password: 4ca0cc2c-7637-40c7-96e9-db62193fee1f, auth: 4ca0cc2c-7637-40c7-96e9-db62193fee1f, sni: xinjiapo.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: CCi51ZAlLWstDjTH, udp: true}
-  - {name: 🇺🇸 US-2-1-1B, server: mgg.vpnvvv.top, port: 46754, type: vless, uuid: fbe267b6-9ef1-4edc-bed5-ac697a061ee1, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 US-2-1A, server: us.wulan.sbs, port: 45783, type: vless, uuid: 7d9abf5d-f509-4648-8e9a-2b36344a5323, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国2线-1A, server: 198.23.187.198.pinchela.xyz, port: 8080, type: hysteria2, password: a539db11-cf96-45f5-ab39-52e69dac6316, auth: a539db11-cf96-45f5-ab39-52e69dac6316, sni: 198.23.187.198.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: RX14sGmptnOZqnEh, udp: true}
-  - {name: 🇭🇰 HK-1-1F, server: hk.wulan.sbs, port: 13579, type: vless, uuid: 9487560c-9241-4b89-acb5-650146f3cdf7, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1D, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 486ced44-8ec9-4bca-8df8-c9deda8cd140, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇯🇵 JAPAN-SS-1B, server: 167.179.99.83, port: 8445, type: ss, cipher: aes-256-gcm, password: bfd1bf92-6949-48f7-a56b-64c1567c11b2, udp: true}
-  - {name: 🇺🇸 HY-03 | US, server: usflare1.cloudaddy.top, port: 30004, type: hysteria2, password: 693ff636-6b7c-4974-bf03-d778e734320e, auth: 693ff636-6b7c-4974-bf03-d778e734320e, sni: us1.cloudsegl1.ccwu.cc, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 VLESS-香港-1D, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: bd2137ea-b5b7-4eef-86fb-4ce4b5970773, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1A, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: a030c6b1-dadb-4caa-b6df-161be96d0b35, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: FV2026-7-7-1E, server: 101.43.62.88, port: 22001, type: vless, uuid: dabdd011-c37a-4ab0-ab8d-ac6b46b6d78f, tls: false, network: tcp, udp: true}
-  - {name: 🇭🇰 VLESS-香港-1E, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: 3ea3eb0e-6897-4bad-90f2-79ac40a4ae78, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
-  - {name: 🇯🇵 日本-1F, server: rb01.pinchela.org, port: 4433, type: hysteria2, password: 4ca0cc2c-7637-40c7-96e9-db62193fee1f, auth: 4ca0cc2c-7637-40c7-96e9-db62193fee1f, sni: rb01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: PCBVPflh6MDUA3EM, udp: true}
-  - {name: 🇺🇸 US-2-2-1F, server: mgg.vpnvvv.top, port: 45783, type: vless, uuid: 9487560c-9241-4b89-acb5-650146f3cdf7, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HY2-香港-1C, server: hy2-vless-zouter.pinchela.xyz, port: 4436, type: hysteria2, password: b6bb2a6d-cda9-41ae-b614-8c0b58073884, auth: b6bb2a6d-cda9-41ae-b614-8c0b58073884, sni: hy2-vless-zouter.pinchela.xyz, skip-cert-verify: false, udp: true}
-  - {name: FV2026-7-7-1C, server: 101.43.62.88, port: 22001, type: vless, uuid: 05510395-e5a2-440b-8193-4c988d6b30a5, tls: false, network: tcp, udp: true}
-  - {name: 🇺🇸 US-4-1C, server: us.wulan.sbs, port: 56623, type: vless, uuid: 51fac6e2-b354-4f1c-9371-6bb4d05d5370, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇯🇵 VLESS-日本-1F, server: 216.23.121.126, port: 4433, type: vless, uuid: 4ca0cc2c-7637-40c7-96e9-db62193fee1f, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
-  - {name: 🇺🇸 US-3-1D, server: us.wulan.sbs, port: 47223, type: vless, uuid: e321ddea-95fe-4e4c-a68b-2b6caaaec584, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 HY-02 | US, server: usflare1.cloudaddy.top, port: 30003, type: hysteria2, password: 693ff636-6b7c-4974-bf03-d778e734320e, auth: 693ff636-6b7c-4974-bf03-d778e734320e, sni: www.iq.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-2-1-1F, server: mgg.vpnvvv.top, port: 46754, type: vless, uuid: 9487560c-9241-4b89-acb5-650146f3cdf7, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 US-2-1C, server: us.wulan.sbs, port: 45783, type: vless, uuid: 51fac6e2-b354-4f1c-9371-6bb4d05d5370, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇯🇵 HY2-日本-1B, server: 216.23.121.126, port: 4434, type: hysteria2, password: a7664075-9026-4ed4-a5af-3b71b5325fbe, auth: a7664075-9026-4ed4-a5af-3b71b5325fbe, sni: hy2-zouter-jp.pinchela.org, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1D, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 486ced44-8ec9-4bca-8df8-c9deda8cd140, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1B, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: ee8abdb3-76fe-4989-a443-d3530a694382, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇫🇷 法国-1D, server: fg31.56.146.135.pinchela.xyz, port: 8080, type: hysteria2, password: bd2137ea-b5b7-4eef-86fb-4ce4b5970773, auth: bd2137ea-b5b7-4eef-86fb-4ce4b5970773, sni: fg31.56.146.135.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 858sILlKqRJlug5M, udp: true}
-  - {name: 🇺🇸 美国-1F, server: us01.pinchela.org, port: 4433, type: hysteria2, password: 4ca0cc2c-7637-40c7-96e9-db62193fee1f, auth: 4ca0cc2c-7637-40c7-96e9-db62193fee1f, sni: us01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: AtEhnl5SebQY1yoK, udp: true}
-  - {name: 🇺🇸 US-2-2-1C, server: mgg.vpnvvv.top, port: 45783, type: vless, uuid: 51fac6e2-b354-4f1c-9371-6bb4d05d5370, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国-1G, server: us01.pinchela.org, port: 4433, type: hysteria2, password: b49025b8-68dc-4e7c-9ec6-04d8f42ac196, auth: b49025b8-68dc-4e7c-9ec6-04d8f42ac196, sni: us01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: AtEhnl5SebQY1yoK, udp: true}
-  - {name: F1-YPC, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 05510395-e5a2-440b-8193-4c988d6b30a5, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇸🇬 新加坡-1G, server: xinjiapo.pinchela.xyz, port: 443, type: hysteria2, password: b49025b8-68dc-4e7c-9ec6-04d8f42ac196, auth: b49025b8-68dc-4e7c-9ec6-04d8f42ac196, sni: xinjiapo.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: CCi51ZAlLWstDjTH, udp: true}
-  - {name: 🇺🇸 美国-1D, server: us01.pinchela.org, port: 4433, type: hysteria2, password: bd2137ea-b5b7-4eef-86fb-4ce4b5970773, auth: bd2137ea-b5b7-4eef-86fb-4ce4b5970773, sni: us01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: AtEhnl5SebQY1yoK, udp: true}
-  - {name: 🇭🇰 HK-1-1A, server: hk.wulan.sbs, port: 13579, type: vless, uuid: 7d9abf5d-f509-4648-8e9a-2b36344a5323, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇯🇵 日本-1B, server: rb01.pinchela.org, port: 4433, type: hysteria2, password: a7664075-9026-4ed4-a5af-3b71b5325fbe, auth: a7664075-9026-4ed4-a5af-3b71b5325fbe, sni: rb01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: PCBVPflh6MDUA3EM, udp: true}
-  - {name: 🇺🇸 美国-洛杉矶-PRO, server: 5.253.38.67, port: 40444, type: vless, uuid: 9ca5e695-5888-4e2d-9058-69579e3a5c22, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZZK_Oo5-iDDgoWzxIURTLWoKPbC8NFto3Mk7OvAZgRU, short-id: "b3f2a1c9" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FV2026-7-7-1A, server: 101.43.62.88, port: 22001, type: vless, uuid: 666fb085-e9b7-4dd6-a212-157d4949d351, tls: false, network: tcp, udp: true}
-  - {name: 🇺🇸 US-2-2-1D, server: mgg.vpnvvv.top, port: 45783, type: vless, uuid: e321ddea-95fe-4e4c-a68b-2b6caaaec584, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇯🇵 HY2-日本-1E, server: 216.23.121.126, port: 4434, type: hysteria2, password: 3ea3eb0e-6897-4bad-90f2-79ac40a4ae78, auth: 3ea3eb0e-6897-4bad-90f2-79ac40a4ae78, sni: hy2-zouter-jp.pinchela.org, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 US-2-1F, server: us.wulan.sbs, port: 45783, type: vless, uuid: 9487560c-9241-4b89-acb5-650146f3cdf7, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 US-4-1E, server: us.wulan.sbs, port: 56623, type: vless, uuid: 86539054-d708-4e4a-ba13-2d19161ee54a, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 US-2-1D, server: us.wulan.sbs, port: 45783, type: vless, uuid: e321ddea-95fe-4e4c-a68b-2b6caaaec584, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 US-2-1-1E, server: mgg.vpnvvv.top, port: 46754, type: vless, uuid: 86539054-d708-4e4a-ba13-2d19161ee54a, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇸🇬 新加坡-1D, server: xinjiapo.pinchela.xyz, port: 443, type: hysteria2, password: bd2137ea-b5b7-4eef-86fb-4ce4b5970773, auth: bd2137ea-b5b7-4eef-86fb-4ce4b5970773, sni: xinjiapo.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: CCi51ZAlLWstDjTH, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1G, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 7b64d82e-8dfb-432e-98f9-b236f2b4b09e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HY2-香港-1E, server: hy2-vless-zouter.pinchela.xyz, port: 4436, type: hysteria2, password: 3ea3eb0e-6897-4bad-90f2-79ac40a4ae78, auth: 3ea3eb0e-6897-4bad-90f2-79ac40a4ae78, sni: hy2-vless-zouter.pinchela.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 VLESS-香港-1C, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: b6bb2a6d-cda9-41ae-b614-8c0b58073884, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
-  - {name: 🇭🇰 HY2-香港-1D, server: hy2-vless-zouter.pinchela.xyz, port: 4436, type: hysteria2, password: bd2137ea-b5b7-4eef-86fb-4ce4b5970773, auth: bd2137ea-b5b7-4eef-86fb-4ce4b5970773, sni: hy2-vless-zouter.pinchela.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇫🇷 法国-1G, server: fg31.56.146.135.pinchela.xyz, port: 8080, type: hysteria2, password: b49025b8-68dc-4e7c-9ec6-04d8f42ac196, auth: b49025b8-68dc-4e7c-9ec6-04d8f42ac196, sni: fg31.56.146.135.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 858sILlKqRJlug5M, udp: true}
-  - {name: 🇯🇵 日本-1D, server: rb01.pinchela.org, port: 4433, type: hysteria2, password: bd2137ea-b5b7-4eef-86fb-4ce4b5970773, auth: bd2137ea-b5b7-4eef-86fb-4ce4b5970773, sni: rb01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: PCBVPflh6MDUA3EM, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1E, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: b34f4f3d-6014-4ada-a770-5028d3133424, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: 29ce1f32-ffb6-4115-99e5-d2a4ae9791f9, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1A, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: a030c6b1-dadb-4caa-b6df-161be96d0b35, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇮🇩 印度尼西亚-1G, server: ydnxy8.215.1.126.pinchela.xyz, port: 5566, type: hysteria2, password: b49025b8-68dc-4e7c-9ec6-04d8f42ac196, auth: b49025b8-68dc-4e7c-9ec6-04d8f42ac196, sni: ydnxy8.215.1.126.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: bieaOsohYOKUTxmg, udp: true}
-  - {name: 🇭🇰 HY2-香港-1F, server: hy2-vless-zouter.pinchela.xyz, port: 4436, type: hysteria2, password: 4ca0cc2c-7637-40c7-96e9-db62193fee1f, auth: 4ca0cc2c-7637-40c7-96e9-db62193fee1f, sni: hy2-vless-zouter.pinchela.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 TTC9999 香港, server: ww2.ttc9999.com, port: 443, type: vmess, uuid: b2f83e28-944a-4260-8f43-c204aa9dae00, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: ww2.ttc9999.com}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1F, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 2b4a4eea-4b56-4e5f-9e6e-7987fb22ef1e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: G I C A B N H T H N, server: expired.example.com, port: 80, type: vmess, uuid: 6871ebe6-fe0b-438f-ac0b-99df3ebb06e7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /expired, headers: {Host: expired.example.com}}, udp: true}
-  - {name: 🇯🇵 HY2-日本-1F, server: 216.23.121.126, port: 4434, type: hysteria2, password: 4ca0cc2c-7637-40c7-96e9-db62193fee1f, auth: 4ca0cc2c-7637-40c7-96e9-db62193fee1f, sni: hy2-zouter-jp.pinchela.org, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 US-4-1D, server: us.wulan.sbs, port: 56623, type: vless, uuid: e321ddea-95fe-4e4c-a68b-2b6caaaec584, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HK-2-1B, server: hk.wulan.sbs, port: 24689, type: vless, uuid: fbe267b6-9ef1-4edc-bed5-ac697a061ee1, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1G, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 7b64d82e-8dfb-432e-98f9-b236f2b4b09e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: L9-RHS, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 0d4b6cd3-ddee-4b32-b9fa-099b2bd56333, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: qq, network: tcp, udp: true}
-  - {name: 🇺🇸 US-2-2-1A, server: mgg.vpnvvv.top, port: 45783, type: vless, uuid: 7d9abf5d-f509-4648-8e9a-2b36344a5323, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1A, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: a030c6b1-dadb-4caa-b6df-161be96d0b35, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇯🇵 VLESS-日本-1D, server: 216.23.121.126, port: 4433, type: vless, uuid: bd2137ea-b5b7-4eef-86fb-4ce4b5970773, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1D, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 486ced44-8ec9-4bca-8df8-c9deda8cd140, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇯🇵 JAPAN-01-1C, server: 167.179.99.83, port: 8443, type: vmess, uuid: d4743db7-c9b1-4c80-9a2c-502b49bc0412, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ray}, udp: true}
-  - {name: 🇺🇸 美国2线-1C, server: 198.23.187.198.pinchela.xyz, port: 8080, type: hysteria2, password: b6bb2a6d-cda9-41ae-b614-8c0b58073884, auth: b6bb2a6d-cda9-41ae-b614-8c0b58073884, sni: 198.23.187.198.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: RX14sGmptnOZqnEh, udp: true}
-  - {name: 🇭🇰 香港2线-1D, server: 47.75.116.73.pinchela.xyz, port: 443, type: hysteria2, password: bd2137ea-b5b7-4eef-86fb-4ce4b5970773, auth: bd2137ea-b5b7-4eef-86fb-4ce4b5970773, sni: 47.75.116.73.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 4KonhVPIojfXekEV, udp: true}
-  - {name: 🇺🇸 US-3-1E, server: us.wulan.sbs, port: 47223, type: vless, uuid: 86539054-d708-4e4a-ba13-2d19161ee54a, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国2线-1B, server: 198.23.187.198.pinchela.xyz, port: 8080, type: hysteria2, password: a7664075-9026-4ed4-a5af-3b71b5325fbe, auth: a7664075-9026-4ed4-a5af-3b71b5325fbe, sni: 198.23.187.198.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: RX14sGmptnOZqnEh, udp: true}
-  - {name: 🇫🇷 法国-1F, server: fg31.56.146.135.pinchela.xyz, port: 8080, type: hysteria2, password: 4ca0cc2c-7637-40c7-96e9-db62193fee1f, auth: 4ca0cc2c-7637-40c7-96e9-db62193fee1f, sni: fg31.56.146.135.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 858sILlKqRJlug5M, udp: true}
-  - {name: 🇹🇼 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: 29ce1f32-ffb6-4115-99e5-d2a4ae9791f9, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 HY2-日本-1D, server: 216.23.121.126, port: 4434, type: hysteria2, password: d7464e10-e30f-4c70-9d7d-460c5cf36143, auth: d7464e10-e30f-4c70-9d7d-460c5cf36143, sni: hy2-zouter-jp.pinchela.org, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 HY-02 | US-1A, server: usflare1.cloudaddy.top, port: 30003, type: hysteria2, password: ac618ccb-9cfa-4886-b1f3-b0cc8b94013b, auth: ac618ccb-9cfa-4886-b1f3-b0cc8b94013b, sni: www.iq.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK-1-1F, server: hk.wulan.sbs, port: 13579, type: vless, uuid: e321ddea-95fe-4e4c-a68b-2b6caaaec584, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1D, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: b34f4f3d-6014-4ada-a770-5028d3133424, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 新加坡-1F, server: xinjiapo.pinchela.xyz, port: 443, type: hysteria2, password: 4b5bc464-d05e-4417-b788-11f939bf04b4, auth: 4b5bc464-d05e-4417-b788-11f939bf04b4, sni: xinjiapo.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: CCi51ZAlLWstDjTH, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1C, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 486ced44-8ec9-4bca-8df8-c9deda8cd140, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HY2-香港-1F, server: hy2-vless-zouter.pinchela.xyz, port: 4436, type: hysteria2, password: 4b5bc464-d05e-4417-b788-11f939bf04b4, auth: 4b5bc464-d05e-4417-b788-11f939bf04b4, sni: hy2-vless-zouter.pinchela.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 HY2-香港-1B, server: hy2-vless-zouter.pinchela.xyz, port: 4436, type: hysteria2, password: 7a850235-cba6-47e4-b325-cbb1bf444ddb, auth: 7a850235-cba6-47e4-b325-cbb1bf444ddb, sni: hy2-vless-zouter.pinchela.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US-4-1F, server: us.wulan.sbs, port: 56623, type: vless, uuid: e321ddea-95fe-4e4c-a68b-2b6caaaec584, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HK-1-1A, server: hk.wulan.sbs, port: 13579, type: vless, uuid: 9487560c-9241-4b89-acb5-650146f3cdf7, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: FV2026-7-7-1B, server: 101.43.62.88, port: 22001, type: vless, uuid: 666fb085-e9b7-4dd6-a212-157d4949d351, tls: false, network: tcp, udp: true}
+  - {name: 🇺🇸 美国-1B, server: us01.pinchela.org, port: 4433, type: hysteria2, password: 7a850235-cba6-47e4-b325-cbb1bf444ddb, auth: 7a850235-cba6-47e4-b325-cbb1bf444ddb, sni: us01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: AtEhnl5SebQY1yoK, udp: true}
+  - {name: 🇭🇰 香港2线-1A, server: 47.75.116.73.pinchela.xyz, port: 443, type: hysteria2, password: 2cdd2b02-643e-4dc4-b59e-7c9a4a7ac203, auth: 2cdd2b02-643e-4dc4-b59e-7c9a4a7ac203, sni: 47.75.116.73.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 4KonhVPIojfXekEV, udp: true}
+  - {name: 🇮🇩 印度尼西亚-1D, server: ydnxy8.215.1.126.pinchela.xyz, port: 5566, type: hysteria2, password: d7464e10-e30f-4c70-9d7d-460c5cf36143, auth: d7464e10-e30f-4c70-9d7d-460c5cf36143, sni: ydnxy8.215.1.126.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: bieaOsohYOKUTxmg, udp: true}
+  - {name: 🇭🇰 HK-2-1B, server: hk.wulan.sbs, port: 24689, type: vless, uuid: 7d9abf5d-f509-4648-8e9a-2b36344a5323, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇹🇼 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: a30de232-696a-48be-9dec-4a14e42e0f17, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1A, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: ee8abdb3-76fe-4989-a443-d3530a694382, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 US-3-1C, server: us.wulan.sbs, port: 47223, type: vless, uuid: 86539054-d708-4e4a-ba13-2d19161ee54a, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 新加坡-1A, server: xinjiapo.pinchela.xyz, port: 443, type: hysteria2, password: 2cdd2b02-643e-4dc4-b59e-7c9a4a7ac203, auth: 2cdd2b02-643e-4dc4-b59e-7c9a4a7ac203, sni: xinjiapo.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: CCi51ZAlLWstDjTH, udp: true}
+  - {name: 🇺🇸 US-4-1E, server: us.wulan.sbs, port: 56623, type: vless, uuid: fbe267b6-9ef1-4edc-bed5-ac697a061ee1, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 VLESS-香港-1A, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: 2cdd2b02-643e-4dc4-b59e-7c9a4a7ac203, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
+  - {name: 🇭🇰 香港2线-1B, server: 47.75.116.73.pinchela.xyz, port: 443, type: hysteria2, password: 7a850235-cba6-47e4-b325-cbb1bf444ddb, auth: 7a850235-cba6-47e4-b325-cbb1bf444ddb, sni: 47.75.116.73.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 4KonhVPIojfXekEV, udp: true}
+  - {name: 🇯🇵 HY2-日本-1C, server: 216.23.121.126, port: 4434, type: hysteria2, password: b63bd2e1-2f03-420d-b52d-6913893e8fbd, auth: b63bd2e1-2f03-420d-b52d-6913893e8fbd, sni: hy2-zouter-jp.pinchela.org, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 VLESS-香港-1F, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: 4b5bc464-d05e-4417-b788-11f939bf04b4, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
+  - {name: 🇺🇸 US-2-1-1B, server: mgg.vpnvvv.top, port: 46754, type: vless, uuid: 7d9abf5d-f509-4648-8e9a-2b36344a5323, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US-2-1F, server: us.wulan.sbs, port: 45783, type: vless, uuid: e321ddea-95fe-4e4c-a68b-2b6caaaec584, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: SILICONVALLEY-01-1B, server: 144.202.98.98, port: 8444, type: vmess, uuid: bfd1bf92-6949-48f7-a56b-64c1567c11b2, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: HR-ZSB, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 478cfd0c-6d3c-48f7-8587-05785b951f44, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1F, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 2b4a4eea-4b56-4e5f-9e6e-7987fb22ef1e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HK-1-1E, server: hk.wulan.sbs, port: 13579, type: vless, uuid: 86539054-d708-4e4a-ba13-2d19161ee54a, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 香港2线-1C, server: 47.75.116.73.pinchela.xyz, port: 443, type: hysteria2, password: b6bb2a6d-cda9-41ae-b614-8c0b58073884, auth: b6bb2a6d-cda9-41ae-b614-8c0b58073884, sni: 47.75.116.73.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 4KonhVPIojfXekEV, udp: true}
-  - {name: 🇫🇷 法国-1C, server: fg31.56.146.135.pinchela.xyz, port: 8080, type: hysteria2, password: b6bb2a6d-cda9-41ae-b614-8c0b58073884, auth: b6bb2a6d-cda9-41ae-b614-8c0b58073884, sni: fg31.56.146.135.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 858sILlKqRJlug5M, udp: true}
-  - {name: 🇺🇸 美国2线-1D, server: 198.23.187.198.pinchela.xyz, port: 8080, type: hysteria2, password: bd2137ea-b5b7-4eef-86fb-4ce4b5970773, auth: bd2137ea-b5b7-4eef-86fb-4ce4b5970773, sni: 198.23.187.198.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: RX14sGmptnOZqnEh, udp: true}
-  - {name: 🇭🇰 HY2-香港-1A, server: hy2-vless-zouter.pinchela.xyz, port: 4436, type: hysteria2, password: a539db11-cf96-45f5-ab39-52e69dac6316, auth: a539db11-cf96-45f5-ab39-52e69dac6316, sni: hy2-vless-zouter.pinchela.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇫🇷 法国-1E, server: fg31.56.146.135.pinchela.xyz, port: 8080, type: hysteria2, password: 3ea3eb0e-6897-4bad-90f2-79ac40a4ae78, auth: 3ea3eb0e-6897-4bad-90f2-79ac40a4ae78, sni: fg31.56.146.135.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 858sILlKqRJlug5M, udp: true}
-  - {name: 🇺🇸 US-3-1F, server: us.wulan.sbs, port: 47223, type: vless, uuid: 9487560c-9241-4b89-acb5-650146f3cdf7, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 US-1-1D, server: us.wulan.sbs, port: 45623, type: vless, uuid: e321ddea-95fe-4e4c-a68b-2b6caaaec584, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 US-2-1-1D, server: mgg.vpnvvv.top, port: 46754, type: vless, uuid: e321ddea-95fe-4e4c-a68b-2b6caaaec584, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 香港2线-1B, server: 47.75.116.73.pinchela.xyz, port: 443, type: hysteria2, password: a7664075-9026-4ed4-a5af-3b71b5325fbe, auth: a7664075-9026-4ed4-a5af-3b71b5325fbe, sni: 47.75.116.73.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 4KonhVPIojfXekEV, udp: true}
-  - {name: 🇸🇬 新加坡-1E, server: xinjiapo.pinchela.xyz, port: 443, type: hysteria2, password: 3ea3eb0e-6897-4bad-90f2-79ac40a4ae78, auth: 3ea3eb0e-6897-4bad-90f2-79ac40a4ae78, sni: xinjiapo.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: CCi51ZAlLWstDjTH, udp: true}
-  - {name: 🇺🇸 美国-1C, server: us01.pinchela.org, port: 4433, type: hysteria2, password: b6bb2a6d-cda9-41ae-b614-8c0b58073884, auth: b6bb2a6d-cda9-41ae-b614-8c0b58073884, sni: us01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: AtEhnl5SebQY1yoK, udp: true}
-  - {name: AC-SIY, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: dabdd011-c37a-4ab0-ab8d-ac6b46b6d78f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 香港2线-1A, server: 47.75.116.73.pinchela.xyz, port: 443, type: hysteria2, password: a539db11-cf96-45f5-ab39-52e69dac6316, auth: a539db11-cf96-45f5-ab39-52e69dac6316, sni: 47.75.116.73.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 4KonhVPIojfXekEV, udp: true}
-  - {name: 🇯🇵 HY2-日本-1A, server: 216.23.121.126, port: 4434, type: hysteria2, password: a539db11-cf96-45f5-ab39-52e69dac6316, auth: a539db11-cf96-45f5-ab39-52e69dac6316, sni: hy2-zouter-jp.pinchela.org, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1C, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: f9ff3ff1-90aa-4800-9fa7-6402ef82da82, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇯🇵 JAPAN-01-1B, server: 167.179.99.83, port: 8443, type: vmess, uuid: bfd1bf92-6949-48f7-a56b-64c1567c11b2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ray}, udp: true}
-  - {name: 🇮🇩 印度尼西亚-1A, server: ydnxy8.215.1.126.pinchela.xyz, port: 5566, type: hysteria2, password: a539db11-cf96-45f5-ab39-52e69dac6316, auth: a539db11-cf96-45f5-ab39-52e69dac6316, sni: ydnxy8.215.1.126.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: bieaOsohYOKUTxmg, udp: true}
-  - {name: 🇺🇸 HY-05| US, server: usflare1.cloudaddy.top, port: 30006, type: hysteria2, password: 693ff636-6b7c-4974-bf03-d778e734320e, auth: 693ff636-6b7c-4974-bf03-d778e734320e, sni: www.iq.com, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇩 印度尼西亚-1B, server: ydnxy8.215.1.126.pinchela.xyz, port: 5566, type: hysteria2, password: a7664075-9026-4ed4-a5af-3b71b5325fbe, auth: a7664075-9026-4ed4-a5af-3b71b5325fbe, sni: ydnxy8.215.1.126.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: bieaOsohYOKUTxmg, udp: true}
-  - {name: 🇺🇸 US-2-2-1B, server: mgg.vpnvvv.top, port: 45783, type: vless, uuid: fbe267b6-9ef1-4edc-bed5-ac697a061ee1, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国加速器 01, server: hk01.wulink.net, port: 8443, type: trojan, password: 78160879-2e7b-4958-b6fa-3fe61f496107, sni: hk01.wulink.net, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国-1E, server: us01.pinchela.org, port: 4433, type: hysteria2, password: 3ea3eb0e-6897-4bad-90f2-79ac40a4ae78, auth: 3ea3eb0e-6897-4bad-90f2-79ac40a4ae78, sni: us01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: AtEhnl5SebQY1yoK, udp: true}
-  - {name: 🇯🇵 日本-1C, server: rb01.pinchela.org, port: 4433, type: hysteria2, password: b6bb2a6d-cda9-41ae-b614-8c0b58073884, auth: b6bb2a6d-cda9-41ae-b614-8c0b58073884, sni: rb01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: PCBVPflh6MDUA3EM, udp: true}
-  - {name: 🇺🇸 US-1-1A, server: us.wulan.sbs, port: 45623, type: vless, uuid: 7d9abf5d-f509-4648-8e9a-2b36344a5323, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 US-1-1C, server: us.wulan.sbs, port: 45623, type: vless, uuid: 51fac6e2-b354-4f1c-9371-6bb4d05d5370, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1G, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 7b64d82e-8dfb-432e-98f9-b236f2b4b09e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HK-2-1D, server: hk.wulan.sbs, port: 24689, type: vless, uuid: e321ddea-95fe-4e4c-a68b-2b6caaaec584, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇯🇵 日本-1A, server: rb01.pinchela.org, port: 4433, type: hysteria2, password: a539db11-cf96-45f5-ab39-52e69dac6316, auth: a539db11-cf96-45f5-ab39-52e69dac6316, sni: rb01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: PCBVPflh6MDUA3EM, udp: true}
-  - {name: 🇯🇵 HY2-日本-1G, server: 216.23.121.126, port: 4434, type: hysteria2, password: b49025b8-68dc-4e7c-9ec6-04d8f42ac196, auth: b49025b8-68dc-4e7c-9ec6-04d8f42ac196, sni: hy2-zouter-jp.pinchela.org, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 VLESS-日本-1A, server: 216.23.121.126, port: 4433, type: vless, uuid: 2cdd2b02-643e-4dc4-b59e-7c9a4a7ac203, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
+  - {name: 🇯🇵 日本-1A, server: rb01.pinchela.org, port: 4433, type: hysteria2, password: 2cdd2b02-643e-4dc4-b59e-7c9a4a7ac203, auth: 2cdd2b02-643e-4dc4-b59e-7c9a4a7ac203, sni: rb01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: PCBVPflh6MDUA3EM, udp: true}
+  - {name: FV2026-7-7-1A, server: 101.43.62.88, port: 22001, type: vless, uuid: dabdd011-c37a-4ab0-ab8d-ac6b46b6d78f, tls: false, network: tcp, udp: true}
+  - {name: 🇭🇰 香港2线-1D, server: 47.75.116.73.pinchela.xyz, port: 443, type: hysteria2, password: d7464e10-e30f-4c70-9d7d-460c5cf36143, auth: d7464e10-e30f-4c70-9d7d-460c5cf36143, sni: 47.75.116.73.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 4KonhVPIojfXekEV, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1G, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: ba4c87c1-8ede-4e71-9c34-c71ecdfc16b4, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 US-4-1D, server: us.wulan.sbs, port: 56623, type: vless, uuid: 51fac6e2-b354-4f1c-9371-6bb4d05d5370, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1E, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 7b64d82e-8dfb-432e-98f9-b236f2b4b09e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HK-2-1F, server: hk.wulan.sbs, port: 24689, type: vless, uuid: e321ddea-95fe-4e4c-a68b-2b6caaaec584, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 HY-04 | US-1A, server: usflare1.cloudaddy.top, port: 30005, type: hysteria2, password: ac618ccb-9cfa-4886-b1f3-b0cc8b94013b, auth: ac618ccb-9cfa-4886-b1f3-b0cc8b94013b, sni: www.iq.com, skip-cert-verify: true, udp: true}
+  - {name: OD-EMU, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 478cfd0c-6d3c-48f7-8587-05785b951f44, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: safari, network: tcp, udp: true}
   - {name: 🇯🇵 JAPAN-01-1A, server: 167.179.99.83, port: 8443, type: vmess, uuid: ede19c6d-f364-40ab-81a1-74ff7b7345b2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ray}, udp: true}
-  - {name: 🇮🇩 印度尼西亚-1C, server: ydnxy8.215.1.126.pinchela.xyz, port: 5566, type: hysteria2, password: b6bb2a6d-cda9-41ae-b614-8c0b58073884, auth: b6bb2a6d-cda9-41ae-b614-8c0b58073884, sni: ydnxy8.215.1.126.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: bieaOsohYOKUTxmg, udp: true}
-  - {name: 🇺🇸 US-4-1F, server: us.wulan.sbs, port: 56623, type: vless, uuid: 9487560c-9241-4b89-acb5-650146f3cdf7, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1G, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 7b64d82e-8dfb-432e-98f9-b236f2b4b09e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 HY-04 | US, server: usflare1.cloudaddy.top, port: 30005, type: hysteria2, password: 693ff636-6b7c-4974-bf03-d778e734320e, auth: 693ff636-6b7c-4974-bf03-d778e734320e, sni: www.iq.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本-1E, server: rb01.pinchela.org, port: 4433, type: hysteria2, password: 3ea3eb0e-6897-4bad-90f2-79ac40a4ae78, auth: 3ea3eb0e-6897-4bad-90f2-79ac40a4ae78, sni: rb01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: PCBVPflh6MDUA3EM, udp: true}
-  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: 29ce1f32-ffb6-4115-99e5-d2a4ae9791f9, sni: node4.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1A, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: a030c6b1-dadb-4caa-b6df-161be96d0b35, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HK-1-1C, server: hk.wulan.sbs, port: 13579, type: vless, uuid: 51fac6e2-b354-4f1c-9371-6bb4d05d5370, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HK-2-1F, server: hk.wulan.sbs, port: 24689, type: vless, uuid: 9487560c-9241-4b89-acb5-650146f3cdf7, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1B, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: ee8abdb3-76fe-4989-a443-d3530a694382, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1D, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 486ced44-8ec9-4bca-8df8-c9deda8cd140, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HY2-香港-1B, server: hy2-vless-zouter.pinchela.xyz, port: 4436, type: hysteria2, password: a7664075-9026-4ed4-a5af-3b71b5325fbe, auth: a7664075-9026-4ed4-a5af-3b71b5325fbe, sni: hy2-vless-zouter.pinchela.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 VLESS-日本-1E, server: 216.23.121.126, port: 4433, type: vless, uuid: 3ea3eb0e-6897-4bad-90f2-79ac40a4ae78, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
-  - {name: 🇹🇼 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: 29ce1f32-ffb6-4115-99e5-d2a4ae9791f9, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1F, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 2b4a4eea-4b56-4e5f-9e6e-7987fb22ef1e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 美国2线-1E, server: 198.23.187.198.pinchela.xyz, port: 8080, type: hysteria2, password: 3ea3eb0e-6897-4bad-90f2-79ac40a4ae78, auth: 3ea3eb0e-6897-4bad-90f2-79ac40a4ae78, sni: 198.23.187.198.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: RX14sGmptnOZqnEh, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1C, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: f9ff3ff1-90aa-4800-9fa7-6402ef82da82, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1C, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: f9ff3ff1-90aa-4800-9fa7-6402ef82da82, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇮🇩 印度尼西亚-1E, server: ydnxy8.215.1.126.pinchela.xyz, port: 5566, type: hysteria2, password: 3ea3eb0e-6897-4bad-90f2-79ac40a4ae78, auth: 3ea3eb0e-6897-4bad-90f2-79ac40a4ae78, sni: ydnxy8.215.1.126.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: bieaOsohYOKUTxmg, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1E, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: b34f4f3d-6014-4ada-a770-5028d3133424, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇸🇬 新加坡-1B, server: xinjiapo.pinchela.xyz, port: 443, type: hysteria2, password: a7664075-9026-4ed4-a5af-3b71b5325fbe, auth: a7664075-9026-4ed4-a5af-3b71b5325fbe, sni: xinjiapo.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: CCi51ZAlLWstDjTH, udp: true}
-  - {name: 🇺🇸 US-2-1B, server: us.wulan.sbs, port: 45783, type: vless, uuid: fbe267b6-9ef1-4edc-bed5-ac697a061ee1, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 香港2线-1G, server: 47.75.116.73.pinchela.xyz, port: 443, type: hysteria2, password: b49025b8-68dc-4e7c-9ec6-04d8f42ac196, auth: b49025b8-68dc-4e7c-9ec6-04d8f42ac196, sni: 47.75.116.73.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 4KonhVPIojfXekEV, udp: true}
-  - {name: 🇭🇰 HY2-香港-1G, server: hy2-vless-zouter.pinchela.xyz, port: 4436, type: hysteria2, password: b49025b8-68dc-4e7c-9ec6-04d8f42ac196, auth: b49025b8-68dc-4e7c-9ec6-04d8f42ac196, sni: hy2-vless-zouter.pinchela.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 VLESS-香港-1F, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: 4ca0cc2c-7637-40c7-96e9-db62193fee1f, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
-  - {name: 🇺🇸 美国-1B, server: us01.pinchela.org, port: 4433, type: hysteria2, password: a7664075-9026-4ed4-a5af-3b71b5325fbe, auth: a7664075-9026-4ed4-a5af-3b71b5325fbe, sni: us01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: AtEhnl5SebQY1yoK, udp: true}
-  - {name: 🇭🇰 HK-1-1B, server: hk.wulan.sbs, port: 13579, type: vless, uuid: fbe267b6-9ef1-4edc-bed5-ac697a061ee1, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1E, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: b34f4f3d-6014-4ada-a770-5028d3133424, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HK-1-1D, server: hk.wulan.sbs, port: 13579, type: vless, uuid: e321ddea-95fe-4e4c-a68b-2b6caaaec584, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国2线-1G, server: 198.23.187.198.pinchela.xyz, port: 8080, type: hysteria2, password: b49025b8-68dc-4e7c-9ec6-04d8f42ac196, auth: b49025b8-68dc-4e7c-9ec6-04d8f42ac196, sni: 198.23.187.198.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: RX14sGmptnOZqnEh, udp: true}
+  - {name: 🇺🇸 US-2-2-1C, server: mgg.vpnvvv.top, port: 45783, type: vless, uuid: 86539054-d708-4e4a-ba13-2d19161ee54a, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 JAPAN-SS-1B, server: 167.179.99.83, port: 8445, type: ss, cipher: aes-256-gcm, password: bfd1bf92-6949-48f7-a56b-64c1567c11b2, udp: true}
+  - {name: GH-ZWA, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 05510395-e5a2-440b-8193-4c988d6b30a5, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 🇯🇵 VLESS-日本-1G, server: 216.23.121.126, port: 4433, type: vless, uuid: 4bf633dd-71db-42fa-8e26-d35b844c8306, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
+  - {name: EA-USC, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 0d4b6cd3-ddee-4b32-b9fa-099b2bd56333, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: ios, network: tcp, udp: true}
+  - {name: 🇺🇸 美国-1F, server: us01.pinchela.org, port: 4433, type: hysteria2, password: 4b5bc464-d05e-4417-b788-11f939bf04b4, auth: 4b5bc464-d05e-4417-b788-11f939bf04b4, sni: us01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: AtEhnl5SebQY1yoK, udp: true}
+  - {name: 🇯🇵 JAPAN-SS-1C, server: 167.179.99.83, port: 8445, type: ss, cipher: aes-256-gcm, password: d4743db7-c9b1-4c80-9a2c-502b49bc0412, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1D, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: b34f4f3d-6014-4ada-a770-5028d3133424, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇯🇵 HY2-日本-1G, server: 216.23.121.126, port: 4434, type: hysteria2, password: 4bf633dd-71db-42fa-8e26-d35b844c8306, auth: 4bf633dd-71db-42fa-8e26-d35b844c8306, sni: hy2-zouter-jp.pinchela.org, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US-2-1C, server: us.wulan.sbs, port: 45783, type: vless, uuid: 86539054-d708-4e4a-ba13-2d19161ee54a, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1B, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: a030c6b1-dadb-4caa-b6df-161be96d0b35, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇮🇩 印度尼西亚-1G, server: ydnxy8.215.1.126.pinchela.xyz, port: 5566, type: hysteria2, password: 4bf633dd-71db-42fa-8e26-d35b844c8306, auth: 4bf633dd-71db-42fa-8e26-d35b844c8306, sni: ydnxy8.215.1.126.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: bieaOsohYOKUTxmg, udp: true}
+  - {name: 🇭🇰 TTC9999 香港, server: ww2.ttc9999.com, port: 443, type: vmess, uuid: 3e4edf21-ee4c-45a6-a9f8-4cfb11a3611d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: ww2.ttc9999.com}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1D, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: b34f4f3d-6014-4ada-a770-5028d3133424, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1E, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 7b64d82e-8dfb-432e-98f9-b236f2b4b09e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1B, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: a030c6b1-dadb-4caa-b6df-161be96d0b35, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 US-4-1B, server: us.wulan.sbs, port: 56623, type: vless, uuid: 7d9abf5d-f509-4648-8e9a-2b36344a5323, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 VLESS-日本-1D, server: 216.23.121.126, port: 4433, type: vless, uuid: d7464e10-e30f-4c70-9d7d-460c5cf36143, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
+  - {name: WG-RPU, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 666fb085-e9b7-4dd6-a212-157d4949d351, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: qq, network: tcp, udp: true}
+  - {name: 🇺🇸 HY-05| US-1B, server: usflare1.cloudaddy.top, port: 30006, type: hysteria2, password: ca17a52c-6539-41a5-89ba-c05fe37c8b67, auth: ca17a52c-6539-41a5-89ba-c05fe37c8b67, sni: www.iq.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-2-1-1D, server: mgg.vpnvvv.top, port: 46754, type: vless, uuid: 51fac6e2-b354-4f1c-9371-6bb4d05d5370, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: FV2026-7-7-1F, server: 101.43.62.88, port: 22001, type: vless, uuid: 70136a15-63d6-40d4-9b37-20484c64d61f, tls: false, network: tcp, udp: true}
+  - {name: 🇯🇵 HY2-日本-1A, server: 216.23.121.126, port: 4434, type: hysteria2, password: 2cdd2b02-643e-4dc4-b59e-7c9a4a7ac203, auth: 2cdd2b02-643e-4dc4-b59e-7c9a4a7ac203, sni: hy2-zouter-jp.pinchela.org, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US-1-1C, server: us.wulan.sbs, port: 45623, type: vless, uuid: 86539054-d708-4e4a-ba13-2d19161ee54a, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇫🇷 法国-1G, server: fg31.56.146.135.pinchela.xyz, port: 8080, type: hysteria2, password: 4bf633dd-71db-42fa-8e26-d35b844c8306, auth: 4bf633dd-71db-42fa-8e26-d35b844c8306, sni: fg31.56.146.135.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 858sILlKqRJlug5M, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1D, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: b34f4f3d-6014-4ada-a770-5028d3133424, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1F, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: f9ff3ff1-90aa-4800-9fa7-6402ef82da82, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HK-1-1E, server: hk.wulan.sbs, port: 13579, type: vless, uuid: fbe267b6-9ef1-4edc-bed5-ac697a061ee1, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 VLESS-香港-1G, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: 4bf633dd-71db-42fa-8e26-d35b844c8306, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1G, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: ba4c87c1-8ede-4e71-9c34-c71ecdfc16b4, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 新加坡-1G, server: xinjiapo.pinchela.xyz, port: 443, type: hysteria2, password: 4bf633dd-71db-42fa-8e26-d35b844c8306, auth: 4bf633dd-71db-42fa-8e26-d35b844c8306, sni: xinjiapo.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: CCi51ZAlLWstDjTH, udp: true}
+  - {name: 🇭🇰 VLESS-香港-1C, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: b63bd2e1-2f03-420d-b52d-6913893e8fbd, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1C, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 486ced44-8ec9-4bca-8df8-c9deda8cd140, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 US-2-2-1A, server: mgg.vpnvvv.top, port: 45783, type: vless, uuid: 9487560c-9241-4b89-acb5-650146f3cdf7, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇹🇼 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: a30de232-696a-48be-9dec-4a14e42e0f17, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: FV2026-7-7-1E, server: 101.43.62.88, port: 22001, type: vless, uuid: 05510395-e5a2-440b-8193-4c988d6b30a5, tls: false, network: tcp, udp: true}
+  - {name: 🇺🇸 US-4-1A, server: us.wulan.sbs, port: 56623, type: vless, uuid: 9487560c-9241-4b89-acb5-650146f3cdf7, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 VLESS-日本-1E, server: 216.23.121.126, port: 4433, type: vless, uuid: 3aa670ae-9e55-4acd-a3cf-fc2498cd7831, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
+  - {name: 🇺🇸 美国-1C, server: us01.pinchela.org, port: 4433, type: hysteria2, password: b63bd2e1-2f03-420d-b52d-6913893e8fbd, auth: b63bd2e1-2f03-420d-b52d-6913893e8fbd, sni: us01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: AtEhnl5SebQY1yoK, udp: true}
+  - {name: 🇺🇸 美国2线-1C, server: 198.23.187.198.pinchela.xyz, port: 8080, type: hysteria2, password: b63bd2e1-2f03-420d-b52d-6913893e8fbd, auth: b63bd2e1-2f03-420d-b52d-6913893e8fbd, sni: 198.23.187.198.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: RX14sGmptnOZqnEh, udp: true}
+  - {name: FV2026-7-7-1D, server: 101.43.62.88, port: 22001, type: vless, uuid: 478cfd0c-6d3c-48f7-8587-05785b951f44, tls: false, network: tcp, udp: true}
+  - {name: 🇫🇷 法国-1E, server: fg31.56.146.135.pinchela.xyz, port: 8080, type: hysteria2, password: 3aa670ae-9e55-4acd-a3cf-fc2498cd7831, auth: 3aa670ae-9e55-4acd-a3cf-fc2498cd7831, sni: fg31.56.146.135.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 858sILlKqRJlug5M, udp: true}
+  - {name: 🇺🇸 US-1-1B, server: us.wulan.sbs, port: 45623, type: vless, uuid: 7d9abf5d-f509-4648-8e9a-2b36344a5323, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 HY-03 | US-1B, server: usflare1.cloudaddy.top, port: 30004, type: hysteria2, password: ca17a52c-6539-41a5-89ba-c05fe37c8b67, auth: ca17a52c-6539-41a5-89ba-c05fe37c8b67, sni: us1.cloudsegl1.ccwu.cc, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇩 印度尼西亚-1C, server: ydnxy8.215.1.126.pinchela.xyz, port: 5566, type: hysteria2, password: b63bd2e1-2f03-420d-b52d-6913893e8fbd, auth: b63bd2e1-2f03-420d-b52d-6913893e8fbd, sni: ydnxy8.215.1.126.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: bieaOsohYOKUTxmg, udp: true}
+  - {name: 🇭🇰 VLESS-香港-1D, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: d7464e10-e30f-4c70-9d7d-460c5cf36143, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
+  - {name: 🇯🇵 日本-1D, server: rb01.pinchela.org, port: 4433, type: hysteria2, password: d7464e10-e30f-4c70-9d7d-460c5cf36143, auth: d7464e10-e30f-4c70-9d7d-460c5cf36143, sni: rb01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: PCBVPflh6MDUA3EM, udp: true}
+  - {name: 🇺🇸 US-1-1D, server: us.wulan.sbs, port: 45623, type: vless, uuid: 51fac6e2-b354-4f1c-9371-6bb4d05d5370, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US-2-1B, server: us.wulan.sbs, port: 45783, type: vless, uuid: 7d9abf5d-f509-4648-8e9a-2b36344a5323, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1E, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 7b64d82e-8dfb-432e-98f9-b236f2b4b09e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 HY-03 | US-1A, server: usflare1.cloudaddy.top, port: 30004, type: hysteria2, password: ac618ccb-9cfa-4886-b1f3-b0cc8b94013b, auth: ac618ccb-9cfa-4886-b1f3-b0cc8b94013b, sni: us1.cloudsegl1.ccwu.cc, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US-3-1D, server: us.wulan.sbs, port: 47223, type: vless, uuid: 51fac6e2-b354-4f1c-9371-6bb4d05d5370, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US-1-1A, server: us.wulan.sbs, port: 45623, type: vless, uuid: 9487560c-9241-4b89-acb5-650146f3cdf7, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇮🇩 印度尼西亚-1B, server: ydnxy8.215.1.126.pinchela.xyz, port: 5566, type: hysteria2, password: 7a850235-cba6-47e4-b325-cbb1bf444ddb, auth: 7a850235-cba6-47e4-b325-cbb1bf444ddb, sni: ydnxy8.215.1.126.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: bieaOsohYOKUTxmg, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1B, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: a030c6b1-dadb-4caa-b6df-161be96d0b35, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇫🇷 法国-1B, server: fg31.56.146.135.pinchela.xyz, port: 8080, type: hysteria2, password: 7a850235-cba6-47e4-b325-cbb1bf444ddb, auth: 7a850235-cba6-47e4-b325-cbb1bf444ddb, sni: fg31.56.146.135.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 858sILlKqRJlug5M, udp: true}
+  - {name: 🇭🇰 VLESS-香港-1E, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: 3aa670ae-9e55-4acd-a3cf-fc2498cd7831, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
+  - {name: FV2026-7-7-1C, server: 101.43.62.88, port: 22001, type: vless, uuid: 0d4b6cd3-ddee-4b32-b9fa-099b2bd56333, tls: false, network: tcp, udp: true}
+  - {name: 🇯🇵 HY2-日本-1B, server: 216.23.121.126, port: 4434, type: hysteria2, password: 7a850235-cba6-47e4-b325-cbb1bf444ddb, auth: 7a850235-cba6-47e4-b325-cbb1bf444ddb, sni: hy2-zouter-jp.pinchela.org, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国加速器 01, server: hk01.wulink.net, port: 8443, type: trojan, password: c123eab8-675f-40a0-b2f9-b5f08c3fd379, sni: hk01.wulink.net, skip-cert-verify: false, udp: true}
+  - {name: AM-DIC, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 70136a15-63d6-40d4-9b37-20484c64d61f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 美国2线-1A, server: 198.23.187.198.pinchela.xyz, port: 8080, type: hysteria2, password: 2cdd2b02-643e-4dc4-b59e-7c9a4a7ac203, auth: 2cdd2b02-643e-4dc4-b59e-7c9a4a7ac203, sni: 198.23.187.198.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: RX14sGmptnOZqnEh, udp: true}
+  - {name: 🇯🇵 VLESS-日本-1C, server: 216.23.121.126, port: 4433, type: vless, uuid: b63bd2e1-2f03-420d-b52d-6913893e8fbd, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
+  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: a30de232-696a-48be-9dec-4a14e42e0f17, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国-1E, server: us01.pinchela.org, port: 4433, type: hysteria2, password: 3aa670ae-9e55-4acd-a3cf-fc2498cd7831, auth: 3aa670ae-9e55-4acd-a3cf-fc2498cd7831, sni: us01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: AtEhnl5SebQY1yoK, udp: true}
+  - {name: 🇭🇰 香港2线-1C, server: 47.75.116.73.pinchela.xyz, port: 443, type: hysteria2, password: b63bd2e1-2f03-420d-b52d-6913893e8fbd, auth: b63bd2e1-2f03-420d-b52d-6913893e8fbd, sni: 47.75.116.73.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 4KonhVPIojfXekEV, udp: true}
+  - {name: 🇫🇷 法国-1C, server: fg31.56.146.135.pinchela.xyz, port: 8080, type: hysteria2, password: b63bd2e1-2f03-420d-b52d-6913893e8fbd, auth: b63bd2e1-2f03-420d-b52d-6913893e8fbd, sni: fg31.56.146.135.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 858sILlKqRJlug5M, udp: true}
+  - {name: 🇺🇸 美国2线-1B, server: 198.23.187.198.pinchela.xyz, port: 8080, type: hysteria2, password: 7a850235-cba6-47e4-b325-cbb1bf444ddb, auth: 7a850235-cba6-47e4-b325-cbb1bf444ddb, sni: 198.23.187.198.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: RX14sGmptnOZqnEh, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1C, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 486ced44-8ec9-4bca-8df8-c9deda8cd140, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国2线-1F, server: 198.23.187.198.pinchela.xyz, port: 8080, type: hysteria2, password: 4b5bc464-d05e-4417-b788-11f939bf04b4, auth: 4b5bc464-d05e-4417-b788-11f939bf04b4, sni: 198.23.187.198.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: RX14sGmptnOZqnEh, udp: true}
+  - {name: 🇯🇵 日本-1C, server: rb01.pinchela.org, port: 4433, type: hysteria2, password: b63bd2e1-2f03-420d-b52d-6913893e8fbd, auth: b63bd2e1-2f03-420d-b52d-6913893e8fbd, sni: rb01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: PCBVPflh6MDUA3EM, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1F, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: f9ff3ff1-90aa-4800-9fa7-6402ef82da82, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 US-2-1-1A, server: mgg.vpnvvv.top, port: 46754, type: vless, uuid: 9487560c-9241-4b89-acb5-650146f3cdf7, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 香港2线-1E, server: 47.75.116.73.pinchela.xyz, port: 443, type: hysteria2, password: 3aa670ae-9e55-4acd-a3cf-fc2498cd7831, auth: 3aa670ae-9e55-4acd-a3cf-fc2498cd7831, sni: 47.75.116.73.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 4KonhVPIojfXekEV, udp: true}
+  - {name: 🇺🇸 HY-04 | US-1B, server: usflare1.cloudaddy.top, port: 30005, type: hysteria2, password: ca17a52c-6539-41a5-89ba-c05fe37c8b67, auth: ca17a52c-6539-41a5-89ba-c05fe37c8b67, sni: www.iq.com, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 法国-1F, server: fg31.56.146.135.pinchela.xyz, port: 8080, type: hysteria2, password: 4b5bc464-d05e-4417-b788-11f939bf04b4, auth: 4b5bc464-d05e-4417-b788-11f939bf04b4, sni: fg31.56.146.135.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 858sILlKqRJlug5M, udp: true}
+  - {name: 🇯🇵 日本-1B, server: rb01.pinchela.org, port: 4433, type: hysteria2, password: 7a850235-cba6-47e4-b325-cbb1bf444ddb, auth: 7a850235-cba6-47e4-b325-cbb1bf444ddb, sni: rb01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: PCBVPflh6MDUA3EM, udp: true}
+  - {name: 🇸🇬 新加坡-1D, server: xinjiapo.pinchela.xyz, port: 443, type: hysteria2, password: d7464e10-e30f-4c70-9d7d-460c5cf36143, auth: d7464e10-e30f-4c70-9d7d-460c5cf36143, sni: xinjiapo.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: CCi51ZAlLWstDjTH, udp: true}
+  - {name: 🇯🇵 日本-1F, server: rb01.pinchela.org, port: 4433, type: hysteria2, password: 4b5bc464-d05e-4417-b788-11f939bf04b4, auth: 4b5bc464-d05e-4417-b788-11f939bf04b4, sni: rb01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: PCBVPflh6MDUA3EM, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1H, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 59cded24-312c-4e95-a8db-9bb94a674f41, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: MC-SJE, server: empty.node, port: 443, type: trojan, password: 4f27fec8-ffa2-4396-8250-bd46d2f5d59b, sni: empty.node, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 HY2-香港-1C, server: hy2-vless-zouter.pinchela.xyz, port: 4436, type: hysteria2, password: b63bd2e1-2f03-420d-b52d-6913893e8fbd, auth: b63bd2e1-2f03-420d-b52d-6913893e8fbd, sni: hy2-vless-zouter.pinchela.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 HK-2-1C, server: hk.wulan.sbs, port: 24689, type: vless, uuid: 86539054-d708-4e4a-ba13-2d19161ee54a, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1F, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: f9ff3ff1-90aa-4800-9fa7-6402ef82da82, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1H, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 59cded24-312c-4e95-a8db-9bb94a674f41, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇯🇵 JAPAN-01-1B, server: 167.179.99.83, port: 8443, type: vmess, uuid: bfd1bf92-6949-48f7-a56b-64c1567c11b2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ray}, udp: true}
+  - {name: 🇺🇸 US-2-1-1C, server: mgg.vpnvvv.top, port: 46754, type: vless, uuid: 86539054-d708-4e4a-ba13-2d19161ee54a, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HK-1-1D, server: hk.wulan.sbs, port: 13579, type: vless, uuid: 51fac6e2-b354-4f1c-9371-6bb4d05d5370, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US-3-1B, server: us.wulan.sbs, port: 47223, type: vless, uuid: 7d9abf5d-f509-4648-8e9a-2b36344a5323, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 美国-1G, server: us01.pinchela.org, port: 4433, type: hysteria2, password: 4bf633dd-71db-42fa-8e26-d35b844c8306, auth: 4bf633dd-71db-42fa-8e26-d35b844c8306, sni: us01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: AtEhnl5SebQY1yoK, udp: true}
+  - {name: 🇺🇸 美国2线-1G, server: 198.23.187.198.pinchela.xyz, port: 8080, type: hysteria2, password: 4bf633dd-71db-42fa-8e26-d35b844c8306, auth: 4bf633dd-71db-42fa-8e26-d35b844c8306, sni: 198.23.187.198.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: RX14sGmptnOZqnEh, udp: true}
+  - {name: 🇮🇩 印度尼西亚-1E, server: ydnxy8.215.1.126.pinchela.xyz, port: 5566, type: hysteria2, password: 3aa670ae-9e55-4acd-a3cf-fc2498cd7831, auth: 3aa670ae-9e55-4acd-a3cf-fc2498cd7831, sni: ydnxy8.215.1.126.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: bieaOsohYOKUTxmg, udp: true}
+  - {name: 🇸🇬 新加坡-1B, server: xinjiapo.pinchela.xyz, port: 443, type: hysteria2, password: 7a850235-cba6-47e4-b325-cbb1bf444ddb, auth: 7a850235-cba6-47e4-b325-cbb1bf444ddb, sni: xinjiapo.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: CCi51ZAlLWstDjTH, udp: true}
+  - {name: 🇭🇰 HY2-香港-1G, server: hy2-vless-zouter.pinchela.xyz, port: 4436, type: hysteria2, password: 4bf633dd-71db-42fa-8e26-d35b844c8306, auth: 4bf633dd-71db-42fa-8e26-d35b844c8306, sni: hy2-vless-zouter.pinchela.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1F, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: f9ff3ff1-90aa-4800-9fa7-6402ef82da82, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HY2-香港-1D, server: hy2-vless-zouter.pinchela.xyz, port: 4436, type: hysteria2, password: d7464e10-e30f-4c70-9d7d-460c5cf36143, auth: d7464e10-e30f-4c70-9d7d-460c5cf36143, sni: hy2-vless-zouter.pinchela.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港2线-1F, server: 47.75.116.73.pinchela.xyz, port: 443, type: hysteria2, password: 4b5bc464-d05e-4417-b788-11f939bf04b4, auth: 4b5bc464-d05e-4417-b788-11f939bf04b4, sni: 47.75.116.73.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 4KonhVPIojfXekEV, udp: true}
+  - {name: 🇫🇷 法国-1D, server: fg31.56.146.135.pinchela.xyz, port: 8080, type: hysteria2, password: d7464e10-e30f-4c70-9d7d-460c5cf36143, auth: d7464e10-e30f-4c70-9d7d-460c5cf36143, sni: fg31.56.146.135.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 858sILlKqRJlug5M, udp: true}
+  - {name: 🇭🇰 HK-1-1C, server: hk.wulan.sbs, port: 13579, type: vless, uuid: 86539054-d708-4e4a-ba13-2d19161ee54a, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 美国2线-1E, server: 198.23.187.198.pinchela.xyz, port: 8080, type: hysteria2, password: 3aa670ae-9e55-4acd-a3cf-fc2498cd7831, auth: 3aa670ae-9e55-4acd-a3cf-fc2498cd7831, sni: 198.23.187.198.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: RX14sGmptnOZqnEh, udp: true}
+  - {name: 🇺🇸 US-3-1E, server: us.wulan.sbs, port: 47223, type: vless, uuid: fbe267b6-9ef1-4edc-bed5-ac697a061ee1, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1H, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 59cded24-312c-4e95-a8db-9bb94a674f41, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: G I C A B N H T H N, server: expired.example.com, port: 80, type: vmess, uuid: 4bb65956-7fe8-4f94-af99-ba4447d817d4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /expired, headers: {Host: expired.example.com}}, udp: true}
+  - {name: 🇯🇵 日本-1E, server: rb01.pinchela.org, port: 4433, type: hysteria2, password: 3aa670ae-9e55-4acd-a3cf-fc2498cd7831, auth: 3aa670ae-9e55-4acd-a3cf-fc2498cd7831, sni: rb01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: PCBVPflh6MDUA3EM, udp: true}
+  - {name: 🇺🇸 US-2-2-1D, server: mgg.vpnvvv.top, port: 45783, type: vless, uuid: 51fac6e2-b354-4f1c-9371-6bb4d05d5370, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: SILICONVALLEY-01-1C, server: 144.202.98.98, port: 8444, type: vmess, uuid: d4743db7-c9b1-4c80-9a2c-502b49bc0412, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 JAPAN-01-1C, server: 167.179.99.83, port: 8443, type: vmess, uuid: d4743db7-c9b1-4c80-9a2c-502b49bc0412, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ray}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1B, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: a030c6b1-dadb-4caa-b6df-161be96d0b35, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国-洛杉矶-PRO, server: 5.253.38.67, port: 40444, type: vless, uuid: 9ca5e695-5888-4e2d-9058-69579e3a5c22, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZZK_Oo5-iDDgoWzxIURTLWoKPbC8NFto3Mk7OvAZgRU, short-id: "b3f2a1c9" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US-2-2-1B, server: mgg.vpnvvv.top, port: 45783, type: vless, uuid: 7d9abf5d-f509-4648-8e9a-2b36344a5323, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 VLESS-日本-1B, server: 216.23.121.126, port: 4433, type: vless, uuid: 7a850235-cba6-47e4-b325-cbb1bf444ddb, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
+  - {name: 🇺🇸 US-2-1-1E, server: mgg.vpnvvv.top, port: 46754, type: vless, uuid: fbe267b6-9ef1-4edc-bed5-ac697a061ee1, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇹🇼 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: a30de232-696a-48be-9dec-4a14e42e0f17, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-1-1E, server: us.wulan.sbs, port: 45623, type: vless, uuid: fbe267b6-9ef1-4edc-bed5-ac697a061ee1, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US-2-2-1E, server: mgg.vpnvvv.top, port: 45783, type: vless, uuid: fbe267b6-9ef1-4edc-bed5-ac697a061ee1, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 HY-05| US-1A, server: usflare1.cloudaddy.top, port: 30006, type: hysteria2, password: ac618ccb-9cfa-4886-b1f3-b0cc8b94013b, auth: ac618ccb-9cfa-4886-b1f3-b0cc8b94013b, sni: www.iq.com, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1H, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 59cded24-312c-4e95-a8db-9bb94a674f41, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇯🇵 HY2-日本-1E, server: 216.23.121.126, port: 4434, type: hysteria2, password: 3aa670ae-9e55-4acd-a3cf-fc2498cd7831, auth: 3aa670ae-9e55-4acd-a3cf-fc2498cd7831, sni: hy2-zouter-jp.pinchela.org, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇩 印度尼西亚-1F, server: ydnxy8.215.1.126.pinchela.xyz, port: 5566, type: hysteria2, password: 4b5bc464-d05e-4417-b788-11f939bf04b4, auth: 4b5bc464-d05e-4417-b788-11f939bf04b4, sni: ydnxy8.215.1.126.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: bieaOsohYOKUTxmg, udp: true}
+  - {name: 🇯🇵 VLESS-日本-1F, server: 216.23.121.126, port: 4433, type: vless, uuid: 4b5bc464-d05e-4417-b788-11f939bf04b4, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
+  - {name: 🇺🇸 美国-1A, server: us01.pinchela.org, port: 4433, type: hysteria2, password: 2cdd2b02-643e-4dc4-b59e-7c9a4a7ac203, auth: 2cdd2b02-643e-4dc4-b59e-7c9a4a7ac203, sni: us01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: AtEhnl5SebQY1yoK, udp: true}
+  - {name: 🇭🇰 VLESS-香港-1B, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: 7a850235-cba6-47e4-b325-cbb1bf444ddb, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
+  - {name: 🇫🇷 法国-1A, server: fg31.56.146.135.pinchela.xyz, port: 8080, type: hysteria2, password: 2cdd2b02-643e-4dc4-b59e-7c9a4a7ac203, auth: 2cdd2b02-643e-4dc4-b59e-7c9a4a7ac203, sni: fg31.56.146.135.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 858sILlKqRJlug5M, udp: true}
+  - {name: 🇺🇸 US-2-1D, server: us.wulan.sbs, port: 45783, type: vless, uuid: 51fac6e2-b354-4f1c-9371-6bb4d05d5370, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US-2-2-1F, server: mgg.vpnvvv.top, port: 45783, type: vless, uuid: e321ddea-95fe-4e4c-a68b-2b6caaaec584, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HK-2-1D, server: hk.wulan.sbs, port: 24689, type: vless, uuid: 51fac6e2-b354-4f1c-9371-6bb4d05d5370, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1A, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: ee8abdb3-76fe-4989-a443-d3530a694382, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1A, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: ee8abdb3-76fe-4989-a443-d3530a694382, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 US-2-1-1F, server: mgg.vpnvvv.top, port: 46754, type: vless, uuid: e321ddea-95fe-4e4c-a68b-2b6caaaec584, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 HY-02 | US-1B, server: usflare1.cloudaddy.top, port: 30003, type: hysteria2, password: ca17a52c-6539-41a5-89ba-c05fe37c8b67, auth: ca17a52c-6539-41a5-89ba-c05fe37c8b67, sni: www.iq.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK-1-1B, server: hk.wulan.sbs, port: 13579, type: vless, uuid: 7d9abf5d-f509-4648-8e9a-2b36344a5323, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 美国2线-1D, server: 198.23.187.198.pinchela.xyz, port: 8080, type: hysteria2, password: d7464e10-e30f-4c70-9d7d-460c5cf36143, auth: d7464e10-e30f-4c70-9d7d-460c5cf36143, sni: 198.23.187.198.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: RX14sGmptnOZqnEh, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1G, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: ba4c87c1-8ede-4e71-9c34-c71ecdfc16b4, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: a30de232-696a-48be-9dec-4a14e42e0f17, sni: node4.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本-1G, server: rb01.pinchela.org, port: 4433, type: hysteria2, password: 4bf633dd-71db-42fa-8e26-d35b844c8306, auth: 4bf633dd-71db-42fa-8e26-d35b844c8306, sni: rb01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: PCBVPflh6MDUA3EM, udp: true}
+  - {name: 🇯🇵 JAPAN-SS-1A, server: 167.179.99.83, port: 8445, type: ss, cipher: aes-256-gcm, password: ede19c6d-f364-40ab-81a1-74ff7b7345b2, udp: true}
+  - {name: 🇺🇸 US-4-1C, server: us.wulan.sbs, port: 56623, type: vless, uuid: 86539054-d708-4e4a-ba13-2d19161ee54a, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 美国-1D, server: us01.pinchela.org, port: 4433, type: hysteria2, password: d7464e10-e30f-4c70-9d7d-460c5cf36143, auth: d7464e10-e30f-4c70-9d7d-460c5cf36143, sni: us01.pinchela.org, skip-cert-verify: false, obfs: salamander, obfs-password: AtEhnl5SebQY1yoK, udp: true}
+  - {name: 🇭🇰 香港2线-1G, server: 47.75.116.73.pinchela.xyz, port: 443, type: hysteria2, password: 4bf633dd-71db-42fa-8e26-d35b844c8306, auth: 4bf633dd-71db-42fa-8e26-d35b844c8306, sni: 47.75.116.73.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: 4KonhVPIojfXekEV, udp: true}
+  - {name: 🇸🇬 新加坡-1E, server: xinjiapo.pinchela.xyz, port: 443, type: hysteria2, password: 3aa670ae-9e55-4acd-a3cf-fc2498cd7831, auth: 3aa670ae-9e55-4acd-a3cf-fc2498cd7831, sni: xinjiapo.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: CCi51ZAlLWstDjTH, udp: true}
+  - {name: SILICONVALLEY-01-1A, server: 144.202.98.98, port: 8444, type: vmess, uuid: ede19c6d-f364-40ab-81a1-74ff7b7345b2, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 US-2-1A, server: us.wulan.sbs, port: 45783, type: vless, uuid: 9487560c-9241-4b89-acb5-650146f3cdf7, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US-1-1F, server: us.wulan.sbs, port: 45623, type: vless, uuid: e321ddea-95fe-4e4c-a68b-2b6caaaec584, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HK-2-1A, server: hk.wulan.sbs, port: 24689, type: vless, uuid: 9487560c-9241-4b89-acb5-650146f3cdf7, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US-3-1A, server: us.wulan.sbs, port: 47223, type: vless, uuid: 9487560c-9241-4b89-acb5-650146f3cdf7, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1E, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 7b64d82e-8dfb-432e-98f9-b236f2b4b09e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HK-2-1E, server: hk.wulan.sbs, port: 24689, type: vless, uuid: fbe267b6-9ef1-4edc-bed5-ac697a061ee1, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1A, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: ee8abdb3-76fe-4989-a443-d3530a694382, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1G, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: ba4c87c1-8ede-4e71-9c34-c71ecdfc16b4, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 US-2-1E, server: us.wulan.sbs, port: 45783, type: vless, uuid: fbe267b6-9ef1-4edc-bed5-ac697a061ee1, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 新加坡-1C, server: xinjiapo.pinchela.xyz, port: 443, type: hysteria2, password: b63bd2e1-2f03-420d-b52d-6913893e8fbd, auth: b63bd2e1-2f03-420d-b52d-6913893e8fbd, sni: xinjiapo.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: CCi51ZAlLWstDjTH, udp: true}
+  - {name: OM-QJB, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: dabdd011-c37a-4ab0-ab8d-ac6b46b6d78f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 🇺🇸 US-3-1F, server: us.wulan.sbs, port: 47223, type: vless, uuid: e321ddea-95fe-4e4c-a68b-2b6caaaec584, tls: true, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 HY2-日本-1F, server: 216.23.121.126, port: 4434, type: hysteria2, password: 4b5bc464-d05e-4417-b788-11f939bf04b4, auth: 4b5bc464-d05e-4417-b788-11f939bf04b4, sni: hy2-zouter-jp.pinchela.org, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1C, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 486ced44-8ec9-4bca-8df8-c9deda8cd140, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇮🇩 印度尼西亚-1A, server: ydnxy8.215.1.126.pinchela.xyz, port: 5566, type: hysteria2, password: 2cdd2b02-643e-4dc4-b59e-7c9a4a7ac203, auth: 2cdd2b02-643e-4dc4-b59e-7c9a4a7ac203, sni: ydnxy8.215.1.126.pinchela.xyz, skip-cert-verify: false, obfs: salamander, obfs-password: bieaOsohYOKUTxmg, udp: true}
+  - {name: 🇭🇰 HY2-香港-1E, server: hy2-vless-zouter.pinchela.xyz, port: 4436, type: hysteria2, password: 3aa670ae-9e55-4acd-a3cf-fc2498cd7831, auth: 3aa670ae-9e55-4acd-a3cf-fc2498cd7831, sni: hy2-vless-zouter.pinchela.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 HY2-香港-1A, server: hy2-vless-zouter.pinchela.xyz, port: 4436, type: hysteria2, password: 2cdd2b02-643e-4dc4-b59e-7c9a4a7ac203, auth: 2cdd2b02-643e-4dc4-b59e-7c9a4a7ac203, sni: hy2-vless-zouter.pinchela.xyz, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬 新加坡-1A
-      - 🇯🇵 JAPAN-SS-1A
-      - 🇯🇵 VLESS-日本-1G
-      - 🇺🇸 US-3-1C
-      - 5A-VCE
-      - 🇭🇰 VLESS-香港-1G
-      - 🇯🇵 VLESS-日本-1C
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇯🇵 VLESS-日本-1A
-      - 🇯🇵 日本-1G
-      - 🇺🇸 US-1-1F
-      - FV2026-7-7-1B
-      - 🇭🇰 VLESS-香港-1B
-      - 🇺🇸 US-2-2-1E
-      - 🇺🇸 US-2-1-1C
-      - 🇯🇵 VLESS-日本-1B
-      - 🇺🇸 美国-1A
       - 🇯🇵 HY2-日本-1D
-      - 🇺🇸 US-4-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - SILICONVALLEY-01-1C
-      - 🇭🇰 香港2线-1E
-      - 🇮🇩 印度尼西亚-1D
-      - ME-GBW
-      - 🇭🇰 VLESS-香港-1A
-      - 🇺🇸 US-2-1-1A
-      - 🇺🇸 美国2线-1F
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 香港2线-1F
-      - 🇸🇬 新加坡-1C
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 HK-2-1C
-      - 🇺🇸 US-4-1A
-      - SILICONVALLEY-01-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇭🇰 HK-2-1E
-      - 🇺🇸 US-2-1E
-      - 🇭🇰 HK-2-1A
-      - 🇺🇸 US-3-1A
-      - 🇺🇸 US-1-1E
-      - 🇺🇸 US-3-1B
-      - 🇩🇪 德国-法兰克福-004-1E
-      - FV2026-7-7-1D
-      - 🇫🇷 法国-1B
-      - 🇯🇵 JAPAN-SS-1C
-      - 🇺🇸 US-1-1B
-      - 🇮🇩 印度尼西亚-1F
-      - 🇫🇷 法国-1A
-      - 🇯🇵 HY2-日本-1C
-      - 🇸🇬 新加坡-1F
-      - 🇺🇸 US-2-1-1B
-      - 🇺🇸 US-2-1A
-      - 🇺🇸 美国2线-1A
+      - 🇺🇸 HY-02 | US-1A
       - 🇭🇰 HK-1-1F
       - 🇩🇪 德国-法兰克福-002-1D
-      - 🇯🇵 JAPAN-SS-1B
-      - 🇺🇸 HY-03 | US
-      - 🇭🇰 VLESS-香港-1D
-      - 🇩🇪 德国-法兰克福-001-1A
-      - FV2026-7-7-1E
-      - 🇭🇰 VLESS-香港-1E
-      - 🇯🇵 日本-1F
-      - 🇺🇸 US-2-2-1F
-      - 🇭🇰 HY2-香港-1C
-      - FV2026-7-7-1C
-      - 🇺🇸 US-4-1C
-      - 🇯🇵 VLESS-日本-1F
-      - 🇺🇸 US-3-1D
-      - 🇺🇸 HY-02 | US
-      - 🇺🇸 US-2-1-1F
-      - 🇺🇸 US-2-1C
-      - 🇯🇵 HY2-日本-1B
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇫🇷 法国-1D
-      - 🇺🇸 美国-1F
-      - 🇺🇸 US-2-2-1C
-      - 🇺🇸 美国-1G
-      - F1-YPC
-      - 🇸🇬 新加坡-1G
-      - 🇺🇸 美国-1D
-      - 🇭🇰 HK-1-1A
-      - 🇯🇵 日本-1B
-      - 🇺🇸 美国-洛杉矶-PRO
-      - FV2026-7-7-1A
-      - 🇺🇸 US-2-2-1D
-      - 🇯🇵 HY2-日本-1E
-      - 🇺🇸 US-2-1F
-      - 🇺🇸 US-4-1E
-      - 🇺🇸 US-2-1D
-      - 🇺🇸 US-2-1-1E
-      - 🇸🇬 新加坡-1D
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇭🇰 HY2-香港-1E
-      - 🇭🇰 VLESS-香港-1C
-      - 🇭🇰 HY2-香港-1D
-      - 🇫🇷 法国-1G
-      - 🇯🇵 日本-1D
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇨🇳 中国联通节点1
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇮🇩 印度尼西亚-1G
+      - 🇸🇬 新加坡-1F
+      - 🇩🇪 德国-法兰克福-002-1C
       - 🇭🇰 HY2-香港-1F
-      - 🇭🇰 TTC9999 香港
-      - 🇩🇪 德国-法兰克福-001-1F
-      - G I C A B N H T H N
-      - 🇯🇵 HY2-日本-1F
-      - 🇺🇸 US-4-1D
+      - 🇭🇰 HY2-香港-1B
+      - 🇺🇸 US-4-1F
+      - 🇭🇰 HK-1-1A
+      - FV2026-7-7-1B
+      - 🇺🇸 美国-1B
+      - 🇭🇰 香港2线-1A
+      - 🇮🇩 印度尼西亚-1D
       - 🇭🇰 HK-2-1B
-      - 🇩🇪 德国-法兰克福-001-1G
-      - L9-RHS
-      - 🇺🇸 US-2-2-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇯🇵 VLESS-日本-1D
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇯🇵 JAPAN-01-1C
-      - 🇺🇸 美国2线-1C
-      - 🇭🇰 香港2线-1D
-      - 🇺🇸 US-3-1E
-      - 🇺🇸 美国2线-1B
-      - 🇫🇷 法国-1F
-      - 🇹🇼 台湾高速节点3
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇺🇸 US-3-1C
+      - 🇸🇬 新加坡-1A
+      - 🇺🇸 US-4-1E
+      - 🇭🇰 VLESS-香港-1A
+      - 🇭🇰 香港2线-1B
+      - 🇯🇵 HY2-日本-1C
+      - 🇭🇰 VLESS-香港-1F
+      - 🇺🇸 US-2-1-1B
+      - 🇺🇸 US-2-1F
       - SILICONVALLEY-01-1B
-      - HR-ZSB
-      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇯🇵 VLESS-日本-1A
+      - 🇯🇵 日本-1A
+      - FV2026-7-7-1A
+      - 🇭🇰 香港2线-1D
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇺🇸 US-4-1D
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇭🇰 HK-2-1F
+      - 🇺🇸 HY-04 | US-1A
+      - OD-EMU
+      - 🇯🇵 JAPAN-01-1A
+      - 🇺🇸 US-2-2-1C
+      - 🇯🇵 JAPAN-SS-1B
+      - GH-ZWA
+      - 🇯🇵 VLESS-日本-1G
+      - EA-USC
+      - 🇺🇸 美国-1F
+      - 🇯🇵 JAPAN-SS-1C
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 HY2-日本-1G
+      - 🇺🇸 US-2-1C
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇮🇩 印度尼西亚-1G
+      - 🇭🇰 TTC9999 香港
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 US-4-1B
+      - 🇯🇵 VLESS-日本-1D
+      - WG-RPU
+      - 🇺🇸 HY-05| US-1B
+      - 🇺🇸 US-2-1-1D
+      - FV2026-7-7-1F
+      - 🇯🇵 HY2-日本-1A
+      - 🇺🇸 US-1-1C
+      - 🇫🇷 法国-1G
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-003-1F
       - 🇭🇰 HK-1-1E
+      - 🇭🇰 VLESS-香港-1G
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇸🇬 新加坡-1G
+      - 🇭🇰 VLESS-香港-1C
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇺🇸 US-2-2-1A
+      - 🇹🇼 台湾高速节点
+      - FV2026-7-7-1E
+      - 🇺🇸 US-4-1A
+      - 🇯🇵 VLESS-日本-1E
+      - 🇺🇸 美国-1C
+      - 🇺🇸 美国2线-1C
+      - FV2026-7-7-1D
+      - 🇫🇷 法国-1E
+      - 🇺🇸 US-1-1B
+      - 🇺🇸 HY-03 | US-1B
+      - 🇮🇩 印度尼西亚-1C
+      - 🇭🇰 VLESS-香港-1D
+      - 🇯🇵 日本-1D
+      - 🇺🇸 US-1-1D
+      - 🇺🇸 US-2-1B
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇺🇸 HY-03 | US-1A
+      - 🇺🇸 US-3-1D
+      - 🇺🇸 US-1-1A
+      - 🇮🇩 印度尼西亚-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇫🇷 法国-1B
+      - 🇭🇰 VLESS-香港-1E
+      - FV2026-7-7-1C
+      - 🇯🇵 HY2-日本-1B
+      - 🇺🇸 美国加速器 01
+      - AM-DIC
+      - 🇺🇸 美国2线-1A
+      - 🇯🇵 VLESS-日本-1C
+      - 🇨🇳 中国联通节点1
+      - 🇺🇸 美国-1E
       - 🇭🇰 香港2线-1C
       - 🇫🇷 法国-1C
-      - 🇺🇸 美国2线-1D
-      - 🇭🇰 HY2-香港-1A
-      - 🇫🇷 法国-1E
-      - 🇺🇸 US-3-1F
-      - 🇺🇸 US-1-1D
-      - 🇺🇸 US-2-1-1D
-      - 🇭🇰 香港2线-1B
-      - 🇸🇬 新加坡-1E
-      - 🇺🇸 美国-1C
-      - AC-SIY
-      - 🇭🇰 香港2线-1A
-      - 🇯🇵 HY2-日本-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇯🇵 JAPAN-01-1B
-      - 🇮🇩 印度尼西亚-1A
-      - 🇺🇸 HY-05| US
-      - 🇮🇩 印度尼西亚-1B
-      - 🇺🇸 US-2-2-1B
-      - 🇺🇸 美国加速器 01
-      - 🇺🇸 美国-1E
+      - 🇺🇸 美国2线-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇺🇸 美国2线-1F
       - 🇯🇵 日本-1C
-      - 🇺🇸 US-1-1A
-      - 🇺🇸 US-1-1C
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇭🇰 HK-2-1D
-      - 🇯🇵 日本-1A
-      - 🇯🇵 HY2-日本-1G
-      - 🇯🇵 JAPAN-01-1A
-      - 🇮🇩 印度尼西亚-1C
-      - 🇺🇸 US-4-1F
-      - 🇩🇪 德国-法兰克福-004-1G
-      - 🇺🇸 HY-04 | US
-      - 🇯🇵 日本-1E
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 HK-1-1C
-      - 🇭🇰 HK-2-1F
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇭🇰 HY2-香港-1B
-      - 🇯🇵 VLESS-日本-1E
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇺🇸 美国2线-1E
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇮🇩 印度尼西亚-1E
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇸🇬 新加坡-1B
-      - 🇺🇸 US-2-1B
-      - 🇭🇰 香港2线-1G
-      - 🇭🇰 HY2-香港-1G
-      - 🇭🇰 VLESS-香港-1F
-      - 🇺🇸 美国-1B
-      - 🇭🇰 HK-1-1B
-      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇺🇸 US-2-1-1A
+      - 🇭🇰 香港2线-1E
+      - 🇺🇸 HY-04 | US-1B
+      - 🇫🇷 法国-1F
+      - 🇯🇵 日本-1B
+      - 🇸🇬 新加坡-1D
+      - 🇯🇵 日本-1F
+      - 🇩🇪 德国-法兰克福-004-1H
+      - MC-SJE
+      - 🇭🇰 HY2-香港-1C
+      - 🇭🇰 HK-2-1C
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇯🇵 JAPAN-01-1B
+      - 🇺🇸 US-2-1-1C
       - 🇭🇰 HK-1-1D
+      - 🇺🇸 US-3-1B
+      - 🇺🇸 美国-1G
       - 🇺🇸 美国2线-1G
+      - 🇮🇩 印度尼西亚-1E
+      - 🇸🇬 新加坡-1B
+      - 🇭🇰 HY2-香港-1G
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇭🇰 HY2-香港-1D
+      - 🇭🇰 香港2线-1F
+      - 🇫🇷 法国-1D
+      - 🇭🇰 HK-1-1C
+      - 🇺🇸 美国2线-1E
+      - 🇺🇸 US-3-1E
+      - 🇩🇪 德国-法兰克福-003-1H
+      - G I C A B N H T H N
+      - 🇯🇵 日本-1E
+      - 🇺🇸 US-2-2-1D
+      - SILICONVALLEY-01-1C
+      - 🇯🇵 JAPAN-01-1C
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇺🇸 US-2-2-1B
+      - 🇯🇵 VLESS-日本-1B
+      - 🇺🇸 US-2-1-1E
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇸 US-1-1E
+      - 🇺🇸 US-2-2-1E
+      - 🇺🇸 HY-05| US-1A
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇯🇵 HY2-日本-1E
+      - 🇮🇩 印度尼西亚-1F
+      - 🇯🇵 VLESS-日本-1F
+      - 🇺🇸 美国-1A
+      - 🇭🇰 VLESS-香港-1B
+      - 🇫🇷 法国-1A
+      - 🇺🇸 US-2-1D
+      - 🇺🇸 US-2-2-1F
+      - 🇭🇰 HK-2-1D
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇺🇸 US-2-1-1F
+      - 🇺🇸 HY-02 | US-1B
+      - 🇭🇰 HK-1-1B
+      - 🇺🇸 美国2线-1D
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇺🇸 美国高速节点1
+      - 🇯🇵 日本-1G
+      - 🇯🇵 JAPAN-SS-1A
+      - 🇺🇸 US-4-1C
+      - 🇺🇸 美国-1D
+      - 🇭🇰 香港2线-1G
+      - 🇸🇬 新加坡-1E
+      - SILICONVALLEY-01-1A
+      - 🇺🇸 US-2-1A
+      - 🇺🇸 US-1-1F
+      - 🇭🇰 HK-2-1A
+      - 🇺🇸 US-3-1A
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇭🇰 HK-2-1E
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇺🇸 US-2-1E
+      - 🇸🇬 新加坡-1C
+      - OM-QJB
+      - 🇺🇸 US-3-1F
+      - 🇯🇵 HY2-日本-1F
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇮🇩 印度尼西亚-1A
+      - 🇭🇰 HY2-香港-1E
+      - 🇭🇰 HY2-香港-1A
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇸🇬 新加坡-1A
-      - 🇯🇵 JAPAN-SS-1A
-      - 🇯🇵 VLESS-日本-1G
-      - 🇺🇸 US-3-1C
-      - 5A-VCE
-      - 🇭🇰 VLESS-香港-1G
-      - 🇯🇵 VLESS-日本-1C
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇯🇵 VLESS-日本-1A
-      - 🇯🇵 日本-1G
-      - 🇺🇸 US-1-1F
-      - FV2026-7-7-1B
-      - 🇭🇰 VLESS-香港-1B
-      - 🇺🇸 US-2-2-1E
-      - 🇺🇸 US-2-1-1C
-      - 🇯🇵 VLESS-日本-1B
-      - 🇺🇸 美国-1A
       - 🇯🇵 HY2-日本-1D
-      - 🇺🇸 US-4-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - SILICONVALLEY-01-1C
-      - 🇭🇰 香港2线-1E
-      - 🇮🇩 印度尼西亚-1D
-      - ME-GBW
-      - 🇭🇰 VLESS-香港-1A
-      - 🇺🇸 US-2-1-1A
-      - 🇺🇸 美国2线-1F
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 香港2线-1F
-      - 🇸🇬 新加坡-1C
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 HK-2-1C
-      - 🇺🇸 US-4-1A
-      - SILICONVALLEY-01-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇭🇰 HK-2-1E
-      - 🇺🇸 US-2-1E
-      - 🇭🇰 HK-2-1A
-      - 🇺🇸 US-3-1A
-      - 🇺🇸 US-1-1E
-      - 🇺🇸 US-3-1B
-      - 🇩🇪 德国-法兰克福-004-1E
-      - FV2026-7-7-1D
-      - 🇫🇷 法国-1B
-      - 🇯🇵 JAPAN-SS-1C
-      - 🇺🇸 US-1-1B
-      - 🇮🇩 印度尼西亚-1F
-      - 🇫🇷 法国-1A
-      - 🇯🇵 HY2-日本-1C
-      - 🇸🇬 新加坡-1F
-      - 🇺🇸 US-2-1-1B
-      - 🇺🇸 US-2-1A
-      - 🇺🇸 美国2线-1A
+      - 🇺🇸 HY-02 | US-1A
       - 🇭🇰 HK-1-1F
       - 🇩🇪 德国-法兰克福-002-1D
-      - 🇯🇵 JAPAN-SS-1B
-      - 🇺🇸 HY-03 | US
-      - 🇭🇰 VLESS-香港-1D
-      - 🇩🇪 德国-法兰克福-001-1A
-      - FV2026-7-7-1E
-      - 🇭🇰 VLESS-香港-1E
-      - 🇯🇵 日本-1F
-      - 🇺🇸 US-2-2-1F
-      - 🇭🇰 HY2-香港-1C
-      - FV2026-7-7-1C
-      - 🇺🇸 US-4-1C
-      - 🇯🇵 VLESS-日本-1F
-      - 🇺🇸 US-3-1D
-      - 🇺🇸 HY-02 | US
-      - 🇺🇸 US-2-1-1F
-      - 🇺🇸 US-2-1C
-      - 🇯🇵 HY2-日本-1B
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇫🇷 法国-1D
-      - 🇺🇸 美国-1F
-      - 🇺🇸 US-2-2-1C
-      - 🇺🇸 美国-1G
-      - F1-YPC
-      - 🇸🇬 新加坡-1G
-      - 🇺🇸 美国-1D
-      - 🇭🇰 HK-1-1A
-      - 🇯🇵 日本-1B
-      - 🇺🇸 美国-洛杉矶-PRO
-      - FV2026-7-7-1A
-      - 🇺🇸 US-2-2-1D
-      - 🇯🇵 HY2-日本-1E
-      - 🇺🇸 US-2-1F
-      - 🇺🇸 US-4-1E
-      - 🇺🇸 US-2-1D
-      - 🇺🇸 US-2-1-1E
-      - 🇸🇬 新加坡-1D
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇭🇰 HY2-香港-1E
-      - 🇭🇰 VLESS-香港-1C
-      - 🇭🇰 HY2-香港-1D
-      - 🇫🇷 法国-1G
-      - 🇯🇵 日本-1D
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇨🇳 中国联通节点1
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇮🇩 印度尼西亚-1G
+      - 🇸🇬 新加坡-1F
+      - 🇩🇪 德国-法兰克福-002-1C
       - 🇭🇰 HY2-香港-1F
-      - 🇭🇰 TTC9999 香港
-      - 🇩🇪 德国-法兰克福-001-1F
-      - G I C A B N H T H N
-      - 🇯🇵 HY2-日本-1F
-      - 🇺🇸 US-4-1D
+      - 🇭🇰 HY2-香港-1B
+      - 🇺🇸 US-4-1F
+      - 🇭🇰 HK-1-1A
+      - FV2026-7-7-1B
+      - 🇺🇸 美国-1B
+      - 🇭🇰 香港2线-1A
+      - 🇮🇩 印度尼西亚-1D
       - 🇭🇰 HK-2-1B
-      - 🇩🇪 德国-法兰克福-001-1G
-      - L9-RHS
-      - 🇺🇸 US-2-2-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇯🇵 VLESS-日本-1D
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇯🇵 JAPAN-01-1C
-      - 🇺🇸 美国2线-1C
-      - 🇭🇰 香港2线-1D
-      - 🇺🇸 US-3-1E
-      - 🇺🇸 美国2线-1B
-      - 🇫🇷 法国-1F
-      - 🇹🇼 台湾高速节点3
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇺🇸 US-3-1C
+      - 🇸🇬 新加坡-1A
+      - 🇺🇸 US-4-1E
+      - 🇭🇰 VLESS-香港-1A
+      - 🇭🇰 香港2线-1B
+      - 🇯🇵 HY2-日本-1C
+      - 🇭🇰 VLESS-香港-1F
+      - 🇺🇸 US-2-1-1B
+      - 🇺🇸 US-2-1F
       - SILICONVALLEY-01-1B
-      - HR-ZSB
-      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇯🇵 VLESS-日本-1A
+      - 🇯🇵 日本-1A
+      - FV2026-7-7-1A
+      - 🇭🇰 香港2线-1D
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇺🇸 US-4-1D
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇭🇰 HK-2-1F
+      - 🇺🇸 HY-04 | US-1A
+      - OD-EMU
+      - 🇯🇵 JAPAN-01-1A
+      - 🇺🇸 US-2-2-1C
+      - 🇯🇵 JAPAN-SS-1B
+      - GH-ZWA
+      - 🇯🇵 VLESS-日本-1G
+      - EA-USC
+      - 🇺🇸 美国-1F
+      - 🇯🇵 JAPAN-SS-1C
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 HY2-日本-1G
+      - 🇺🇸 US-2-1C
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇮🇩 印度尼西亚-1G
+      - 🇭🇰 TTC9999 香港
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 US-4-1B
+      - 🇯🇵 VLESS-日本-1D
+      - WG-RPU
+      - 🇺🇸 HY-05| US-1B
+      - 🇺🇸 US-2-1-1D
+      - FV2026-7-7-1F
+      - 🇯🇵 HY2-日本-1A
+      - 🇺🇸 US-1-1C
+      - 🇫🇷 法国-1G
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-003-1F
       - 🇭🇰 HK-1-1E
+      - 🇭🇰 VLESS-香港-1G
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇸🇬 新加坡-1G
+      - 🇭🇰 VLESS-香港-1C
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇺🇸 US-2-2-1A
+      - 🇹🇼 台湾高速节点
+      - FV2026-7-7-1E
+      - 🇺🇸 US-4-1A
+      - 🇯🇵 VLESS-日本-1E
+      - 🇺🇸 美国-1C
+      - 🇺🇸 美国2线-1C
+      - FV2026-7-7-1D
+      - 🇫🇷 法国-1E
+      - 🇺🇸 US-1-1B
+      - 🇺🇸 HY-03 | US-1B
+      - 🇮🇩 印度尼西亚-1C
+      - 🇭🇰 VLESS-香港-1D
+      - 🇯🇵 日本-1D
+      - 🇺🇸 US-1-1D
+      - 🇺🇸 US-2-1B
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇺🇸 HY-03 | US-1A
+      - 🇺🇸 US-3-1D
+      - 🇺🇸 US-1-1A
+      - 🇮🇩 印度尼西亚-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇫🇷 法国-1B
+      - 🇭🇰 VLESS-香港-1E
+      - FV2026-7-7-1C
+      - 🇯🇵 HY2-日本-1B
+      - 🇺🇸 美国加速器 01
+      - AM-DIC
+      - 🇺🇸 美国2线-1A
+      - 🇯🇵 VLESS-日本-1C
+      - 🇨🇳 中国联通节点1
+      - 🇺🇸 美国-1E
       - 🇭🇰 香港2线-1C
       - 🇫🇷 法国-1C
-      - 🇺🇸 美国2线-1D
-      - 🇭🇰 HY2-香港-1A
-      - 🇫🇷 法国-1E
-      - 🇺🇸 US-3-1F
-      - 🇺🇸 US-1-1D
-      - 🇺🇸 US-2-1-1D
-      - 🇭🇰 香港2线-1B
-      - 🇸🇬 新加坡-1E
-      - 🇺🇸 美国-1C
-      - AC-SIY
-      - 🇭🇰 香港2线-1A
-      - 🇯🇵 HY2-日本-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇯🇵 JAPAN-01-1B
-      - 🇮🇩 印度尼西亚-1A
-      - 🇺🇸 HY-05| US
-      - 🇮🇩 印度尼西亚-1B
-      - 🇺🇸 US-2-2-1B
-      - 🇺🇸 美国加速器 01
-      - 🇺🇸 美国-1E
+      - 🇺🇸 美国2线-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇺🇸 美国2线-1F
       - 🇯🇵 日本-1C
-      - 🇺🇸 US-1-1A
-      - 🇺🇸 US-1-1C
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇭🇰 HK-2-1D
-      - 🇯🇵 日本-1A
-      - 🇯🇵 HY2-日本-1G
-      - 🇯🇵 JAPAN-01-1A
-      - 🇮🇩 印度尼西亚-1C
-      - 🇺🇸 US-4-1F
-      - 🇩🇪 德国-法兰克福-004-1G
-      - 🇺🇸 HY-04 | US
-      - 🇯🇵 日本-1E
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 HK-1-1C
-      - 🇭🇰 HK-2-1F
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇭🇰 HY2-香港-1B
-      - 🇯🇵 VLESS-日本-1E
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇺🇸 美国2线-1E
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇮🇩 印度尼西亚-1E
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇸🇬 新加坡-1B
-      - 🇺🇸 US-2-1B
-      - 🇭🇰 香港2线-1G
-      - 🇭🇰 HY2-香港-1G
-      - 🇭🇰 VLESS-香港-1F
-      - 🇺🇸 美国-1B
-      - 🇭🇰 HK-1-1B
-      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇺🇸 US-2-1-1A
+      - 🇭🇰 香港2线-1E
+      - 🇺🇸 HY-04 | US-1B
+      - 🇫🇷 法国-1F
+      - 🇯🇵 日本-1B
+      - 🇸🇬 新加坡-1D
+      - 🇯🇵 日本-1F
+      - 🇩🇪 德国-法兰克福-004-1H
+      - MC-SJE
+      - 🇭🇰 HY2-香港-1C
+      - 🇭🇰 HK-2-1C
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇯🇵 JAPAN-01-1B
+      - 🇺🇸 US-2-1-1C
       - 🇭🇰 HK-1-1D
+      - 🇺🇸 US-3-1B
+      - 🇺🇸 美国-1G
       - 🇺🇸 美国2线-1G
+      - 🇮🇩 印度尼西亚-1E
+      - 🇸🇬 新加坡-1B
+      - 🇭🇰 HY2-香港-1G
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇭🇰 HY2-香港-1D
+      - 🇭🇰 香港2线-1F
+      - 🇫🇷 法国-1D
+      - 🇭🇰 HK-1-1C
+      - 🇺🇸 美国2线-1E
+      - 🇺🇸 US-3-1E
+      - 🇩🇪 德国-法兰克福-003-1H
+      - G I C A B N H T H N
+      - 🇯🇵 日本-1E
+      - 🇺🇸 US-2-2-1D
+      - SILICONVALLEY-01-1C
+      - 🇯🇵 JAPAN-01-1C
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇺🇸 US-2-2-1B
+      - 🇯🇵 VLESS-日本-1B
+      - 🇺🇸 US-2-1-1E
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇸 US-1-1E
+      - 🇺🇸 US-2-2-1E
+      - 🇺🇸 HY-05| US-1A
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇯🇵 HY2-日本-1E
+      - 🇮🇩 印度尼西亚-1F
+      - 🇯🇵 VLESS-日本-1F
+      - 🇺🇸 美国-1A
+      - 🇭🇰 VLESS-香港-1B
+      - 🇫🇷 法国-1A
+      - 🇺🇸 US-2-1D
+      - 🇺🇸 US-2-2-1F
+      - 🇭🇰 HK-2-1D
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇺🇸 US-2-1-1F
+      - 🇺🇸 HY-02 | US-1B
+      - 🇭🇰 HK-1-1B
+      - 🇺🇸 美国2线-1D
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇺🇸 美国高速节点1
+      - 🇯🇵 日本-1G
+      - 🇯🇵 JAPAN-SS-1A
+      - 🇺🇸 US-4-1C
+      - 🇺🇸 美国-1D
+      - 🇭🇰 香港2线-1G
+      - 🇸🇬 新加坡-1E
+      - SILICONVALLEY-01-1A
+      - 🇺🇸 US-2-1A
+      - 🇺🇸 US-1-1F
+      - 🇭🇰 HK-2-1A
+      - 🇺🇸 US-3-1A
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇭🇰 HK-2-1E
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇺🇸 US-2-1E
+      - 🇸🇬 新加坡-1C
+      - OM-QJB
+      - 🇺🇸 US-3-1F
+      - 🇯🇵 HY2-日本-1F
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇮🇩 印度尼西亚-1A
+      - 🇭🇰 HY2-香港-1E
+      - 🇭🇰 HY2-香港-1A
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬 新加坡-1A
-      - 🇯🇵 JAPAN-SS-1A
-      - 🇯🇵 VLESS-日本-1G
-      - 🇺🇸 US-3-1C
-      - 5A-VCE
-      - 🇭🇰 VLESS-香港-1G
-      - 🇯🇵 VLESS-日本-1C
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇯🇵 VLESS-日本-1A
-      - 🇯🇵 日本-1G
-      - 🇺🇸 US-1-1F
-      - FV2026-7-7-1B
-      - 🇭🇰 VLESS-香港-1B
-      - 🇺🇸 US-2-2-1E
-      - 🇺🇸 US-2-1-1C
-      - 🇯🇵 VLESS-日本-1B
-      - 🇺🇸 美国-1A
       - 🇯🇵 HY2-日本-1D
-      - 🇺🇸 US-4-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - SILICONVALLEY-01-1C
-      - 🇭🇰 香港2线-1E
-      - 🇮🇩 印度尼西亚-1D
-      - ME-GBW
-      - 🇭🇰 VLESS-香港-1A
-      - 🇺🇸 US-2-1-1A
-      - 🇺🇸 美国2线-1F
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 香港2线-1F
-      - 🇸🇬 新加坡-1C
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 HK-2-1C
-      - 🇺🇸 US-4-1A
-      - SILICONVALLEY-01-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇭🇰 HK-2-1E
-      - 🇺🇸 US-2-1E
-      - 🇭🇰 HK-2-1A
-      - 🇺🇸 US-3-1A
-      - 🇺🇸 US-1-1E
-      - 🇺🇸 US-3-1B
-      - 🇩🇪 德国-法兰克福-004-1E
-      - FV2026-7-7-1D
-      - 🇫🇷 法国-1B
-      - 🇯🇵 JAPAN-SS-1C
-      - 🇺🇸 US-1-1B
-      - 🇮🇩 印度尼西亚-1F
-      - 🇫🇷 法国-1A
-      - 🇯🇵 HY2-日本-1C
-      - 🇸🇬 新加坡-1F
-      - 🇺🇸 US-2-1-1B
-      - 🇺🇸 US-2-1A
-      - 🇺🇸 美国2线-1A
+      - 🇺🇸 HY-02 | US-1A
       - 🇭🇰 HK-1-1F
       - 🇩🇪 德国-法兰克福-002-1D
-      - 🇯🇵 JAPAN-SS-1B
-      - 🇺🇸 HY-03 | US
-      - 🇭🇰 VLESS-香港-1D
-      - 🇩🇪 德国-法兰克福-001-1A
-      - FV2026-7-7-1E
-      - 🇭🇰 VLESS-香港-1E
-      - 🇯🇵 日本-1F
-      - 🇺🇸 US-2-2-1F
-      - 🇭🇰 HY2-香港-1C
-      - FV2026-7-7-1C
-      - 🇺🇸 US-4-1C
-      - 🇯🇵 VLESS-日本-1F
-      - 🇺🇸 US-3-1D
-      - 🇺🇸 HY-02 | US
-      - 🇺🇸 US-2-1-1F
-      - 🇺🇸 US-2-1C
-      - 🇯🇵 HY2-日本-1B
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇫🇷 法国-1D
-      - 🇺🇸 美国-1F
-      - 🇺🇸 US-2-2-1C
-      - 🇺🇸 美国-1G
-      - F1-YPC
-      - 🇸🇬 新加坡-1G
-      - 🇺🇸 美国-1D
-      - 🇭🇰 HK-1-1A
-      - 🇯🇵 日本-1B
-      - 🇺🇸 美国-洛杉矶-PRO
-      - FV2026-7-7-1A
-      - 🇺🇸 US-2-2-1D
-      - 🇯🇵 HY2-日本-1E
-      - 🇺🇸 US-2-1F
-      - 🇺🇸 US-4-1E
-      - 🇺🇸 US-2-1D
-      - 🇺🇸 US-2-1-1E
-      - 🇸🇬 新加坡-1D
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇭🇰 HY2-香港-1E
-      - 🇭🇰 VLESS-香港-1C
-      - 🇭🇰 HY2-香港-1D
-      - 🇫🇷 法国-1G
-      - 🇯🇵 日本-1D
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇨🇳 中国联通节点1
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇮🇩 印度尼西亚-1G
+      - 🇸🇬 新加坡-1F
+      - 🇩🇪 德国-法兰克福-002-1C
       - 🇭🇰 HY2-香港-1F
-      - 🇭🇰 TTC9999 香港
-      - 🇩🇪 德国-法兰克福-001-1F
-      - G I C A B N H T H N
-      - 🇯🇵 HY2-日本-1F
-      - 🇺🇸 US-4-1D
+      - 🇭🇰 HY2-香港-1B
+      - 🇺🇸 US-4-1F
+      - 🇭🇰 HK-1-1A
+      - FV2026-7-7-1B
+      - 🇺🇸 美国-1B
+      - 🇭🇰 香港2线-1A
+      - 🇮🇩 印度尼西亚-1D
       - 🇭🇰 HK-2-1B
-      - 🇩🇪 德国-法兰克福-001-1G
-      - L9-RHS
-      - 🇺🇸 US-2-2-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇯🇵 VLESS-日本-1D
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇯🇵 JAPAN-01-1C
-      - 🇺🇸 美国2线-1C
-      - 🇭🇰 香港2线-1D
-      - 🇺🇸 US-3-1E
-      - 🇺🇸 美国2线-1B
-      - 🇫🇷 法国-1F
-      - 🇹🇼 台湾高速节点3
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇺🇸 US-3-1C
+      - 🇸🇬 新加坡-1A
+      - 🇺🇸 US-4-1E
+      - 🇭🇰 VLESS-香港-1A
+      - 🇭🇰 香港2线-1B
+      - 🇯🇵 HY2-日本-1C
+      - 🇭🇰 VLESS-香港-1F
+      - 🇺🇸 US-2-1-1B
+      - 🇺🇸 US-2-1F
       - SILICONVALLEY-01-1B
-      - HR-ZSB
-      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇯🇵 VLESS-日本-1A
+      - 🇯🇵 日本-1A
+      - FV2026-7-7-1A
+      - 🇭🇰 香港2线-1D
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇺🇸 US-4-1D
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇭🇰 HK-2-1F
+      - 🇺🇸 HY-04 | US-1A
+      - OD-EMU
+      - 🇯🇵 JAPAN-01-1A
+      - 🇺🇸 US-2-2-1C
+      - 🇯🇵 JAPAN-SS-1B
+      - GH-ZWA
+      - 🇯🇵 VLESS-日本-1G
+      - EA-USC
+      - 🇺🇸 美国-1F
+      - 🇯🇵 JAPAN-SS-1C
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 HY2-日本-1G
+      - 🇺🇸 US-2-1C
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇮🇩 印度尼西亚-1G
+      - 🇭🇰 TTC9999 香港
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 US-4-1B
+      - 🇯🇵 VLESS-日本-1D
+      - WG-RPU
+      - 🇺🇸 HY-05| US-1B
+      - 🇺🇸 US-2-1-1D
+      - FV2026-7-7-1F
+      - 🇯🇵 HY2-日本-1A
+      - 🇺🇸 US-1-1C
+      - 🇫🇷 法国-1G
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-003-1F
       - 🇭🇰 HK-1-1E
+      - 🇭🇰 VLESS-香港-1G
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇸🇬 新加坡-1G
+      - 🇭🇰 VLESS-香港-1C
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇺🇸 US-2-2-1A
+      - 🇹🇼 台湾高速节点
+      - FV2026-7-7-1E
+      - 🇺🇸 US-4-1A
+      - 🇯🇵 VLESS-日本-1E
+      - 🇺🇸 美国-1C
+      - 🇺🇸 美国2线-1C
+      - FV2026-7-7-1D
+      - 🇫🇷 法国-1E
+      - 🇺🇸 US-1-1B
+      - 🇺🇸 HY-03 | US-1B
+      - 🇮🇩 印度尼西亚-1C
+      - 🇭🇰 VLESS-香港-1D
+      - 🇯🇵 日本-1D
+      - 🇺🇸 US-1-1D
+      - 🇺🇸 US-2-1B
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇺🇸 HY-03 | US-1A
+      - 🇺🇸 US-3-1D
+      - 🇺🇸 US-1-1A
+      - 🇮🇩 印度尼西亚-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇫🇷 法国-1B
+      - 🇭🇰 VLESS-香港-1E
+      - FV2026-7-7-1C
+      - 🇯🇵 HY2-日本-1B
+      - 🇺🇸 美国加速器 01
+      - AM-DIC
+      - 🇺🇸 美国2线-1A
+      - 🇯🇵 VLESS-日本-1C
+      - 🇨🇳 中国联通节点1
+      - 🇺🇸 美国-1E
       - 🇭🇰 香港2线-1C
       - 🇫🇷 法国-1C
-      - 🇺🇸 美国2线-1D
-      - 🇭🇰 HY2-香港-1A
-      - 🇫🇷 法国-1E
-      - 🇺🇸 US-3-1F
-      - 🇺🇸 US-1-1D
-      - 🇺🇸 US-2-1-1D
-      - 🇭🇰 香港2线-1B
-      - 🇸🇬 新加坡-1E
-      - 🇺🇸 美国-1C
-      - AC-SIY
-      - 🇭🇰 香港2线-1A
-      - 🇯🇵 HY2-日本-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇯🇵 JAPAN-01-1B
-      - 🇮🇩 印度尼西亚-1A
-      - 🇺🇸 HY-05| US
-      - 🇮🇩 印度尼西亚-1B
-      - 🇺🇸 US-2-2-1B
-      - 🇺🇸 美国加速器 01
-      - 🇺🇸 美国-1E
+      - 🇺🇸 美国2线-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇺🇸 美国2线-1F
       - 🇯🇵 日本-1C
-      - 🇺🇸 US-1-1A
-      - 🇺🇸 US-1-1C
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇭🇰 HK-2-1D
-      - 🇯🇵 日本-1A
-      - 🇯🇵 HY2-日本-1G
-      - 🇯🇵 JAPAN-01-1A
-      - 🇮🇩 印度尼西亚-1C
-      - 🇺🇸 US-4-1F
-      - 🇩🇪 德国-法兰克福-004-1G
-      - 🇺🇸 HY-04 | US
-      - 🇯🇵 日本-1E
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 HK-1-1C
-      - 🇭🇰 HK-2-1F
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇭🇰 HY2-香港-1B
-      - 🇯🇵 VLESS-日本-1E
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇺🇸 美国2线-1E
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇮🇩 印度尼西亚-1E
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇸🇬 新加坡-1B
-      - 🇺🇸 US-2-1B
-      - 🇭🇰 香港2线-1G
-      - 🇭🇰 HY2-香港-1G
-      - 🇭🇰 VLESS-香港-1F
-      - 🇺🇸 美国-1B
-      - 🇭🇰 HK-1-1B
-      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇺🇸 US-2-1-1A
+      - 🇭🇰 香港2线-1E
+      - 🇺🇸 HY-04 | US-1B
+      - 🇫🇷 法国-1F
+      - 🇯🇵 日本-1B
+      - 🇸🇬 新加坡-1D
+      - 🇯🇵 日本-1F
+      - 🇩🇪 德国-法兰克福-004-1H
+      - MC-SJE
+      - 🇭🇰 HY2-香港-1C
+      - 🇭🇰 HK-2-1C
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇯🇵 JAPAN-01-1B
+      - 🇺🇸 US-2-1-1C
       - 🇭🇰 HK-1-1D
+      - 🇺🇸 US-3-1B
+      - 🇺🇸 美国-1G
       - 🇺🇸 美国2线-1G
+      - 🇮🇩 印度尼西亚-1E
+      - 🇸🇬 新加坡-1B
+      - 🇭🇰 HY2-香港-1G
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇭🇰 HY2-香港-1D
+      - 🇭🇰 香港2线-1F
+      - 🇫🇷 法国-1D
+      - 🇭🇰 HK-1-1C
+      - 🇺🇸 美国2线-1E
+      - 🇺🇸 US-3-1E
+      - 🇩🇪 德国-法兰克福-003-1H
+      - G I C A B N H T H N
+      - 🇯🇵 日本-1E
+      - 🇺🇸 US-2-2-1D
+      - SILICONVALLEY-01-1C
+      - 🇯🇵 JAPAN-01-1C
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇺🇸 US-2-2-1B
+      - 🇯🇵 VLESS-日本-1B
+      - 🇺🇸 US-2-1-1E
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇸 US-1-1E
+      - 🇺🇸 US-2-2-1E
+      - 🇺🇸 HY-05| US-1A
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇯🇵 HY2-日本-1E
+      - 🇮🇩 印度尼西亚-1F
+      - 🇯🇵 VLESS-日本-1F
+      - 🇺🇸 美国-1A
+      - 🇭🇰 VLESS-香港-1B
+      - 🇫🇷 法国-1A
+      - 🇺🇸 US-2-1D
+      - 🇺🇸 US-2-2-1F
+      - 🇭🇰 HK-2-1D
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇺🇸 US-2-1-1F
+      - 🇺🇸 HY-02 | US-1B
+      - 🇭🇰 HK-1-1B
+      - 🇺🇸 美国2线-1D
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇺🇸 美国高速节点1
+      - 🇯🇵 日本-1G
+      - 🇯🇵 JAPAN-SS-1A
+      - 🇺🇸 US-4-1C
+      - 🇺🇸 美国-1D
+      - 🇭🇰 香港2线-1G
+      - 🇸🇬 新加坡-1E
+      - SILICONVALLEY-01-1A
+      - 🇺🇸 US-2-1A
+      - 🇺🇸 US-1-1F
+      - 🇭🇰 HK-2-1A
+      - 🇺🇸 US-3-1A
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇭🇰 HK-2-1E
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇺🇸 US-2-1E
+      - 🇸🇬 新加坡-1C
+      - OM-QJB
+      - 🇺🇸 US-3-1F
+      - 🇯🇵 HY2-日本-1F
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇮🇩 印度尼西亚-1A
+      - 🇭🇰 HY2-香港-1E
+      - 🇭🇰 HY2-香港-1A
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -784,796 +824,836 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬 新加坡-1A
-      - 🇯🇵 JAPAN-SS-1A
-      - 🇯🇵 VLESS-日本-1G
-      - 🇺🇸 US-3-1C
-      - 5A-VCE
-      - 🇭🇰 VLESS-香港-1G
-      - 🇯🇵 VLESS-日本-1C
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇯🇵 VLESS-日本-1A
-      - 🇯🇵 日本-1G
-      - 🇺🇸 US-1-1F
-      - FV2026-7-7-1B
-      - 🇭🇰 VLESS-香港-1B
-      - 🇺🇸 US-2-2-1E
-      - 🇺🇸 US-2-1-1C
-      - 🇯🇵 VLESS-日本-1B
-      - 🇺🇸 美国-1A
       - 🇯🇵 HY2-日本-1D
-      - 🇺🇸 US-4-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - SILICONVALLEY-01-1C
-      - 🇭🇰 香港2线-1E
-      - 🇮🇩 印度尼西亚-1D
-      - ME-GBW
-      - 🇭🇰 VLESS-香港-1A
-      - 🇺🇸 US-2-1-1A
-      - 🇺🇸 美国2线-1F
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 香港2线-1F
-      - 🇸🇬 新加坡-1C
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 HK-2-1C
-      - 🇺🇸 US-4-1A
-      - SILICONVALLEY-01-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇭🇰 HK-2-1E
-      - 🇺🇸 US-2-1E
-      - 🇭🇰 HK-2-1A
-      - 🇺🇸 US-3-1A
-      - 🇺🇸 US-1-1E
-      - 🇺🇸 US-3-1B
-      - 🇩🇪 德国-法兰克福-004-1E
-      - FV2026-7-7-1D
-      - 🇫🇷 法国-1B
-      - 🇯🇵 JAPAN-SS-1C
-      - 🇺🇸 US-1-1B
-      - 🇮🇩 印度尼西亚-1F
-      - 🇫🇷 法国-1A
-      - 🇯🇵 HY2-日本-1C
-      - 🇸🇬 新加坡-1F
-      - 🇺🇸 US-2-1-1B
-      - 🇺🇸 US-2-1A
-      - 🇺🇸 美国2线-1A
+      - 🇺🇸 HY-02 | US-1A
       - 🇭🇰 HK-1-1F
       - 🇩🇪 德国-法兰克福-002-1D
-      - 🇯🇵 JAPAN-SS-1B
-      - 🇺🇸 HY-03 | US
-      - 🇭🇰 VLESS-香港-1D
-      - 🇩🇪 德国-法兰克福-001-1A
-      - FV2026-7-7-1E
-      - 🇭🇰 VLESS-香港-1E
-      - 🇯🇵 日本-1F
-      - 🇺🇸 US-2-2-1F
-      - 🇭🇰 HY2-香港-1C
-      - FV2026-7-7-1C
-      - 🇺🇸 US-4-1C
-      - 🇯🇵 VLESS-日本-1F
-      - 🇺🇸 US-3-1D
-      - 🇺🇸 HY-02 | US
-      - 🇺🇸 US-2-1-1F
-      - 🇺🇸 US-2-1C
-      - 🇯🇵 HY2-日本-1B
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇫🇷 法国-1D
-      - 🇺🇸 美国-1F
-      - 🇺🇸 US-2-2-1C
-      - 🇺🇸 美国-1G
-      - F1-YPC
-      - 🇸🇬 新加坡-1G
-      - 🇺🇸 美国-1D
-      - 🇭🇰 HK-1-1A
-      - 🇯🇵 日本-1B
-      - 🇺🇸 美国-洛杉矶-PRO
-      - FV2026-7-7-1A
-      - 🇺🇸 US-2-2-1D
-      - 🇯🇵 HY2-日本-1E
-      - 🇺🇸 US-2-1F
-      - 🇺🇸 US-4-1E
-      - 🇺🇸 US-2-1D
-      - 🇺🇸 US-2-1-1E
-      - 🇸🇬 新加坡-1D
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇭🇰 HY2-香港-1E
-      - 🇭🇰 VLESS-香港-1C
-      - 🇭🇰 HY2-香港-1D
-      - 🇫🇷 法国-1G
-      - 🇯🇵 日本-1D
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇨🇳 中国联通节点1
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇮🇩 印度尼西亚-1G
+      - 🇸🇬 新加坡-1F
+      - 🇩🇪 德国-法兰克福-002-1C
       - 🇭🇰 HY2-香港-1F
-      - 🇭🇰 TTC9999 香港
-      - 🇩🇪 德国-法兰克福-001-1F
-      - G I C A B N H T H N
-      - 🇯🇵 HY2-日本-1F
-      - 🇺🇸 US-4-1D
+      - 🇭🇰 HY2-香港-1B
+      - 🇺🇸 US-4-1F
+      - 🇭🇰 HK-1-1A
+      - FV2026-7-7-1B
+      - 🇺🇸 美国-1B
+      - 🇭🇰 香港2线-1A
+      - 🇮🇩 印度尼西亚-1D
       - 🇭🇰 HK-2-1B
-      - 🇩🇪 德国-法兰克福-001-1G
-      - L9-RHS
-      - 🇺🇸 US-2-2-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇯🇵 VLESS-日本-1D
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇯🇵 JAPAN-01-1C
-      - 🇺🇸 美国2线-1C
-      - 🇭🇰 香港2线-1D
-      - 🇺🇸 US-3-1E
-      - 🇺🇸 美国2线-1B
-      - 🇫🇷 法国-1F
-      - 🇹🇼 台湾高速节点3
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇺🇸 US-3-1C
+      - 🇸🇬 新加坡-1A
+      - 🇺🇸 US-4-1E
+      - 🇭🇰 VLESS-香港-1A
+      - 🇭🇰 香港2线-1B
+      - 🇯🇵 HY2-日本-1C
+      - 🇭🇰 VLESS-香港-1F
+      - 🇺🇸 US-2-1-1B
+      - 🇺🇸 US-2-1F
       - SILICONVALLEY-01-1B
-      - HR-ZSB
-      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇯🇵 VLESS-日本-1A
+      - 🇯🇵 日本-1A
+      - FV2026-7-7-1A
+      - 🇭🇰 香港2线-1D
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇺🇸 US-4-1D
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇭🇰 HK-2-1F
+      - 🇺🇸 HY-04 | US-1A
+      - OD-EMU
+      - 🇯🇵 JAPAN-01-1A
+      - 🇺🇸 US-2-2-1C
+      - 🇯🇵 JAPAN-SS-1B
+      - GH-ZWA
+      - 🇯🇵 VLESS-日本-1G
+      - EA-USC
+      - 🇺🇸 美国-1F
+      - 🇯🇵 JAPAN-SS-1C
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 HY2-日本-1G
+      - 🇺🇸 US-2-1C
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇮🇩 印度尼西亚-1G
+      - 🇭🇰 TTC9999 香港
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 US-4-1B
+      - 🇯🇵 VLESS-日本-1D
+      - WG-RPU
+      - 🇺🇸 HY-05| US-1B
+      - 🇺🇸 US-2-1-1D
+      - FV2026-7-7-1F
+      - 🇯🇵 HY2-日本-1A
+      - 🇺🇸 US-1-1C
+      - 🇫🇷 法国-1G
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-003-1F
       - 🇭🇰 HK-1-1E
+      - 🇭🇰 VLESS-香港-1G
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇸🇬 新加坡-1G
+      - 🇭🇰 VLESS-香港-1C
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇺🇸 US-2-2-1A
+      - 🇹🇼 台湾高速节点
+      - FV2026-7-7-1E
+      - 🇺🇸 US-4-1A
+      - 🇯🇵 VLESS-日本-1E
+      - 🇺🇸 美国-1C
+      - 🇺🇸 美国2线-1C
+      - FV2026-7-7-1D
+      - 🇫🇷 法国-1E
+      - 🇺🇸 US-1-1B
+      - 🇺🇸 HY-03 | US-1B
+      - 🇮🇩 印度尼西亚-1C
+      - 🇭🇰 VLESS-香港-1D
+      - 🇯🇵 日本-1D
+      - 🇺🇸 US-1-1D
+      - 🇺🇸 US-2-1B
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇺🇸 HY-03 | US-1A
+      - 🇺🇸 US-3-1D
+      - 🇺🇸 US-1-1A
+      - 🇮🇩 印度尼西亚-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇫🇷 法国-1B
+      - 🇭🇰 VLESS-香港-1E
+      - FV2026-7-7-1C
+      - 🇯🇵 HY2-日本-1B
+      - 🇺🇸 美国加速器 01
+      - AM-DIC
+      - 🇺🇸 美国2线-1A
+      - 🇯🇵 VLESS-日本-1C
+      - 🇨🇳 中国联通节点1
+      - 🇺🇸 美国-1E
       - 🇭🇰 香港2线-1C
       - 🇫🇷 法国-1C
-      - 🇺🇸 美国2线-1D
-      - 🇭🇰 HY2-香港-1A
-      - 🇫🇷 法国-1E
-      - 🇺🇸 US-3-1F
-      - 🇺🇸 US-1-1D
-      - 🇺🇸 US-2-1-1D
-      - 🇭🇰 香港2线-1B
-      - 🇸🇬 新加坡-1E
-      - 🇺🇸 美国-1C
-      - AC-SIY
-      - 🇭🇰 香港2线-1A
-      - 🇯🇵 HY2-日本-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇯🇵 JAPAN-01-1B
-      - 🇮🇩 印度尼西亚-1A
-      - 🇺🇸 HY-05| US
-      - 🇮🇩 印度尼西亚-1B
-      - 🇺🇸 US-2-2-1B
-      - 🇺🇸 美国加速器 01
-      - 🇺🇸 美国-1E
+      - 🇺🇸 美国2线-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇺🇸 美国2线-1F
       - 🇯🇵 日本-1C
-      - 🇺🇸 US-1-1A
-      - 🇺🇸 US-1-1C
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇭🇰 HK-2-1D
-      - 🇯🇵 日本-1A
-      - 🇯🇵 HY2-日本-1G
-      - 🇯🇵 JAPAN-01-1A
-      - 🇮🇩 印度尼西亚-1C
-      - 🇺🇸 US-4-1F
-      - 🇩🇪 德国-法兰克福-004-1G
-      - 🇺🇸 HY-04 | US
-      - 🇯🇵 日本-1E
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 HK-1-1C
-      - 🇭🇰 HK-2-1F
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇭🇰 HY2-香港-1B
-      - 🇯🇵 VLESS-日本-1E
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇺🇸 美国2线-1E
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇮🇩 印度尼西亚-1E
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇸🇬 新加坡-1B
-      - 🇺🇸 US-2-1B
-      - 🇭🇰 香港2线-1G
-      - 🇭🇰 HY2-香港-1G
-      - 🇭🇰 VLESS-香港-1F
-      - 🇺🇸 美国-1B
-      - 🇭🇰 HK-1-1B
-      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇺🇸 US-2-1-1A
+      - 🇭🇰 香港2线-1E
+      - 🇺🇸 HY-04 | US-1B
+      - 🇫🇷 法国-1F
+      - 🇯🇵 日本-1B
+      - 🇸🇬 新加坡-1D
+      - 🇯🇵 日本-1F
+      - 🇩🇪 德国-法兰克福-004-1H
+      - MC-SJE
+      - 🇭🇰 HY2-香港-1C
+      - 🇭🇰 HK-2-1C
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇯🇵 JAPAN-01-1B
+      - 🇺🇸 US-2-1-1C
       - 🇭🇰 HK-1-1D
+      - 🇺🇸 US-3-1B
+      - 🇺🇸 美国-1G
       - 🇺🇸 美国2线-1G
+      - 🇮🇩 印度尼西亚-1E
+      - 🇸🇬 新加坡-1B
+      - 🇭🇰 HY2-香港-1G
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇭🇰 HY2-香港-1D
+      - 🇭🇰 香港2线-1F
+      - 🇫🇷 法国-1D
+      - 🇭🇰 HK-1-1C
+      - 🇺🇸 美国2线-1E
+      - 🇺🇸 US-3-1E
+      - 🇩🇪 德国-法兰克福-003-1H
+      - G I C A B N H T H N
+      - 🇯🇵 日本-1E
+      - 🇺🇸 US-2-2-1D
+      - SILICONVALLEY-01-1C
+      - 🇯🇵 JAPAN-01-1C
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇺🇸 US-2-2-1B
+      - 🇯🇵 VLESS-日本-1B
+      - 🇺🇸 US-2-1-1E
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇸 US-1-1E
+      - 🇺🇸 US-2-2-1E
+      - 🇺🇸 HY-05| US-1A
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇯🇵 HY2-日本-1E
+      - 🇮🇩 印度尼西亚-1F
+      - 🇯🇵 VLESS-日本-1F
+      - 🇺🇸 美国-1A
+      - 🇭🇰 VLESS-香港-1B
+      - 🇫🇷 法国-1A
+      - 🇺🇸 US-2-1D
+      - 🇺🇸 US-2-2-1F
+      - 🇭🇰 HK-2-1D
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇺🇸 US-2-1-1F
+      - 🇺🇸 HY-02 | US-1B
+      - 🇭🇰 HK-1-1B
+      - 🇺🇸 美国2线-1D
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇺🇸 美国高速节点1
+      - 🇯🇵 日本-1G
+      - 🇯🇵 JAPAN-SS-1A
+      - 🇺🇸 US-4-1C
+      - 🇺🇸 美国-1D
+      - 🇭🇰 香港2线-1G
+      - 🇸🇬 新加坡-1E
+      - SILICONVALLEY-01-1A
+      - 🇺🇸 US-2-1A
+      - 🇺🇸 US-1-1F
+      - 🇭🇰 HK-2-1A
+      - 🇺🇸 US-3-1A
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇭🇰 HK-2-1E
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇺🇸 US-2-1E
+      - 🇸🇬 新加坡-1C
+      - OM-QJB
+      - 🇺🇸 US-3-1F
+      - 🇯🇵 HY2-日本-1F
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇮🇩 印度尼西亚-1A
+      - 🇭🇰 HY2-香港-1E
+      - 🇭🇰 HY2-香港-1A
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 VLESS-香港-1G
-      - 🇭🇰 VLESS-香港-1B
-      - 🇭🇰 香港2线-1E
-      - 🇭🇰 VLESS-香港-1A
-      - 🇭🇰 香港2线-1F
+      - 🇭🇰 HY2-香港-1F
+      - 🇭🇰 HY2-香港-1B
+      - 🇭🇰 香港2线-1A
       - 🇹🇼 台湾高速节点2
+      - 🇭🇰 VLESS-香港-1A
+      - 🇭🇰 香港2线-1B
+      - 🇭🇰 VLESS-香港-1F
+      - 🇭🇰 香港2线-1D
+      - 🇭🇰 TTC9999 香港
+      - 🇭🇰 VLESS-香港-1G
+      - 🇭🇰 VLESS-香港-1C
+      - 🇹🇼 台湾高速节点
       - 🇭🇰 VLESS-香港-1D
       - 🇭🇰 VLESS-香港-1E
-      - 🇭🇰 HY2-香港-1C
-      - 🇭🇰 HY2-香港-1E
-      - 🇭🇰 VLESS-香港-1C
-      - 🇭🇰 HY2-香港-1D
-      - 🇭🇰 HY2-香港-1F
-      - 🇭🇰 TTC9999 香港
-      - 🇭🇰 香港2线-1D
-      - 🇹🇼 台湾高速节点3
       - 🇭🇰 香港2线-1C
-      - 🇭🇰 HY2-香港-1A
-      - 🇭🇰 香港2线-1B
-      - 🇭🇰 香港2线-1A
-      - 🇭🇰 HY2-香港-1B
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 香港2线-1G
+      - 🇭🇰 香港2线-1E
+      - 🇭🇰 HY2-香港-1C
       - 🇭🇰 HY2-香港-1G
-      - 🇭🇰 VLESS-香港-1F
+      - 🇭🇰 HY2-香港-1D
+      - 🇭🇰 香港2线-1F
+      - 🇹🇼 台湾高速节点3
+      - 🇭🇰 VLESS-香港-1B
+      - 🇭🇰 香港2线-1G
+      - 🇭🇰 HY2-香港-1E
+      - 🇭🇰 HY2-香港-1A
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇸🇬 新加坡-1A
-      - 🇯🇵 JAPAN-SS-1A
-      - 🇯🇵 VLESS-日本-1G
-      - 🇺🇸 US-3-1C
-      - 5A-VCE
-      - 🇭🇰 VLESS-香港-1G
-      - 🇯🇵 VLESS-日本-1C
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇯🇵 VLESS-日本-1A
-      - 🇯🇵 日本-1G
-      - 🇺🇸 US-1-1F
-      - FV2026-7-7-1B
-      - 🇭🇰 VLESS-香港-1B
-      - 🇺🇸 US-2-2-1E
-      - 🇺🇸 US-2-1-1C
-      - 🇯🇵 VLESS-日本-1B
-      - 🇺🇸 美国-1A
       - 🇯🇵 HY2-日本-1D
-      - 🇺🇸 US-4-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - SILICONVALLEY-01-1C
-      - 🇭🇰 香港2线-1E
-      - 🇮🇩 印度尼西亚-1D
-      - ME-GBW
-      - 🇭🇰 VLESS-香港-1A
-      - 🇺🇸 US-2-1-1A
-      - 🇺🇸 美国2线-1F
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 香港2线-1F
-      - 🇸🇬 新加坡-1C
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 HK-2-1C
-      - 🇺🇸 US-4-1A
-      - SILICONVALLEY-01-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇭🇰 HK-2-1E
-      - 🇺🇸 US-2-1E
-      - 🇭🇰 HK-2-1A
-      - 🇺🇸 US-3-1A
-      - 🇺🇸 US-1-1E
-      - 🇺🇸 US-3-1B
-      - 🇩🇪 德国-法兰克福-004-1E
-      - FV2026-7-7-1D
-      - 🇫🇷 法国-1B
-      - 🇯🇵 JAPAN-SS-1C
-      - 🇺🇸 US-1-1B
-      - 🇮🇩 印度尼西亚-1F
-      - 🇫🇷 法国-1A
-      - 🇯🇵 HY2-日本-1C
-      - 🇸🇬 新加坡-1F
-      - 🇺🇸 US-2-1-1B
-      - 🇺🇸 US-2-1A
-      - 🇺🇸 美国2线-1A
+      - 🇺🇸 HY-02 | US-1A
       - 🇭🇰 HK-1-1F
       - 🇩🇪 德国-法兰克福-002-1D
-      - 🇯🇵 JAPAN-SS-1B
-      - 🇺🇸 HY-03 | US
-      - 🇭🇰 VLESS-香港-1D
-      - 🇩🇪 德国-法兰克福-001-1A
-      - FV2026-7-7-1E
-      - 🇭🇰 VLESS-香港-1E
-      - 🇯🇵 日本-1F
-      - 🇺🇸 US-2-2-1F
-      - 🇭🇰 HY2-香港-1C
-      - FV2026-7-7-1C
-      - 🇺🇸 US-4-1C
-      - 🇯🇵 VLESS-日本-1F
-      - 🇺🇸 US-3-1D
-      - 🇺🇸 HY-02 | US
-      - 🇺🇸 US-2-1-1F
-      - 🇺🇸 US-2-1C
-      - 🇯🇵 HY2-日本-1B
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇫🇷 法国-1D
-      - 🇺🇸 美国-1F
-      - 🇺🇸 US-2-2-1C
-      - 🇺🇸 美国-1G
-      - F1-YPC
-      - 🇸🇬 新加坡-1G
-      - 🇺🇸 美国-1D
-      - 🇭🇰 HK-1-1A
-      - 🇯🇵 日本-1B
-      - 🇺🇸 美国-洛杉矶-PRO
-      - FV2026-7-7-1A
-      - 🇺🇸 US-2-2-1D
-      - 🇯🇵 HY2-日本-1E
-      - 🇺🇸 US-2-1F
-      - 🇺🇸 US-4-1E
-      - 🇺🇸 US-2-1D
-      - 🇺🇸 US-2-1-1E
-      - 🇸🇬 新加坡-1D
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇭🇰 HY2-香港-1E
-      - 🇭🇰 VLESS-香港-1C
-      - 🇭🇰 HY2-香港-1D
-      - 🇫🇷 法国-1G
-      - 🇯🇵 日本-1D
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇨🇳 中国联通节点1
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇮🇩 印度尼西亚-1G
+      - 🇸🇬 新加坡-1F
+      - 🇩🇪 德国-法兰克福-002-1C
       - 🇭🇰 HY2-香港-1F
-      - 🇭🇰 TTC9999 香港
-      - 🇩🇪 德国-法兰克福-001-1F
-      - G I C A B N H T H N
-      - 🇯🇵 HY2-日本-1F
-      - 🇺🇸 US-4-1D
+      - 🇭🇰 HY2-香港-1B
+      - 🇺🇸 US-4-1F
+      - 🇭🇰 HK-1-1A
+      - FV2026-7-7-1B
+      - 🇺🇸 美国-1B
+      - 🇭🇰 香港2线-1A
+      - 🇮🇩 印度尼西亚-1D
       - 🇭🇰 HK-2-1B
-      - 🇩🇪 德国-法兰克福-001-1G
-      - L9-RHS
-      - 🇺🇸 US-2-2-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇯🇵 VLESS-日本-1D
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇯🇵 JAPAN-01-1C
-      - 🇺🇸 美国2线-1C
-      - 🇭🇰 香港2线-1D
-      - 🇺🇸 US-3-1E
-      - 🇺🇸 美国2线-1B
-      - 🇫🇷 法国-1F
-      - 🇹🇼 台湾高速节点3
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇺🇸 US-3-1C
+      - 🇸🇬 新加坡-1A
+      - 🇺🇸 US-4-1E
+      - 🇭🇰 VLESS-香港-1A
+      - 🇭🇰 香港2线-1B
+      - 🇯🇵 HY2-日本-1C
+      - 🇭🇰 VLESS-香港-1F
+      - 🇺🇸 US-2-1-1B
+      - 🇺🇸 US-2-1F
       - SILICONVALLEY-01-1B
-      - HR-ZSB
-      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇯🇵 VLESS-日本-1A
+      - 🇯🇵 日本-1A
+      - FV2026-7-7-1A
+      - 🇭🇰 香港2线-1D
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇺🇸 US-4-1D
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇭🇰 HK-2-1F
+      - 🇺🇸 HY-04 | US-1A
+      - OD-EMU
+      - 🇯🇵 JAPAN-01-1A
+      - 🇺🇸 US-2-2-1C
+      - 🇯🇵 JAPAN-SS-1B
+      - GH-ZWA
+      - 🇯🇵 VLESS-日本-1G
+      - EA-USC
+      - 🇺🇸 美国-1F
+      - 🇯🇵 JAPAN-SS-1C
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 HY2-日本-1G
+      - 🇺🇸 US-2-1C
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇮🇩 印度尼西亚-1G
+      - 🇭🇰 TTC9999 香港
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 US-4-1B
+      - 🇯🇵 VLESS-日本-1D
+      - WG-RPU
+      - 🇺🇸 HY-05| US-1B
+      - 🇺🇸 US-2-1-1D
+      - FV2026-7-7-1F
+      - 🇯🇵 HY2-日本-1A
+      - 🇺🇸 US-1-1C
+      - 🇫🇷 法国-1G
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-003-1F
       - 🇭🇰 HK-1-1E
+      - 🇭🇰 VLESS-香港-1G
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇸🇬 新加坡-1G
+      - 🇭🇰 VLESS-香港-1C
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇺🇸 US-2-2-1A
+      - 🇹🇼 台湾高速节点
+      - FV2026-7-7-1E
+      - 🇺🇸 US-4-1A
+      - 🇯🇵 VLESS-日本-1E
+      - 🇺🇸 美国-1C
+      - 🇺🇸 美国2线-1C
+      - FV2026-7-7-1D
+      - 🇫🇷 法国-1E
+      - 🇺🇸 US-1-1B
+      - 🇺🇸 HY-03 | US-1B
+      - 🇮🇩 印度尼西亚-1C
+      - 🇭🇰 VLESS-香港-1D
+      - 🇯🇵 日本-1D
+      - 🇺🇸 US-1-1D
+      - 🇺🇸 US-2-1B
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇺🇸 HY-03 | US-1A
+      - 🇺🇸 US-3-1D
+      - 🇺🇸 US-1-1A
+      - 🇮🇩 印度尼西亚-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇫🇷 法国-1B
+      - 🇭🇰 VLESS-香港-1E
+      - FV2026-7-7-1C
+      - 🇯🇵 HY2-日本-1B
+      - 🇺🇸 美国加速器 01
+      - AM-DIC
+      - 🇺🇸 美国2线-1A
+      - 🇯🇵 VLESS-日本-1C
+      - 🇨🇳 中国联通节点1
+      - 🇺🇸 美国-1E
       - 🇭🇰 香港2线-1C
       - 🇫🇷 法国-1C
-      - 🇺🇸 美国2线-1D
-      - 🇭🇰 HY2-香港-1A
-      - 🇫🇷 法国-1E
-      - 🇺🇸 US-3-1F
-      - 🇺🇸 US-1-1D
-      - 🇺🇸 US-2-1-1D
-      - 🇭🇰 香港2线-1B
-      - 🇸🇬 新加坡-1E
-      - 🇺🇸 美国-1C
-      - AC-SIY
-      - 🇭🇰 香港2线-1A
-      - 🇯🇵 HY2-日本-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇯🇵 JAPAN-01-1B
-      - 🇮🇩 印度尼西亚-1A
-      - 🇺🇸 HY-05| US
-      - 🇮🇩 印度尼西亚-1B
-      - 🇺🇸 US-2-2-1B
-      - 🇺🇸 美国加速器 01
-      - 🇺🇸 美国-1E
+      - 🇺🇸 美国2线-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇺🇸 美国2线-1F
       - 🇯🇵 日本-1C
-      - 🇺🇸 US-1-1A
-      - 🇺🇸 US-1-1C
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇭🇰 HK-2-1D
-      - 🇯🇵 日本-1A
-      - 🇯🇵 HY2-日本-1G
-      - 🇯🇵 JAPAN-01-1A
-      - 🇮🇩 印度尼西亚-1C
-      - 🇺🇸 US-4-1F
-      - 🇩🇪 德国-法兰克福-004-1G
-      - 🇺🇸 HY-04 | US
-      - 🇯🇵 日本-1E
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 HK-1-1C
-      - 🇭🇰 HK-2-1F
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇭🇰 HY2-香港-1B
-      - 🇯🇵 VLESS-日本-1E
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇺🇸 美国2线-1E
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇮🇩 印度尼西亚-1E
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇸🇬 新加坡-1B
-      - 🇺🇸 US-2-1B
-      - 🇭🇰 香港2线-1G
-      - 🇭🇰 HY2-香港-1G
-      - 🇭🇰 VLESS-香港-1F
-      - 🇺🇸 美国-1B
-      - 🇭🇰 HK-1-1B
-      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇺🇸 US-2-1-1A
+      - 🇭🇰 香港2线-1E
+      - 🇺🇸 HY-04 | US-1B
+      - 🇫🇷 法国-1F
+      - 🇯🇵 日本-1B
+      - 🇸🇬 新加坡-1D
+      - 🇯🇵 日本-1F
+      - 🇩🇪 德国-法兰克福-004-1H
+      - MC-SJE
+      - 🇭🇰 HY2-香港-1C
+      - 🇭🇰 HK-2-1C
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇯🇵 JAPAN-01-1B
+      - 🇺🇸 US-2-1-1C
       - 🇭🇰 HK-1-1D
+      - 🇺🇸 US-3-1B
+      - 🇺🇸 美国-1G
       - 🇺🇸 美国2线-1G
+      - 🇮🇩 印度尼西亚-1E
+      - 🇸🇬 新加坡-1B
+      - 🇭🇰 HY2-香港-1G
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇭🇰 HY2-香港-1D
+      - 🇭🇰 香港2线-1F
+      - 🇫🇷 法国-1D
+      - 🇭🇰 HK-1-1C
+      - 🇺🇸 美国2线-1E
+      - 🇺🇸 US-3-1E
+      - 🇩🇪 德国-法兰克福-003-1H
+      - G I C A B N H T H N
+      - 🇯🇵 日本-1E
+      - 🇺🇸 US-2-2-1D
+      - SILICONVALLEY-01-1C
+      - 🇯🇵 JAPAN-01-1C
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇺🇸 US-2-2-1B
+      - 🇯🇵 VLESS-日本-1B
+      - 🇺🇸 US-2-1-1E
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇸 US-1-1E
+      - 🇺🇸 US-2-2-1E
+      - 🇺🇸 HY-05| US-1A
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇯🇵 HY2-日本-1E
+      - 🇮🇩 印度尼西亚-1F
+      - 🇯🇵 VLESS-日本-1F
+      - 🇺🇸 美国-1A
+      - 🇭🇰 VLESS-香港-1B
+      - 🇫🇷 法国-1A
+      - 🇺🇸 US-2-1D
+      - 🇺🇸 US-2-2-1F
+      - 🇭🇰 HK-2-1D
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇺🇸 US-2-1-1F
+      - 🇺🇸 HY-02 | US-1B
+      - 🇭🇰 HK-1-1B
+      - 🇺🇸 美国2线-1D
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇺🇸 美国高速节点1
+      - 🇯🇵 日本-1G
+      - 🇯🇵 JAPAN-SS-1A
+      - 🇺🇸 US-4-1C
+      - 🇺🇸 美国-1D
+      - 🇭🇰 香港2线-1G
+      - 🇸🇬 新加坡-1E
+      - SILICONVALLEY-01-1A
+      - 🇺🇸 US-2-1A
+      - 🇺🇸 US-1-1F
+      - 🇭🇰 HK-2-1A
+      - 🇺🇸 US-3-1A
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇭🇰 HK-2-1E
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇺🇸 US-2-1E
+      - 🇸🇬 新加坡-1C
+      - OM-QJB
+      - 🇺🇸 US-3-1F
+      - 🇯🇵 HY2-日本-1F
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇮🇩 印度尼西亚-1A
+      - 🇭🇰 HY2-香港-1E
+      - 🇭🇰 HY2-香港-1A
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇸🇬 新加坡-1A
-      - 🇯🇵 JAPAN-SS-1A
-      - 🇯🇵 VLESS-日本-1G
-      - 🇺🇸 US-3-1C
-      - 5A-VCE
-      - 🇭🇰 VLESS-香港-1G
-      - 🇯🇵 VLESS-日本-1C
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇯🇵 VLESS-日本-1A
-      - 🇯🇵 日本-1G
-      - 🇺🇸 US-1-1F
-      - FV2026-7-7-1B
-      - 🇭🇰 VLESS-香港-1B
-      - 🇺🇸 US-2-2-1E
-      - 🇺🇸 US-2-1-1C
-      - 🇯🇵 VLESS-日本-1B
-      - 🇺🇸 美国-1A
       - 🇯🇵 HY2-日本-1D
-      - 🇺🇸 US-4-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - SILICONVALLEY-01-1C
-      - 🇭🇰 香港2线-1E
-      - 🇮🇩 印度尼西亚-1D
-      - ME-GBW
-      - 🇭🇰 VLESS-香港-1A
-      - 🇺🇸 US-2-1-1A
-      - 🇺🇸 美国2线-1F
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 香港2线-1F
-      - 🇸🇬 新加坡-1C
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 HK-2-1C
-      - 🇺🇸 US-4-1A
-      - SILICONVALLEY-01-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇭🇰 HK-2-1E
-      - 🇺🇸 US-2-1E
-      - 🇭🇰 HK-2-1A
-      - 🇺🇸 US-3-1A
-      - 🇺🇸 US-1-1E
-      - 🇺🇸 US-3-1B
-      - 🇩🇪 德国-法兰克福-004-1E
-      - FV2026-7-7-1D
-      - 🇫🇷 法国-1B
-      - 🇯🇵 JAPAN-SS-1C
-      - 🇺🇸 US-1-1B
-      - 🇮🇩 印度尼西亚-1F
-      - 🇫🇷 法国-1A
-      - 🇯🇵 HY2-日本-1C
-      - 🇸🇬 新加坡-1F
-      - 🇺🇸 US-2-1-1B
-      - 🇺🇸 US-2-1A
-      - 🇺🇸 美国2线-1A
+      - 🇺🇸 HY-02 | US-1A
       - 🇭🇰 HK-1-1F
       - 🇩🇪 德国-法兰克福-002-1D
-      - 🇯🇵 JAPAN-SS-1B
-      - 🇺🇸 HY-03 | US
-      - 🇭🇰 VLESS-香港-1D
-      - 🇩🇪 德国-法兰克福-001-1A
-      - FV2026-7-7-1E
-      - 🇭🇰 VLESS-香港-1E
-      - 🇯🇵 日本-1F
-      - 🇺🇸 US-2-2-1F
-      - 🇭🇰 HY2-香港-1C
-      - FV2026-7-7-1C
-      - 🇺🇸 US-4-1C
-      - 🇯🇵 VLESS-日本-1F
-      - 🇺🇸 US-3-1D
-      - 🇺🇸 HY-02 | US
-      - 🇺🇸 US-2-1-1F
-      - 🇺🇸 US-2-1C
-      - 🇯🇵 HY2-日本-1B
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇫🇷 法国-1D
-      - 🇺🇸 美国-1F
-      - 🇺🇸 US-2-2-1C
-      - 🇺🇸 美国-1G
-      - F1-YPC
-      - 🇸🇬 新加坡-1G
-      - 🇺🇸 美国-1D
-      - 🇭🇰 HK-1-1A
-      - 🇯🇵 日本-1B
-      - 🇺🇸 美国-洛杉矶-PRO
-      - FV2026-7-7-1A
-      - 🇺🇸 US-2-2-1D
-      - 🇯🇵 HY2-日本-1E
-      - 🇺🇸 US-2-1F
-      - 🇺🇸 US-4-1E
-      - 🇺🇸 US-2-1D
-      - 🇺🇸 US-2-1-1E
-      - 🇸🇬 新加坡-1D
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇭🇰 HY2-香港-1E
-      - 🇭🇰 VLESS-香港-1C
-      - 🇭🇰 HY2-香港-1D
-      - 🇫🇷 法国-1G
-      - 🇯🇵 日本-1D
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇨🇳 中国联通节点1
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇮🇩 印度尼西亚-1G
+      - 🇸🇬 新加坡-1F
+      - 🇩🇪 德国-法兰克福-002-1C
       - 🇭🇰 HY2-香港-1F
-      - 🇭🇰 TTC9999 香港
-      - 🇩🇪 德国-法兰克福-001-1F
-      - G I C A B N H T H N
-      - 🇯🇵 HY2-日本-1F
-      - 🇺🇸 US-4-1D
+      - 🇭🇰 HY2-香港-1B
+      - 🇺🇸 US-4-1F
+      - 🇭🇰 HK-1-1A
+      - FV2026-7-7-1B
+      - 🇺🇸 美国-1B
+      - 🇭🇰 香港2线-1A
+      - 🇮🇩 印度尼西亚-1D
       - 🇭🇰 HK-2-1B
-      - 🇩🇪 德国-法兰克福-001-1G
-      - L9-RHS
-      - 🇺🇸 US-2-2-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇯🇵 VLESS-日本-1D
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇯🇵 JAPAN-01-1C
-      - 🇺🇸 美国2线-1C
-      - 🇭🇰 香港2线-1D
-      - 🇺🇸 US-3-1E
-      - 🇺🇸 美国2线-1B
-      - 🇫🇷 法国-1F
-      - 🇹🇼 台湾高速节点3
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇺🇸 US-3-1C
+      - 🇸🇬 新加坡-1A
+      - 🇺🇸 US-4-1E
+      - 🇭🇰 VLESS-香港-1A
+      - 🇭🇰 香港2线-1B
+      - 🇯🇵 HY2-日本-1C
+      - 🇭🇰 VLESS-香港-1F
+      - 🇺🇸 US-2-1-1B
+      - 🇺🇸 US-2-1F
       - SILICONVALLEY-01-1B
-      - HR-ZSB
-      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇯🇵 VLESS-日本-1A
+      - 🇯🇵 日本-1A
+      - FV2026-7-7-1A
+      - 🇭🇰 香港2线-1D
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇺🇸 US-4-1D
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇭🇰 HK-2-1F
+      - 🇺🇸 HY-04 | US-1A
+      - OD-EMU
+      - 🇯🇵 JAPAN-01-1A
+      - 🇺🇸 US-2-2-1C
+      - 🇯🇵 JAPAN-SS-1B
+      - GH-ZWA
+      - 🇯🇵 VLESS-日本-1G
+      - EA-USC
+      - 🇺🇸 美国-1F
+      - 🇯🇵 JAPAN-SS-1C
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 HY2-日本-1G
+      - 🇺🇸 US-2-1C
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇮🇩 印度尼西亚-1G
+      - 🇭🇰 TTC9999 香港
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 US-4-1B
+      - 🇯🇵 VLESS-日本-1D
+      - WG-RPU
+      - 🇺🇸 HY-05| US-1B
+      - 🇺🇸 US-2-1-1D
+      - FV2026-7-7-1F
+      - 🇯🇵 HY2-日本-1A
+      - 🇺🇸 US-1-1C
+      - 🇫🇷 法国-1G
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-003-1F
       - 🇭🇰 HK-1-1E
+      - 🇭🇰 VLESS-香港-1G
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇸🇬 新加坡-1G
+      - 🇭🇰 VLESS-香港-1C
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇺🇸 US-2-2-1A
+      - 🇹🇼 台湾高速节点
+      - FV2026-7-7-1E
+      - 🇺🇸 US-4-1A
+      - 🇯🇵 VLESS-日本-1E
+      - 🇺🇸 美国-1C
+      - 🇺🇸 美国2线-1C
+      - FV2026-7-7-1D
+      - 🇫🇷 法国-1E
+      - 🇺🇸 US-1-1B
+      - 🇺🇸 HY-03 | US-1B
+      - 🇮🇩 印度尼西亚-1C
+      - 🇭🇰 VLESS-香港-1D
+      - 🇯🇵 日本-1D
+      - 🇺🇸 US-1-1D
+      - 🇺🇸 US-2-1B
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇺🇸 HY-03 | US-1A
+      - 🇺🇸 US-3-1D
+      - 🇺🇸 US-1-1A
+      - 🇮🇩 印度尼西亚-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇫🇷 法国-1B
+      - 🇭🇰 VLESS-香港-1E
+      - FV2026-7-7-1C
+      - 🇯🇵 HY2-日本-1B
+      - 🇺🇸 美国加速器 01
+      - AM-DIC
+      - 🇺🇸 美国2线-1A
+      - 🇯🇵 VLESS-日本-1C
+      - 🇨🇳 中国联通节点1
+      - 🇺🇸 美国-1E
       - 🇭🇰 香港2线-1C
       - 🇫🇷 法国-1C
-      - 🇺🇸 美国2线-1D
-      - 🇭🇰 HY2-香港-1A
-      - 🇫🇷 法国-1E
-      - 🇺🇸 US-3-1F
-      - 🇺🇸 US-1-1D
-      - 🇺🇸 US-2-1-1D
-      - 🇭🇰 香港2线-1B
-      - 🇸🇬 新加坡-1E
-      - 🇺🇸 美国-1C
-      - AC-SIY
-      - 🇭🇰 香港2线-1A
-      - 🇯🇵 HY2-日本-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇯🇵 JAPAN-01-1B
-      - 🇮🇩 印度尼西亚-1A
-      - 🇺🇸 HY-05| US
-      - 🇮🇩 印度尼西亚-1B
-      - 🇺🇸 US-2-2-1B
-      - 🇺🇸 美国加速器 01
-      - 🇺🇸 美国-1E
+      - 🇺🇸 美国2线-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇺🇸 美国2线-1F
       - 🇯🇵 日本-1C
-      - 🇺🇸 US-1-1A
-      - 🇺🇸 US-1-1C
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇭🇰 HK-2-1D
-      - 🇯🇵 日本-1A
-      - 🇯🇵 HY2-日本-1G
-      - 🇯🇵 JAPAN-01-1A
-      - 🇮🇩 印度尼西亚-1C
-      - 🇺🇸 US-4-1F
-      - 🇩🇪 德国-法兰克福-004-1G
-      - 🇺🇸 HY-04 | US
-      - 🇯🇵 日本-1E
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 HK-1-1C
-      - 🇭🇰 HK-2-1F
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇭🇰 HY2-香港-1B
-      - 🇯🇵 VLESS-日本-1E
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇺🇸 美国2线-1E
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇮🇩 印度尼西亚-1E
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇸🇬 新加坡-1B
-      - 🇺🇸 US-2-1B
-      - 🇭🇰 香港2线-1G
-      - 🇭🇰 HY2-香港-1G
-      - 🇭🇰 VLESS-香港-1F
-      - 🇺🇸 美国-1B
-      - 🇭🇰 HK-1-1B
-      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇺🇸 US-2-1-1A
+      - 🇭🇰 香港2线-1E
+      - 🇺🇸 HY-04 | US-1B
+      - 🇫🇷 法国-1F
+      - 🇯🇵 日本-1B
+      - 🇸🇬 新加坡-1D
+      - 🇯🇵 日本-1F
+      - 🇩🇪 德国-法兰克福-004-1H
+      - MC-SJE
+      - 🇭🇰 HY2-香港-1C
+      - 🇭🇰 HK-2-1C
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇯🇵 JAPAN-01-1B
+      - 🇺🇸 US-2-1-1C
       - 🇭🇰 HK-1-1D
+      - 🇺🇸 US-3-1B
+      - 🇺🇸 美国-1G
       - 🇺🇸 美国2线-1G
+      - 🇮🇩 印度尼西亚-1E
+      - 🇸🇬 新加坡-1B
+      - 🇭🇰 HY2-香港-1G
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇭🇰 HY2-香港-1D
+      - 🇭🇰 香港2线-1F
+      - 🇫🇷 法国-1D
+      - 🇭🇰 HK-1-1C
+      - 🇺🇸 美国2线-1E
+      - 🇺🇸 US-3-1E
+      - 🇩🇪 德国-法兰克福-003-1H
+      - G I C A B N H T H N
+      - 🇯🇵 日本-1E
+      - 🇺🇸 US-2-2-1D
+      - SILICONVALLEY-01-1C
+      - 🇯🇵 JAPAN-01-1C
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇺🇸 US-2-2-1B
+      - 🇯🇵 VLESS-日本-1B
+      - 🇺🇸 US-2-1-1E
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇸 US-1-1E
+      - 🇺🇸 US-2-2-1E
+      - 🇺🇸 HY-05| US-1A
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇯🇵 HY2-日本-1E
+      - 🇮🇩 印度尼西亚-1F
+      - 🇯🇵 VLESS-日本-1F
+      - 🇺🇸 美国-1A
+      - 🇭🇰 VLESS-香港-1B
+      - 🇫🇷 法国-1A
+      - 🇺🇸 US-2-1D
+      - 🇺🇸 US-2-2-1F
+      - 🇭🇰 HK-2-1D
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇺🇸 US-2-1-1F
+      - 🇺🇸 HY-02 | US-1B
+      - 🇭🇰 HK-1-1B
+      - 🇺🇸 美国2线-1D
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇺🇸 美国高速节点1
+      - 🇯🇵 日本-1G
+      - 🇯🇵 JAPAN-SS-1A
+      - 🇺🇸 US-4-1C
+      - 🇺🇸 美国-1D
+      - 🇭🇰 香港2线-1G
+      - 🇸🇬 新加坡-1E
+      - SILICONVALLEY-01-1A
+      - 🇺🇸 US-2-1A
+      - 🇺🇸 US-1-1F
+      - 🇭🇰 HK-2-1A
+      - 🇺🇸 US-3-1A
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇭🇰 HK-2-1E
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇺🇸 US-2-1E
+      - 🇸🇬 新加坡-1C
+      - OM-QJB
+      - 🇺🇸 US-3-1F
+      - 🇯🇵 HY2-日本-1F
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇮🇩 印度尼西亚-1A
+      - 🇭🇰 HY2-香港-1E
+      - 🇭🇰 HY2-香港-1A
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬 新加坡-1A
-      - 🇯🇵 JAPAN-SS-1A
-      - 🇯🇵 VLESS-日本-1G
-      - 🇺🇸 US-3-1C
-      - 5A-VCE
-      - 🇭🇰 VLESS-香港-1G
-      - 🇯🇵 VLESS-日本-1C
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇯🇵 VLESS-日本-1A
-      - 🇯🇵 日本-1G
-      - 🇺🇸 US-1-1F
-      - FV2026-7-7-1B
-      - 🇭🇰 VLESS-香港-1B
-      - 🇺🇸 US-2-2-1E
-      - 🇺🇸 US-2-1-1C
-      - 🇯🇵 VLESS-日本-1B
-      - 🇺🇸 美国-1A
       - 🇯🇵 HY2-日本-1D
-      - 🇺🇸 US-4-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - SILICONVALLEY-01-1C
-      - 🇭🇰 香港2线-1E
-      - 🇮🇩 印度尼西亚-1D
-      - ME-GBW
-      - 🇭🇰 VLESS-香港-1A
-      - 🇺🇸 US-2-1-1A
-      - 🇺🇸 美国2线-1F
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 香港2线-1F
-      - 🇸🇬 新加坡-1C
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 HK-2-1C
-      - 🇺🇸 US-4-1A
-      - SILICONVALLEY-01-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇭🇰 HK-2-1E
-      - 🇺🇸 US-2-1E
-      - 🇭🇰 HK-2-1A
-      - 🇺🇸 US-3-1A
-      - 🇺🇸 US-1-1E
-      - 🇺🇸 US-3-1B
-      - 🇩🇪 德国-法兰克福-004-1E
-      - FV2026-7-7-1D
-      - 🇫🇷 法国-1B
-      - 🇯🇵 JAPAN-SS-1C
-      - 🇺🇸 US-1-1B
-      - 🇮🇩 印度尼西亚-1F
-      - 🇫🇷 法国-1A
-      - 🇯🇵 HY2-日本-1C
-      - 🇸🇬 新加坡-1F
-      - 🇺🇸 US-2-1-1B
-      - 🇺🇸 US-2-1A
-      - 🇺🇸 美国2线-1A
+      - 🇺🇸 HY-02 | US-1A
       - 🇭🇰 HK-1-1F
       - 🇩🇪 德国-法兰克福-002-1D
-      - 🇯🇵 JAPAN-SS-1B
-      - 🇺🇸 HY-03 | US
-      - 🇭🇰 VLESS-香港-1D
-      - 🇩🇪 德国-法兰克福-001-1A
-      - FV2026-7-7-1E
-      - 🇭🇰 VLESS-香港-1E
-      - 🇯🇵 日本-1F
-      - 🇺🇸 US-2-2-1F
-      - 🇭🇰 HY2-香港-1C
-      - FV2026-7-7-1C
-      - 🇺🇸 US-4-1C
-      - 🇯🇵 VLESS-日本-1F
-      - 🇺🇸 US-3-1D
-      - 🇺🇸 HY-02 | US
-      - 🇺🇸 US-2-1-1F
-      - 🇺🇸 US-2-1C
-      - 🇯🇵 HY2-日本-1B
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇫🇷 法国-1D
-      - 🇺🇸 美国-1F
-      - 🇺🇸 US-2-2-1C
-      - 🇺🇸 美国-1G
-      - F1-YPC
-      - 🇸🇬 新加坡-1G
-      - 🇺🇸 美国-1D
-      - 🇭🇰 HK-1-1A
-      - 🇯🇵 日本-1B
-      - 🇺🇸 美国-洛杉矶-PRO
-      - FV2026-7-7-1A
-      - 🇺🇸 US-2-2-1D
-      - 🇯🇵 HY2-日本-1E
-      - 🇺🇸 US-2-1F
-      - 🇺🇸 US-4-1E
-      - 🇺🇸 US-2-1D
-      - 🇺🇸 US-2-1-1E
-      - 🇸🇬 新加坡-1D
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇭🇰 HY2-香港-1E
-      - 🇭🇰 VLESS-香港-1C
-      - 🇭🇰 HY2-香港-1D
-      - 🇫🇷 法国-1G
-      - 🇯🇵 日本-1D
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇨🇳 中国联通节点1
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇮🇩 印度尼西亚-1G
+      - 🇸🇬 新加坡-1F
+      - 🇩🇪 德国-法兰克福-002-1C
       - 🇭🇰 HY2-香港-1F
-      - 🇭🇰 TTC9999 香港
-      - 🇩🇪 德国-法兰克福-001-1F
-      - G I C A B N H T H N
-      - 🇯🇵 HY2-日本-1F
-      - 🇺🇸 US-4-1D
+      - 🇭🇰 HY2-香港-1B
+      - 🇺🇸 US-4-1F
+      - 🇭🇰 HK-1-1A
+      - FV2026-7-7-1B
+      - 🇺🇸 美国-1B
+      - 🇭🇰 香港2线-1A
+      - 🇮🇩 印度尼西亚-1D
       - 🇭🇰 HK-2-1B
-      - 🇩🇪 德国-法兰克福-001-1G
-      - L9-RHS
-      - 🇺🇸 US-2-2-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇯🇵 VLESS-日本-1D
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇯🇵 JAPAN-01-1C
-      - 🇺🇸 美国2线-1C
-      - 🇭🇰 香港2线-1D
-      - 🇺🇸 US-3-1E
-      - 🇺🇸 美国2线-1B
-      - 🇫🇷 法国-1F
-      - 🇹🇼 台湾高速节点3
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇺🇸 US-3-1C
+      - 🇸🇬 新加坡-1A
+      - 🇺🇸 US-4-1E
+      - 🇭🇰 VLESS-香港-1A
+      - 🇭🇰 香港2线-1B
+      - 🇯🇵 HY2-日本-1C
+      - 🇭🇰 VLESS-香港-1F
+      - 🇺🇸 US-2-1-1B
+      - 🇺🇸 US-2-1F
       - SILICONVALLEY-01-1B
-      - HR-ZSB
-      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇯🇵 VLESS-日本-1A
+      - 🇯🇵 日本-1A
+      - FV2026-7-7-1A
+      - 🇭🇰 香港2线-1D
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇺🇸 US-4-1D
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇭🇰 HK-2-1F
+      - 🇺🇸 HY-04 | US-1A
+      - OD-EMU
+      - 🇯🇵 JAPAN-01-1A
+      - 🇺🇸 US-2-2-1C
+      - 🇯🇵 JAPAN-SS-1B
+      - GH-ZWA
+      - 🇯🇵 VLESS-日本-1G
+      - EA-USC
+      - 🇺🇸 美国-1F
+      - 🇯🇵 JAPAN-SS-1C
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 HY2-日本-1G
+      - 🇺🇸 US-2-1C
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇮🇩 印度尼西亚-1G
+      - 🇭🇰 TTC9999 香港
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 US-4-1B
+      - 🇯🇵 VLESS-日本-1D
+      - WG-RPU
+      - 🇺🇸 HY-05| US-1B
+      - 🇺🇸 US-2-1-1D
+      - FV2026-7-7-1F
+      - 🇯🇵 HY2-日本-1A
+      - 🇺🇸 US-1-1C
+      - 🇫🇷 法国-1G
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-003-1F
       - 🇭🇰 HK-1-1E
+      - 🇭🇰 VLESS-香港-1G
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇸🇬 新加坡-1G
+      - 🇭🇰 VLESS-香港-1C
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇺🇸 US-2-2-1A
+      - 🇹🇼 台湾高速节点
+      - FV2026-7-7-1E
+      - 🇺🇸 US-4-1A
+      - 🇯🇵 VLESS-日本-1E
+      - 🇺🇸 美国-1C
+      - 🇺🇸 美国2线-1C
+      - FV2026-7-7-1D
+      - 🇫🇷 法国-1E
+      - 🇺🇸 US-1-1B
+      - 🇺🇸 HY-03 | US-1B
+      - 🇮🇩 印度尼西亚-1C
+      - 🇭🇰 VLESS-香港-1D
+      - 🇯🇵 日本-1D
+      - 🇺🇸 US-1-1D
+      - 🇺🇸 US-2-1B
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇺🇸 HY-03 | US-1A
+      - 🇺🇸 US-3-1D
+      - 🇺🇸 US-1-1A
+      - 🇮🇩 印度尼西亚-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇫🇷 法国-1B
+      - 🇭🇰 VLESS-香港-1E
+      - FV2026-7-7-1C
+      - 🇯🇵 HY2-日本-1B
+      - 🇺🇸 美国加速器 01
+      - AM-DIC
+      - 🇺🇸 美国2线-1A
+      - 🇯🇵 VLESS-日本-1C
+      - 🇨🇳 中国联通节点1
+      - 🇺🇸 美国-1E
       - 🇭🇰 香港2线-1C
       - 🇫🇷 法国-1C
-      - 🇺🇸 美国2线-1D
-      - 🇭🇰 HY2-香港-1A
-      - 🇫🇷 法国-1E
-      - 🇺🇸 US-3-1F
-      - 🇺🇸 US-1-1D
-      - 🇺🇸 US-2-1-1D
-      - 🇭🇰 香港2线-1B
-      - 🇸🇬 新加坡-1E
-      - 🇺🇸 美国-1C
-      - AC-SIY
-      - 🇭🇰 香港2线-1A
-      - 🇯🇵 HY2-日本-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇯🇵 JAPAN-01-1B
-      - 🇮🇩 印度尼西亚-1A
-      - 🇺🇸 HY-05| US
-      - 🇮🇩 印度尼西亚-1B
-      - 🇺🇸 US-2-2-1B
-      - 🇺🇸 美国加速器 01
-      - 🇺🇸 美国-1E
+      - 🇺🇸 美国2线-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇺🇸 美国2线-1F
       - 🇯🇵 日本-1C
-      - 🇺🇸 US-1-1A
-      - 🇺🇸 US-1-1C
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇭🇰 HK-2-1D
-      - 🇯🇵 日本-1A
-      - 🇯🇵 HY2-日本-1G
-      - 🇯🇵 JAPAN-01-1A
-      - 🇮🇩 印度尼西亚-1C
-      - 🇺🇸 US-4-1F
-      - 🇩🇪 德国-法兰克福-004-1G
-      - 🇺🇸 HY-04 | US
-      - 🇯🇵 日本-1E
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 HK-1-1C
-      - 🇭🇰 HK-2-1F
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇭🇰 HY2-香港-1B
-      - 🇯🇵 VLESS-日本-1E
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇺🇸 美国2线-1E
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇮🇩 印度尼西亚-1E
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇸🇬 新加坡-1B
-      - 🇺🇸 US-2-1B
-      - 🇭🇰 香港2线-1G
-      - 🇭🇰 HY2-香港-1G
-      - 🇭🇰 VLESS-香港-1F
-      - 🇺🇸 美国-1B
-      - 🇭🇰 HK-1-1B
-      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇺🇸 US-2-1-1A
+      - 🇭🇰 香港2线-1E
+      - 🇺🇸 HY-04 | US-1B
+      - 🇫🇷 法国-1F
+      - 🇯🇵 日本-1B
+      - 🇸🇬 新加坡-1D
+      - 🇯🇵 日本-1F
+      - 🇩🇪 德国-法兰克福-004-1H
+      - MC-SJE
+      - 🇭🇰 HY2-香港-1C
+      - 🇭🇰 HK-2-1C
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇯🇵 JAPAN-01-1B
+      - 🇺🇸 US-2-1-1C
       - 🇭🇰 HK-1-1D
+      - 🇺🇸 US-3-1B
+      - 🇺🇸 美国-1G
       - 🇺🇸 美国2线-1G
+      - 🇮🇩 印度尼西亚-1E
+      - 🇸🇬 新加坡-1B
+      - 🇭🇰 HY2-香港-1G
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇭🇰 HY2-香港-1D
+      - 🇭🇰 香港2线-1F
+      - 🇫🇷 法国-1D
+      - 🇭🇰 HK-1-1C
+      - 🇺🇸 美国2线-1E
+      - 🇺🇸 US-3-1E
+      - 🇩🇪 德国-法兰克福-003-1H
+      - G I C A B N H T H N
+      - 🇯🇵 日本-1E
+      - 🇺🇸 US-2-2-1D
+      - SILICONVALLEY-01-1C
+      - 🇯🇵 JAPAN-01-1C
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇺🇸 US-2-2-1B
+      - 🇯🇵 VLESS-日本-1B
+      - 🇺🇸 US-2-1-1E
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇸 US-1-1E
+      - 🇺🇸 US-2-2-1E
+      - 🇺🇸 HY-05| US-1A
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇯🇵 HY2-日本-1E
+      - 🇮🇩 印度尼西亚-1F
+      - 🇯🇵 VLESS-日本-1F
+      - 🇺🇸 美国-1A
+      - 🇭🇰 VLESS-香港-1B
+      - 🇫🇷 法国-1A
+      - 🇺🇸 US-2-1D
+      - 🇺🇸 US-2-2-1F
+      - 🇭🇰 HK-2-1D
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇺🇸 US-2-1-1F
+      - 🇺🇸 HY-02 | US-1B
+      - 🇭🇰 HK-1-1B
+      - 🇺🇸 美国2线-1D
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇺🇸 美国高速节点1
+      - 🇯🇵 日本-1G
+      - 🇯🇵 JAPAN-SS-1A
+      - 🇺🇸 US-4-1C
+      - 🇺🇸 美国-1D
+      - 🇭🇰 香港2线-1G
+      - 🇸🇬 新加坡-1E
+      - SILICONVALLEY-01-1A
+      - 🇺🇸 US-2-1A
+      - 🇺🇸 US-1-1F
+      - 🇭🇰 HK-2-1A
+      - 🇺🇸 US-3-1A
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇭🇰 HK-2-1E
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇺🇸 US-2-1E
+      - 🇸🇬 新加坡-1C
+      - OM-QJB
+      - 🇺🇸 US-3-1F
+      - 🇯🇵 HY2-日本-1F
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇮🇩 印度尼西亚-1A
+      - 🇭🇰 HY2-香港-1E
+      - 🇭🇰 HY2-香港-1A
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1589,192 +1669,202 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬 新加坡-1A
-      - 🇯🇵 JAPAN-SS-1A
-      - 🇯🇵 VLESS-日本-1G
-      - 🇺🇸 US-3-1C
-      - 5A-VCE
-      - 🇭🇰 VLESS-香港-1G
-      - 🇯🇵 VLESS-日本-1C
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇯🇵 VLESS-日本-1A
-      - 🇯🇵 日本-1G
-      - 🇺🇸 US-1-1F
-      - FV2026-7-7-1B
-      - 🇭🇰 VLESS-香港-1B
-      - 🇺🇸 US-2-2-1E
-      - 🇺🇸 US-2-1-1C
-      - 🇯🇵 VLESS-日本-1B
-      - 🇺🇸 美国-1A
       - 🇯🇵 HY2-日本-1D
-      - 🇺🇸 US-4-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - SILICONVALLEY-01-1C
-      - 🇭🇰 香港2线-1E
-      - 🇮🇩 印度尼西亚-1D
-      - ME-GBW
-      - 🇭🇰 VLESS-香港-1A
-      - 🇺🇸 US-2-1-1A
-      - 🇺🇸 美国2线-1F
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 香港2线-1F
-      - 🇸🇬 新加坡-1C
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 HK-2-1C
-      - 🇺🇸 US-4-1A
-      - SILICONVALLEY-01-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇭🇰 HK-2-1E
-      - 🇺🇸 US-2-1E
-      - 🇭🇰 HK-2-1A
-      - 🇺🇸 US-3-1A
-      - 🇺🇸 US-1-1E
-      - 🇺🇸 US-3-1B
-      - 🇩🇪 德国-法兰克福-004-1E
-      - FV2026-7-7-1D
-      - 🇫🇷 法国-1B
-      - 🇯🇵 JAPAN-SS-1C
-      - 🇺🇸 US-1-1B
-      - 🇮🇩 印度尼西亚-1F
-      - 🇫🇷 法国-1A
-      - 🇯🇵 HY2-日本-1C
-      - 🇸🇬 新加坡-1F
-      - 🇺🇸 US-2-1-1B
-      - 🇺🇸 US-2-1A
-      - 🇺🇸 美国2线-1A
+      - 🇺🇸 HY-02 | US-1A
       - 🇭🇰 HK-1-1F
       - 🇩🇪 德国-法兰克福-002-1D
-      - 🇯🇵 JAPAN-SS-1B
-      - 🇺🇸 HY-03 | US
-      - 🇭🇰 VLESS-香港-1D
-      - 🇩🇪 德国-法兰克福-001-1A
-      - FV2026-7-7-1E
-      - 🇭🇰 VLESS-香港-1E
-      - 🇯🇵 日本-1F
-      - 🇺🇸 US-2-2-1F
-      - 🇭🇰 HY2-香港-1C
-      - FV2026-7-7-1C
-      - 🇺🇸 US-4-1C
-      - 🇯🇵 VLESS-日本-1F
-      - 🇺🇸 US-3-1D
-      - 🇺🇸 HY-02 | US
-      - 🇺🇸 US-2-1-1F
-      - 🇺🇸 US-2-1C
-      - 🇯🇵 HY2-日本-1B
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇫🇷 法国-1D
-      - 🇺🇸 美国-1F
-      - 🇺🇸 US-2-2-1C
-      - 🇺🇸 美国-1G
-      - F1-YPC
-      - 🇸🇬 新加坡-1G
-      - 🇺🇸 美国-1D
-      - 🇭🇰 HK-1-1A
-      - 🇯🇵 日本-1B
-      - 🇺🇸 美国-洛杉矶-PRO
-      - FV2026-7-7-1A
-      - 🇺🇸 US-2-2-1D
-      - 🇯🇵 HY2-日本-1E
-      - 🇺🇸 US-2-1F
-      - 🇺🇸 US-4-1E
-      - 🇺🇸 US-2-1D
-      - 🇺🇸 US-2-1-1E
-      - 🇸🇬 新加坡-1D
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇭🇰 HY2-香港-1E
-      - 🇭🇰 VLESS-香港-1C
-      - 🇭🇰 HY2-香港-1D
-      - 🇫🇷 法国-1G
-      - 🇯🇵 日本-1D
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇨🇳 中国联通节点1
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇮🇩 印度尼西亚-1G
+      - 🇸🇬 新加坡-1F
+      - 🇩🇪 德国-法兰克福-002-1C
       - 🇭🇰 HY2-香港-1F
-      - 🇭🇰 TTC9999 香港
-      - 🇩🇪 德国-法兰克福-001-1F
-      - G I C A B N H T H N
-      - 🇯🇵 HY2-日本-1F
-      - 🇺🇸 US-4-1D
+      - 🇭🇰 HY2-香港-1B
+      - 🇺🇸 US-4-1F
+      - 🇭🇰 HK-1-1A
+      - FV2026-7-7-1B
+      - 🇺🇸 美国-1B
+      - 🇭🇰 香港2线-1A
+      - 🇮🇩 印度尼西亚-1D
       - 🇭🇰 HK-2-1B
-      - 🇩🇪 德国-法兰克福-001-1G
-      - L9-RHS
-      - 🇺🇸 US-2-2-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇯🇵 VLESS-日本-1D
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇯🇵 JAPAN-01-1C
-      - 🇺🇸 美国2线-1C
-      - 🇭🇰 香港2线-1D
-      - 🇺🇸 US-3-1E
-      - 🇺🇸 美国2线-1B
-      - 🇫🇷 法国-1F
-      - 🇹🇼 台湾高速节点3
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇺🇸 US-3-1C
+      - 🇸🇬 新加坡-1A
+      - 🇺🇸 US-4-1E
+      - 🇭🇰 VLESS-香港-1A
+      - 🇭🇰 香港2线-1B
+      - 🇯🇵 HY2-日本-1C
+      - 🇭🇰 VLESS-香港-1F
+      - 🇺🇸 US-2-1-1B
+      - 🇺🇸 US-2-1F
       - SILICONVALLEY-01-1B
-      - HR-ZSB
-      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇯🇵 VLESS-日本-1A
+      - 🇯🇵 日本-1A
+      - FV2026-7-7-1A
+      - 🇭🇰 香港2线-1D
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇺🇸 US-4-1D
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇭🇰 HK-2-1F
+      - 🇺🇸 HY-04 | US-1A
+      - OD-EMU
+      - 🇯🇵 JAPAN-01-1A
+      - 🇺🇸 US-2-2-1C
+      - 🇯🇵 JAPAN-SS-1B
+      - GH-ZWA
+      - 🇯🇵 VLESS-日本-1G
+      - EA-USC
+      - 🇺🇸 美国-1F
+      - 🇯🇵 JAPAN-SS-1C
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 HY2-日本-1G
+      - 🇺🇸 US-2-1C
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇮🇩 印度尼西亚-1G
+      - 🇭🇰 TTC9999 香港
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 US-4-1B
+      - 🇯🇵 VLESS-日本-1D
+      - WG-RPU
+      - 🇺🇸 HY-05| US-1B
+      - 🇺🇸 US-2-1-1D
+      - FV2026-7-7-1F
+      - 🇯🇵 HY2-日本-1A
+      - 🇺🇸 US-1-1C
+      - 🇫🇷 法国-1G
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-003-1F
       - 🇭🇰 HK-1-1E
+      - 🇭🇰 VLESS-香港-1G
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇸🇬 新加坡-1G
+      - 🇭🇰 VLESS-香港-1C
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇺🇸 US-2-2-1A
+      - 🇹🇼 台湾高速节点
+      - FV2026-7-7-1E
+      - 🇺🇸 US-4-1A
+      - 🇯🇵 VLESS-日本-1E
+      - 🇺🇸 美国-1C
+      - 🇺🇸 美国2线-1C
+      - FV2026-7-7-1D
+      - 🇫🇷 法国-1E
+      - 🇺🇸 US-1-1B
+      - 🇺🇸 HY-03 | US-1B
+      - 🇮🇩 印度尼西亚-1C
+      - 🇭🇰 VLESS-香港-1D
+      - 🇯🇵 日本-1D
+      - 🇺🇸 US-1-1D
+      - 🇺🇸 US-2-1B
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇺🇸 HY-03 | US-1A
+      - 🇺🇸 US-3-1D
+      - 🇺🇸 US-1-1A
+      - 🇮🇩 印度尼西亚-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇫🇷 法国-1B
+      - 🇭🇰 VLESS-香港-1E
+      - FV2026-7-7-1C
+      - 🇯🇵 HY2-日本-1B
+      - 🇺🇸 美国加速器 01
+      - AM-DIC
+      - 🇺🇸 美国2线-1A
+      - 🇯🇵 VLESS-日本-1C
+      - 🇨🇳 中国联通节点1
+      - 🇺🇸 美国-1E
       - 🇭🇰 香港2线-1C
       - 🇫🇷 法国-1C
-      - 🇺🇸 美国2线-1D
-      - 🇭🇰 HY2-香港-1A
-      - 🇫🇷 法国-1E
-      - 🇺🇸 US-3-1F
-      - 🇺🇸 US-1-1D
-      - 🇺🇸 US-2-1-1D
-      - 🇭🇰 香港2线-1B
-      - 🇸🇬 新加坡-1E
-      - 🇺🇸 美国-1C
-      - AC-SIY
-      - 🇭🇰 香港2线-1A
-      - 🇯🇵 HY2-日本-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇯🇵 JAPAN-01-1B
-      - 🇮🇩 印度尼西亚-1A
-      - 🇺🇸 HY-05| US
-      - 🇮🇩 印度尼西亚-1B
-      - 🇺🇸 US-2-2-1B
-      - 🇺🇸 美国加速器 01
-      - 🇺🇸 美国-1E
+      - 🇺🇸 美国2线-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇺🇸 美国2线-1F
       - 🇯🇵 日本-1C
-      - 🇺🇸 US-1-1A
-      - 🇺🇸 US-1-1C
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇭🇰 HK-2-1D
-      - 🇯🇵 日本-1A
-      - 🇯🇵 HY2-日本-1G
-      - 🇯🇵 JAPAN-01-1A
-      - 🇮🇩 印度尼西亚-1C
-      - 🇺🇸 US-4-1F
-      - 🇩🇪 德国-法兰克福-004-1G
-      - 🇺🇸 HY-04 | US
-      - 🇯🇵 日本-1E
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 HK-1-1C
-      - 🇭🇰 HK-2-1F
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇭🇰 HY2-香港-1B
-      - 🇯🇵 VLESS-日本-1E
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇺🇸 美国2线-1E
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇮🇩 印度尼西亚-1E
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇸🇬 新加坡-1B
-      - 🇺🇸 US-2-1B
-      - 🇭🇰 香港2线-1G
-      - 🇭🇰 HY2-香港-1G
-      - 🇭🇰 VLESS-香港-1F
-      - 🇺🇸 美国-1B
-      - 🇭🇰 HK-1-1B
-      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇺🇸 US-2-1-1A
+      - 🇭🇰 香港2线-1E
+      - 🇺🇸 HY-04 | US-1B
+      - 🇫🇷 法国-1F
+      - 🇯🇵 日本-1B
+      - 🇸🇬 新加坡-1D
+      - 🇯🇵 日本-1F
+      - 🇩🇪 德国-法兰克福-004-1H
+      - MC-SJE
+      - 🇭🇰 HY2-香港-1C
+      - 🇭🇰 HK-2-1C
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇯🇵 JAPAN-01-1B
+      - 🇺🇸 US-2-1-1C
       - 🇭🇰 HK-1-1D
+      - 🇺🇸 US-3-1B
+      - 🇺🇸 美国-1G
       - 🇺🇸 美国2线-1G
+      - 🇮🇩 印度尼西亚-1E
+      - 🇸🇬 新加坡-1B
+      - 🇭🇰 HY2-香港-1G
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇭🇰 HY2-香港-1D
+      - 🇭🇰 香港2线-1F
+      - 🇫🇷 法国-1D
+      - 🇭🇰 HK-1-1C
+      - 🇺🇸 美国2线-1E
+      - 🇺🇸 US-3-1E
+      - 🇩🇪 德国-法兰克福-003-1H
+      - G I C A B N H T H N
+      - 🇯🇵 日本-1E
+      - 🇺🇸 US-2-2-1D
+      - SILICONVALLEY-01-1C
+      - 🇯🇵 JAPAN-01-1C
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇺🇸 US-2-2-1B
+      - 🇯🇵 VLESS-日本-1B
+      - 🇺🇸 US-2-1-1E
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇸 US-1-1E
+      - 🇺🇸 US-2-2-1E
+      - 🇺🇸 HY-05| US-1A
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇯🇵 HY2-日本-1E
+      - 🇮🇩 印度尼西亚-1F
+      - 🇯🇵 VLESS-日本-1F
+      - 🇺🇸 美国-1A
+      - 🇭🇰 VLESS-香港-1B
+      - 🇫🇷 法国-1A
+      - 🇺🇸 US-2-1D
+      - 🇺🇸 US-2-2-1F
+      - 🇭🇰 HK-2-1D
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇺🇸 US-2-1-1F
+      - 🇺🇸 HY-02 | US-1B
+      - 🇭🇰 HK-1-1B
+      - 🇺🇸 美国2线-1D
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇺🇸 美国高速节点1
+      - 🇯🇵 日本-1G
+      - 🇯🇵 JAPAN-SS-1A
+      - 🇺🇸 US-4-1C
+      - 🇺🇸 美国-1D
+      - 🇭🇰 香港2线-1G
+      - 🇸🇬 新加坡-1E
+      - SILICONVALLEY-01-1A
+      - 🇺🇸 US-2-1A
+      - 🇺🇸 US-1-1F
+      - 🇭🇰 HK-2-1A
+      - 🇺🇸 US-3-1A
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇭🇰 HK-2-1E
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇺🇸 US-2-1E
+      - 🇸🇬 新加坡-1C
+      - OM-QJB
+      - 🇺🇸 US-3-1F
+      - 🇯🇵 HY2-日本-1F
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇮🇩 印度尼西亚-1A
+      - 🇭🇰 HY2-香港-1E
+      - 🇭🇰 HY2-香港-1A
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
