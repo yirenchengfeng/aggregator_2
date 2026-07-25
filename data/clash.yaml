@@ -5,551 +5,695 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇫🇷 法国-1D, server: faguo.tkvip.xyz, port: 443, type: hysteria2, password: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, auth: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, sni: faguo.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 新加坡公益-01-1C, server: free77-sg1.node2.top, port: 443, type: vless, uuid: beaf1f15-d042-4dd6-a111-fe26529b9155, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1A, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 1d5918c7-647d-42e0-b924-8ace9e82828c, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: 32f40b24-cd36-4f62-92ca-a48175aecd18, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇦 加拿大-1A, server: jianada-jk.tkvip.xyz, port: 4433, type: hysteria2, password: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, auth: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, sni: jianada-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 新加坡公益-01-1A, server: free77-sg1.node2.top, port: 443, type: vless, uuid: 04450088-e3af-4a66-a43f-5e5d97839c69, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇺🇸 美国公益-01-1B, server: free73-us1.node2.top, port: 443, type: vless, uuid: ec149343-37cb-4a62-9584-a4deb65aed73, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: 32f40b24-cd36-4f62-92ca-a48175aecd18, sni: node4.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-ATT-JK-2-1B, server: us-att-1.tkvip.xyz, port: 4433, type: hysteria2, password: efd08d72-5bb1-40d8-b8f8-3277b088d899, auth: efd08d72-5bb1-40d8-b8f8-3277b088d899, sni: us-att-1.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1D, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: c8acf231-e766-4b3c-ae15-666d7e7b16a2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇫🇷 法国-1G, server: faguo.tkvip.xyz, port: 443, type: hysteria2, password: 1171f7bd-1c11-499d-ab92-501f303163a7, auth: 1171f7bd-1c11-499d-ab92-501f303163a7, sni: faguo.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港公益-01-1D, server: free723-hk1.node2.top, port: 443, type: vless, uuid: e0773bf1-f3fb-4aae-9648-4139390c0bc8, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇺🇸 美国1线-1H, server: meiguo.tkvip.xyz, port: 443, type: hysteria2, password: 992eae7f-2478-4abc-803e-fbf0326939f9, auth: 992eae7f-2478-4abc-803e-fbf0326939f9, sni: meiguo.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国1线-1C, server: meiguo.tkvip.xyz, port: 443, type: hysteria2, password: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, auth: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, sni: meiguo.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 新加坡公益-01-1B, server: free77-sg1.node2.top, port: 443, type: vless, uuid: ec149343-37cb-4a62-9584-a4deb65aed73, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇺🇸 HY-02 | US, server: usflare1.cloudaddy.top, port: 30003, type: hysteria2, password: 104f1c6e-dc0e-4d9e-88df-636ebcd67960, auth: 104f1c6e-dc0e-4d9e-88df-636ebcd67960, sni: www.iq.com, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1C, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: d4e2ba5c-9d94-4ece-bd29-fc1e017259bb, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1C, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: b34e153e-6c40-4d50-a2d5-914d4c39be74, udp: true}
-  - {name: 🇹🇼 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: 32f40b24-cd36-4f62-92ca-a48175aecd18, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: G I C A B N H T H N, server: expired.example.com, port: 80, type: vmess, uuid: 84338498-2b4b-4230-9255-4e7727104451, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /expired, headers: {Host: expired.example.com}}, udp: true}
-  - {name: 🇨🇦 加拿大-1H, server: jianada-jk.tkvip.xyz, port: 4433, type: hysteria2, password: 992eae7f-2478-4abc-803e-fbf0326939f9, auth: 992eae7f-2478-4abc-803e-fbf0326939f9, sni: jianada-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 US-ATT-JK-1H, server: us-attjk.tkvip.xyz, port: 443, type: hysteria2, password: 992eae7f-2478-4abc-803e-fbf0326939f9, auth: 992eae7f-2478-4abc-803e-fbf0326939f9, sni: us-attjk.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本-1F, server: ri-ben-nube.tkvip.xyz, port: 4433, type: hysteria2, password: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, auth: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, sni: ri-ben-nube.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 加拿大-1G, server: jianada-jk.tkvip.xyz, port: 4433, type: hysteria2, password: 1171f7bd-1c11-499d-ab92-501f303163a7, auth: 1171f7bd-1c11-499d-ab92-501f303163a7, sni: jianada-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 JP-JK-1G, server: riben-jk.tkvip.xyz, port: 443, type: hysteria2, password: 1171f7bd-1c11-499d-ab92-501f303163a7, auth: 1171f7bd-1c11-499d-ab92-501f303163a7, sni: riben-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇰🇷 韩国节点-B, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: ccbc4c03-f56e-467b-ad00-d106c767876a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: ios, network: tcp, udp: true}
-  - {name: 🇸🇬 新加坡公益-02-1D, server: free77-sg2.node2.top, port: 443, type: vless, uuid: e0773bf1-f3fb-4aae-9648-4139390c0bc8, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1A, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 1d5918c7-647d-42e0-b924-8ace9e82828c, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: f61e108c-ca89-4e23-8f7d-daeb1b2476fc, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-JK-1D, server: riben-jk.tkvip.xyz, port: 443, type: hysteria2, password: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, auth: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, sni: riben-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1F, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: dabaa428-9d01-408b-8798-22a10d25b0c7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇫🇷 法国-1D, server: faguo.tkvip.xyz, port: 443, type: hysteria2, password: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, auth: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, sni: faguo.tkvip.xyz, skip-cert-verify: false, udp: true}
   - {name: 🇺🇸 US-ATT-JK-2-1E, server: us-att-1.tkvip.xyz, port: 4433, type: hysteria2, password: 12ec6470-2812-494b-83f3-b82b4e5aabcd, auth: 12ec6470-2812-494b-83f3-b82b4e5aabcd, sni: us-att-1.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇹🇼 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: 32f40b24-cd36-4f62-92ca-a48175aecd18, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 HY-05| US, server: usflare1.cloudaddy.top, port: 30006, type: hysteria2, password: 104f1c6e-dc0e-4d9e-88df-636ebcd67960, auth: 104f1c6e-dc0e-4d9e-88df-636ebcd67960, sni: www.iq.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-ATT-JK-2-1G, server: us-att-1.tkvip.xyz, port: 4433, type: hysteria2, password: 1171f7bd-1c11-499d-ab92-501f303163a7, auth: 1171f7bd-1c11-499d-ab92-501f303163a7, sni: us-att-1.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇫🇷 法国-1F, server: faguo.tkvip.xyz, port: 443, type: hysteria2, password: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, auth: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, sni: faguo.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1A, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 1d5918c7-647d-42e0-b924-8ace9e82828c, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 美国1线-1E, server: meiguo.tkvip.xyz, port: 443, type: hysteria2, password: 12ec6470-2812-494b-83f3-b82b4e5aabcd, auth: 12ec6470-2812-494b-83f3-b82b4e5aabcd, sni: meiguo.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1C, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: d4e2ba5c-9d94-4ece-bd29-fc1e017259bb, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 香港-中转1区, server: ace.fffo.cc, port: 58977, type: hysteria2, password: 995bf707-77d6-4cfd-82b6-fe14976e7f38, auth: 995bf707-77d6-4cfd-82b6-fe14976e7f38, sni: hk.xianggang.fifafa.vip, skip-cert-verify: false, obfs: salamander, obfs-password: HjyTyVI8DTFN3drr, udp: true}
+  - {name: 🇺🇸 HY-05| US, server: usflare1.cloudaddy.top, port: 30006, type: hysteria2, password: f8b1df33-bd75-47cc-bf79-2f1e753e3278, auth: f8b1df33-bd75-47cc-bf79-2f1e753e3278, sni: www.iq.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 洛杉矶-中转3区2.5x, server: jpgcp.fffo.cc, port: 33502, type: vless, uuid: 995bf707-77d6-4cfd-82b6-fe14976e7f38, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Lq18TJd2GzEfrjgRr9xOomQ9XAYMBLdjkaFd7ApI-Ak}, servername: aws.amazon.com, client-fingerprint: edge, network: tcp, udp: true}
   - {name: 🇫🇷 法国-1B, server: faguo.tkvip.xyz, port: 443, type: hysteria2, password: efd08d72-5bb1-40d8-b8f8-3277b088d899, auth: efd08d72-5bb1-40d8-b8f8-3277b088d899, sni: faguo.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 加拿大-1B, server: jianada-jk.tkvip.xyz, port: 4433, type: hysteria2, password: efd08d72-5bb1-40d8-b8f8-3277b088d899, auth: efd08d72-5bb1-40d8-b8f8-3277b088d899, sni: jianada-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国1线-1D, server: meiguo.tkvip.xyz, port: 443, type: hysteria2, password: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, auth: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, sni: meiguo.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: FV2026-7-7-1B, server: fv2026.node2.top, port: 21001, type: vless, uuid: ec149343-37cb-4a62-9584-a4deb65aed73, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 US-ATT-JK-1B, server: us-attjk.tkvip.xyz, port: 443, type: hysteria2, password: efd08d72-5bb1-40d8-b8f8-3277b088d899, auth: efd08d72-5bb1-40d8-b8f8-3277b088d899, sni: us-attjk.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本-1C, server: ri-ben-nube.tkvip.xyz, port: 4433, type: hysteria2, password: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, auth: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, sni: ri-ben-nube.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1F, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: d40e7e2b-69c3-400f-bf9d-16703a1be0f2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇫🇷 法国-1E, server: faguo.tkvip.xyz, port: 443, type: hysteria2, password: 12ec6470-2812-494b-83f3-b82b4e5aabcd, auth: 12ec6470-2812-494b-83f3-b82b4e5aabcd, sni: faguo.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国1线-1A, server: meiguo.tkvip.xyz, port: 443, type: hysteria2, password: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, auth: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, sni: meiguo.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国公益-02-1B, server: free73-us2.node2.top, port: 443, type: vless, uuid: ec149343-37cb-4a62-9584-a4deb65aed73, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇺🇸 美国公益-02-1A, server: free73-us2.node2.top, port: 443, type: vless, uuid: 04450088-e3af-4a66-a43f-5e5d97839c69, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1B, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 38e5ecf2-96db-4d65-bd9f-e1817f60cb10, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇸🇬 新加坡公益-03-1B, server: free77-sg3.node2.top, port: 443, type: vless, uuid: ec149343-37cb-4a62-9584-a4deb65aed73, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: MI-MVE, server: empty.node, port: 443, type: trojan, password: d001baeb-6672-447f-95c8-2a74615e7216, sni: empty.node, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1E, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: dabaa428-9d01-408b-8798-22a10d25b0c7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1B, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 38e5ecf2-96db-4d65-bd9f-e1817f60cb10, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇯🇵 日本-1A, server: ri-ben-nube.tkvip.xyz, port: 4433, type: hysteria2, password: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, auth: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, sni: ri-ben-nube.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国1线-1F, server: meiguo.tkvip.xyz, port: 443, type: hysteria2, password: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, auth: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, sni: meiguo.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: A0-ICP, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: e0773bf1-f3fb-4aae-9648-4139390c0bc8, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1D, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: c8acf231-e766-4b3c-ae15-666d7e7b16a2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1D, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: c8acf231-e766-4b3c-ae15-666d7e7b16a2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HK-A, server: 207.57.128.27, port: 8081, type: vless, uuid: ccbc4c03-f56e-467b-ad00-d106c767876a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: WF-PSC, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 04450088-e3af-4a66-a43f-5e5d97839c69, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇫🇷 法国-1H, server: faguo.tkvip.xyz, port: 443, type: hysteria2, password: 992eae7f-2478-4abc-803e-fbf0326939f9, auth: 992eae7f-2478-4abc-803e-fbf0326939f9, sni: faguo.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 新加坡公益-02-1A, server: free77-sg2.node2.top, port: 443, type: vless, uuid: 04450088-e3af-4a66-a43f-5e5d97839c69, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇺🇸 US-ATT-JK-1G, server: us-attjk.tkvip.xyz, port: 443, type: hysteria2, password: 1171f7bd-1c11-499d-ab92-501f303163a7, auth: 1171f7bd-1c11-499d-ab92-501f303163a7, sni: us-attjk.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1A, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 1d5918c7-647d-42e0-b924-8ace9e82828c, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 香港公益-01-1A, server: free723-hk1.node2.top, port: 443, type: vless, uuid: 04450088-e3af-4a66-a43f-5e5d97839c69, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇯🇵 日本-VLESS-WS-CF, server: 162.159.25.160, port: 443, type: vless, uuid: c915dec6-d5b3-435f-9daf-0be1ca83ed82, tls: true, servername: jpnew.jjz126ab.top, network: ws, ws-opts: {path: /vless-jp1, headers: {Host: jpnew.jjz126ab.top}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1E, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: dabaa428-9d01-408b-8798-22a10d25b0c7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇯🇵 日本-HY2, server: jjz.jjznodenode.top, port: 40000, type: hysteria2, password: c915dec6-d5b3-435f-9daf-0be1ca83ed82, auth: c915dec6-d5b3-435f-9daf-0be1ca83ed82, sni: jjz.jjznodenode.top, skip-cert-verify: true, obfs: salamander, obfs-password: CJzHgzdjH1M1kt25, udp: true}
-  - {name: FV2026-7-7-1A, server: fv2026.node2.top, port: 21001, type: vless, uuid: 04450088-e3af-4a66-a43f-5e5d97839c69, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1F, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: d40e7e2b-69c3-400f-bf9d-16703a1be0f2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇸🇬 新加坡公益-03-1A, server: free77-sg3.node2.top, port: 443, type: vless, uuid: 04450088-e3af-4a66-a43f-5e5d97839c69, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1E, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: dabaa428-9d01-408b-8798-22a10d25b0c7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 美国公益-02-1C, server: free73-us2.node2.top, port: 443, type: vless, uuid: beaf1f15-d042-4dd6-a111-fe26529b9155, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1D, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: d4e2ba5c-9d94-4ece-bd29-fc1e017259bb, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国公益-01-1A, server: free73-us1.node2.top, port: 443, type: vless, uuid: beaf1f15-d042-4dd6-a111-fe26529b9155, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇺🇸 US-ATT-JK-1G, server: us-attjk.tkvip.xyz, port: 443, type: hysteria2, password: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, auth: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, sni: us-attjk.tkvip.xyz, skip-cert-verify: false, udp: true}
   - {name: 🇺🇸 US-ATT-JK-1E, server: us-attjk.tkvip.xyz, port: 443, type: hysteria2, password: 12ec6470-2812-494b-83f3-b82b4e5aabcd, auth: 12ec6470-2812-494b-83f3-b82b4e5aabcd, sni: us-attjk.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 新加坡公益-02-1B, server: free77-sg2.node2.top, port: 443, type: vless, uuid: ec149343-37cb-4a62-9584-a4deb65aed73, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇯🇵 JP-JK-1E, server: riben-jk.tkvip.xyz, port: 443, type: hysteria2, password: 12ec6470-2812-494b-83f3-b82b4e5aabcd, auth: 12ec6470-2812-494b-83f3-b82b4e5aabcd, sni: riben-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本-1H, server: ri-ben-nube.tkvip.xyz, port: 4433, type: hysteria2, password: 992eae7f-2478-4abc-803e-fbf0326939f9, auth: 992eae7f-2478-4abc-803e-fbf0326939f9, sni: ri-ben-nube.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 US-ATT-JK-2-1A, server: us-att-1.tkvip.xyz, port: 4433, type: hysteria2, password: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, auth: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, sni: us-att-1.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1B, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 4ba337b7-9d73-4bfc-a0cd-2727b31ac01c, udp: true}
-  - {name: 🇭🇰 香港公益-01-1C, server: free723-hk1.node2.top, port: 443, type: vless, uuid: beaf1f15-d042-4dd6-a111-fe26529b9155, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1D, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: c8acf231-e766-4b3c-ae15-666d7e7b16a2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: FI-GUJ, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: ec149343-37cb-4a62-9584-a4deb65aed73, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 US-ATT-JK-1F, server: us-attjk.tkvip.xyz, port: 443, type: hysteria2, password: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, auth: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, sni: us-attjk.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 US-ATT-JK-1D, server: us-attjk.tkvip.xyz, port: 443, type: hysteria2, password: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, auth: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, sni: us-attjk.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1D, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 55398d3a-7939-4c25-b73b-59e0b5287546, udp: true}
-  - {name: 🇯🇵 JP-JK-1F, server: riben-jk.tkvip.xyz, port: 443, type: hysteria2, password: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, auth: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, sni: riben-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1C, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: d4e2ba5c-9d94-4ece-bd29-fc1e017259bb, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 US-ATT-JK-2-1C, server: us-att-1.tkvip.xyz, port: 4433, type: hysteria2, password: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, auth: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, sni: us-att-1.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 4C-TBL, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: beaf1f15-d042-4dd6-a111-fe26529b9155, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1F, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: d40e7e2b-69c3-400f-bf9d-16703a1be0f2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1C, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: d4e2ba5c-9d94-4ece-bd29-fc1e017259bb, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1B, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 38e5ecf2-96db-4d65-bd9f-e1817f60cb10, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇨🇦 加拿大-1E, server: jianada-jk.tkvip.xyz, port: 4433, type: hysteria2, password: 12ec6470-2812-494b-83f3-b82b4e5aabcd, auth: 12ec6470-2812-494b-83f3-b82b4e5aabcd, sni: jianada-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本-1E, server: ri-ben-nube.tkvip.xyz, port: 4433, type: hysteria2, password: 12ec6470-2812-494b-83f3-b82b4e5aabcd, auth: 12ec6470-2812-494b-83f3-b82b4e5aabcd, sni: ri-ben-nube.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1A, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 842effac-bd37-47a2-9385-67253915b7cb, udp: true}
-  - {name: 🇺🇸 US-ATT-JK-2-1H, server: us-att-1.tkvip.xyz, port: 4433, type: hysteria2, password: 992eae7f-2478-4abc-803e-fbf0326939f9, auth: 992eae7f-2478-4abc-803e-fbf0326939f9, sni: us-att-1.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 加拿大-1C, server: jianada-jk.tkvip.xyz, port: 4433, type: hysteria2, password: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, auth: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, sni: jianada-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 US-ATT-JK-2-1D, server: us-att-1.tkvip.xyz, port: 4433, type: hysteria2, password: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, auth: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, sni: us-att-1.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 新加坡公益-03-1C, server: free77-sg3.node2.top, port: 443, type: vless, uuid: beaf1f15-d042-4dd6-a111-fe26529b9155, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇯🇵 日本-1B, server: ri-ben-nube.tkvip.xyz, port: 4433, type: hysteria2, password: efd08d72-5bb1-40d8-b8f8-3277b088d899, auth: efd08d72-5bb1-40d8-b8f8-3277b088d899, sni: ri-ben-nube.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国公益-01-1D, server: free73-us1.node2.top, port: 443, type: vless, uuid: e0773bf1-f3fb-4aae-9648-4139390c0bc8, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇸🇬 新加坡公益-01-1D, server: free77-sg1.node2.top, port: 443, type: vless, uuid: e0773bf1-f3fb-4aae-9648-4139390c0bc8, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇨🇦 加拿大-1D, server: jianada-jk.tkvip.xyz, port: 4433, type: hysteria2, password: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, auth: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, sni: jianada-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1E, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: dabaa428-9d01-408b-8798-22a10d25b0c7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: FV2026-7-7-1C, server: fv2026.node2.top, port: 21001, type: vless, uuid: beaf1f15-d042-4dd6-a111-fe26529b9155, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 HY-03 | US, server: usflare1.cloudaddy.top, port: 30004, type: hysteria2, password: 104f1c6e-dc0e-4d9e-88df-636ebcd67960, auth: 104f1c6e-dc0e-4d9e-88df-636ebcd67960, sni: us1.cloudsegl1.ccwu.cc, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国公益-01-1A, server: free73-us1.node2.top, port: 443, type: vless, uuid: 04450088-e3af-4a66-a43f-5e5d97839c69, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇺🇸 US-ATT-JK-1C, server: us-attjk.tkvip.xyz, port: 443, type: hysteria2, password: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, auth: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, sni: us-attjk.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 US-ATT-JK-2-1F, server: us-att-1.tkvip.xyz, port: 4433, type: hysteria2, password: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, auth: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, sni: us-att-1.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 新加坡公益-02-1C, server: free77-sg2.node2.top, port: 443, type: vless, uuid: beaf1f15-d042-4dd6-a111-fe26529b9155, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇭🇰 香港公益-01-1B, server: free723-hk1.node2.top, port: 443, type: vless, uuid: ec149343-37cb-4a62-9584-a4deb65aed73, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1G, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 9f1a366c-8868-4b33-9ffc-cac7545211f1, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1E, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: c8acf231-e766-4b3c-ae15-666d7e7b16a2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国1线-1I, server: meiguo.tkvip.xyz, port: 443, type: hysteria2, password: 65dc18ce-98b5-4d7f-bcd2-ef3be1cc38f3, auth: 65dc18ce-98b5-4d7f-bcd2-ef3be1cc38f3, sni: meiguo.tkvip.xyz, skip-cert-verify: false, udp: true}
   - {name: FV2026-7-7-1D, server: fv2026.node2.top, port: 21001, type: vless, uuid: e0773bf1-f3fb-4aae-9648-4139390c0bc8, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国1线-1B, server: meiguo.tkvip.xyz, port: 443, type: hysteria2, password: efd08d72-5bb1-40d8-b8f8-3277b088d899, auth: efd08d72-5bb1-40d8-b8f8-3277b088d899, sni: meiguo.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 JP-JK-1B, server: riben-jk.tkvip.xyz, port: 443, type: hysteria2, password: efd08d72-5bb1-40d8-b8f8-3277b088d899, auth: efd08d72-5bb1-40d8-b8f8-3277b088d899, sni: riben-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本-1D, server: ri-ben-nube.tkvip.xyz, port: 4433, type: hysteria2, password: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, auth: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, sni: ri-ben-nube.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇫🇷 法国-1A, server: faguo.tkvip.xyz, port: 443, type: hysteria2, password: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, auth: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, sni: faguo.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 新加坡-HY2, server: jjz.jjznodenode.top, port: 39999, type: hysteria2, password: c915dec6-d5b3-435f-9daf-0be1ca83ed82, auth: c915dec6-d5b3-435f-9daf-0be1ca83ed82, sni: jjz.jjznodenode.top, skip-cert-verify: true, obfs: salamander, obfs-password: uqmgFZmVNHNYGxaH, udp: true}
-  - {name: 🇸🇬 新加坡公益-03-1D, server: free77-sg3.node2.top, port: 443, type: vless, uuid: e0773bf1-f3fb-4aae-9648-4139390c0bc8, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇯🇵 JP-JK-1A, server: riben-jk.tkvip.xyz, port: 443, type: hysteria2, password: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, auth: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, sni: riben-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国公益-01-1C, server: free73-us1.node2.top, port: 443, type: vless, uuid: beaf1f15-d042-4dd6-a111-fe26529b9155, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇯🇵 JP-JK-1C, server: riben-jk.tkvip.xyz, port: 443, type: hysteria2, password: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, auth: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, sni: riben-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 JP-JK-1H, server: riben-jk.tkvip.xyz, port: 443, type: hysteria2, password: 992eae7f-2478-4abc-803e-fbf0326939f9, auth: 992eae7f-2478-4abc-803e-fbf0326939f9, sni: riben-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 加拿大-1F, server: jianada-jk.tkvip.xyz, port: 4433, type: hysteria2, password: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, auth: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, sni: jianada-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡公益-01-1B, server: free77-sg1.node2.top, port: 443, type: vless, uuid: ec149343-37cb-4a62-9584-a4deb65aed73, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇫🇷 法国-1I, server: faguo.tkvip.xyz, port: 443, type: hysteria2, password: 65dc18ce-98b5-4d7f-bcd2-ef3be1cc38f3, auth: 65dc18ce-98b5-4d7f-bcd2-ef3be1cc38f3, sni: faguo.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 HY-02 | US, server: usflare1.cloudaddy.top, port: 30003, type: hysteria2, password: f8b1df33-bd75-47cc-bf79-2f1e753e3278, auth: f8b1df33-bd75-47cc-bf79-2f1e753e3278, sni: www.iq.com, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1E, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: c8acf231-e766-4b3c-ae15-666d7e7b16a2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1A, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 38e5ecf2-96db-4d65-bd9f-e1817f60cb10, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇯🇵 JP-JK-1E, server: riben-jk.tkvip.xyz, port: 443, type: hysteria2, password: 12ec6470-2812-494b-83f3-b82b4e5aabcd, auth: 12ec6470-2812-494b-83f3-b82b4e5aabcd, sni: riben-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: G I C A B N H T H N, server: expired.example.com, port: 80, type: vmess, uuid: e59af033-387a-4f27-ae05-419d01b3c395, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /expired, headers: {Host: expired.example.com}}, udp: true}
+  - {name: 🇫🇷 法国-1E, server: faguo.tkvip.xyz, port: 443, type: hysteria2, password: 12ec6470-2812-494b-83f3-b82b4e5aabcd, auth: 12ec6470-2812-494b-83f3-b82b4e5aabcd, sni: faguo.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1E, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: c8acf231-e766-4b3c-ae15-666d7e7b16a2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: NH-MRK, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: ec149343-37cb-4a62-9584-a4deb65aed73, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-中转1区1.5x, server: ace.fffo.cc, port: 23536, type: hysteria2, password: 995bf707-77d6-4cfd-82b6-fe14976e7f38, auth: 995bf707-77d6-4cfd-82b6-fe14976e7f38, sni: hu-berlin.de, skip-cert-verify: true, obfs: salamander, obfs-password: zvjykGJRMdUMMHoI, udp: true}
+  - {name: 🇸🇬 新加坡公益-02-1A, server: free77-sg2.node2.top, port: 443, type: vless, uuid: beaf1f15-d042-4dd6-a111-fe26529b9155, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇸🇬 新加坡公益-02-1E, server: free77-sg2.node2.top, port: 443, type: vless, uuid: 444bb474-1b35-437c-b89c-2bcdf9762546, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1C, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: d40e7e2b-69c3-400f-bf9d-16703a1be0f2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1H, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 3567d9fb-58c7-4bbd-9c28-7703e6158d42, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 US-ATT-JK-2-1H, server: us-att-1.tkvip.xyz, port: 4433, type: hysteria2, password: 1171f7bd-1c11-499d-ab92-501f303163a7, auth: 1171f7bd-1c11-499d-ab92-501f303163a7, sni: us-att-1.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港公益-01-1B, server: free723-hk1.node2.top, port: 443, type: vless, uuid: ec149343-37cb-4a62-9584-a4deb65aed73, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1F, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: dabaa428-9d01-408b-8798-22a10d25b0c7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: f61e108c-ca89-4e23-8f7d-daeb1b2476fc, sni: node4.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1D, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: d4e2ba5c-9d94-4ece-bd29-fc1e017259bb, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1G, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 9f1a366c-8868-4b33-9ffc-cac7545211f1, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1G, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 9f1a366c-8868-4b33-9ffc-cac7545211f1, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 US-ATT-JK-1C, server: us-attjk.tkvip.xyz, port: 443, type: hysteria2, password: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, auth: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, sni: us-attjk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇫🇷 法国-1C, server: faguo.tkvip.xyz, port: 443, type: hysteria2, password: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, auth: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, sni: faguo.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇲🇾 马来家宽-中转1区2x, server: ace.fffo.cc, port: 7935, type: hysteria2, password: 995bf707-77d6-4cfd-82b6-fe14976e7f38, auth: 995bf707-77d6-4cfd-82b6-fe14976e7f38, sni: um.edu.my, skip-cert-verify: true, obfs: salamander, obfs-password: HlOuEER8CLzGEGsZ, udp: true}
+  - {name: A2-FGL, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 444bb474-1b35-437c-b89c-2bcdf9762546, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 日本-直连AI丨流媒体, server: 156.246.93.110, port: 443, type: vless, uuid: 995bf707-77d6-4cfd-82b6-fe14976e7f38, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: By_NWNm2JKt4cGvoCTGCZYYXqHBFXMoI371o6lCNBGs}, servername: www.amazon.com, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 🇯🇵 日本-1E, server: ri-ben-nube.tkvip.xyz, port: 4433, type: hysteria2, password: 12ec6470-2812-494b-83f3-b82b4e5aabcd, auth: 12ec6470-2812-494b-83f3-b82b4e5aabcd, sni: ri-ben-nube.tkvip.xyz, skip-cert-verify: false, udp: true}
   - {name: 🇺🇸 US-ATT-JK-1A, server: us-attjk.tkvip.xyz, port: 443, type: hysteria2, password: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, auth: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, sni: us-attjk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港公益-01-1A, server: free723-hk1.node2.top, port: 443, type: vless, uuid: beaf1f15-d042-4dd6-a111-fe26529b9155, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇺🇸 美国公益-02-1A, server: free73-us2.node2.top, port: 443, type: vless, uuid: beaf1f15-d042-4dd6-a111-fe26529b9155, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇺🇸 美国公益-02-1E, server: free73-us2.node2.top, port: 443, type: vless, uuid: 444bb474-1b35-437c-b89c-2bcdf9762546, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1H, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 3567d9fb-58c7-4bbd-9c28-7703e6158d42, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 US-ATT-JK-1D, server: us-attjk.tkvip.xyz, port: 443, type: hysteria2, password: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, auth: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, sni: us-attjk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇦 加拿大-1E, server: jianada-jk.tkvip.xyz, port: 4433, type: hysteria2, password: 12ec6470-2812-494b-83f3-b82b4e5aabcd, auth: 12ec6470-2812-494b-83f3-b82b4e5aabcd, sni: jianada-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US-ATT-JK-1B, server: us-attjk.tkvip.xyz, port: 443, type: hysteria2, password: efd08d72-5bb1-40d8-b8f8-3277b088d899, auth: efd08d72-5bb1-40d8-b8f8-3277b088d899, sni: us-attjk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 JP-JK-1I, server: riben-jk.tkvip.xyz, port: 443, type: hysteria2, password: 65dc18ce-98b5-4d7f-bcd2-ef3be1cc38f3, auth: 65dc18ce-98b5-4d7f-bcd2-ef3be1cc38f3, sni: riben-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本-HY2, server: jjz.jjznodenode.top, port: 40000, type: hysteria2, password: c915dec6-d5b3-435f-9daf-0be1ca83ed82, auth: c915dec6-d5b3-435f-9daf-0be1ca83ed82, sni: jjz.jjznodenode.top, skip-cert-verify: true, obfs: salamander, obfs-password: CJzHgzdjH1M1kt25, udp: true}
+  - {name: 🇻🇳 越南-中转2区, server: sg.dickaws.top, port: 34518, type: vless, uuid: 995bf707-77d6-4cfd-82b6-fe14976e7f38, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ozLQMXseQEQ6xuP1smJsrcrEcN4QLGgyonRDP_INLwI}, servername: vnuhcm.edu.vn, client-fingerprint: qq, network: tcp, udp: true}
+  - {name: 🇺🇸 US-ATT-JK-1H, server: us-attjk.tkvip.xyz, port: 443, type: hysteria2, password: 1171f7bd-1c11-499d-ab92-501f303163a7, auth: 1171f7bd-1c11-499d-ab92-501f303163a7, sni: us-attjk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: TF-KRZ, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: beaf1f15-d042-4dd6-a111-fe26529b9155, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 JP-JK-1H, server: riben-jk.tkvip.xyz, port: 443, type: hysteria2, password: 1171f7bd-1c11-499d-ab92-501f303163a7, auth: 1171f7bd-1c11-499d-ab92-501f303163a7, sni: riben-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1B, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 1d5918c7-647d-42e0-b924-8ace9e82828c, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇨🇦 加拿大-1I, server: jianada-jk.tkvip.xyz, port: 4433, type: hysteria2, password: 65dc18ce-98b5-4d7f-bcd2-ef3be1cc38f3, auth: 65dc18ce-98b5-4d7f-bcd2-ef3be1cc38f3, sni: jianada-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本-1F, server: ri-ben-nube.tkvip.xyz, port: 4433, type: hysteria2, password: 992eae7f-2478-4abc-803e-fbf0326939f9, auth: 992eae7f-2478-4abc-803e-fbf0326939f9, sni: ri-ben-nube.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡公益-02-1B, server: free77-sg2.node2.top, port: 443, type: vless, uuid: ec149343-37cb-4a62-9584-a4deb65aed73, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇺🇸 美国公益-01-1D, server: free73-us1.node2.top, port: 443, type: vless, uuid: e0773bf1-f3fb-4aae-9648-4139390c0bc8, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1D, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: d4e2ba5c-9d94-4ece-bd29-fc1e017259bb, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1A, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 38e5ecf2-96db-4d65-bd9f-e1817f60cb10, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 新加坡公益-01-1D, server: free77-sg1.node2.top, port: 443, type: vless, uuid: e0773bf1-f3fb-4aae-9648-4139390c0bc8, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇺🇸 US-ATT-JK-2-1A, server: us-att-1.tkvip.xyz, port: 4433, type: hysteria2, password: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, auth: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, sni: us-att-1.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 JP-JK-1B, server: riben-jk.tkvip.xyz, port: 443, type: hysteria2, password: efd08d72-5bb1-40d8-b8f8-3277b088d899, auth: efd08d72-5bb1-40d8-b8f8-3277b088d899, sni: riben-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1B, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 1d5918c7-647d-42e0-b924-8ace9e82828c, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: MI-MPH, server: empty.node, port: 443, type: trojan, password: ff5a5357-f262-42f6-8d2a-8008a0781f0c, sni: empty.node, skip-cert-verify: false, udp: true}
+  - {name: BP-YZL, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: e0773bf1-f3fb-4aae-9648-4139390c0bc8, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇨🇦 加拿大-1B, server: jianada-jk.tkvip.xyz, port: 4433, type: hysteria2, password: efd08d72-5bb1-40d8-b8f8-3277b088d899, auth: efd08d72-5bb1-40d8-b8f8-3277b088d899, sni: jianada-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡-HY2, server: jjz.jjznodenode.top, port: 39999, type: hysteria2, password: c915dec6-d5b3-435f-9daf-0be1ca83ed82, auth: c915dec6-d5b3-435f-9daf-0be1ca83ed82, sni: jjz.jjznodenode.top, skip-cert-verify: true, obfs: salamander, obfs-password: uqmgFZmVNHNYGxaH, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1C, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: d40e7e2b-69c3-400f-bf9d-16703a1be0f2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HK-A, server: 207.57.128.27, port: 8081, type: vless, uuid: ccbc4c03-f56e-467b-ad00-d106c767876a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: ios, network: tcp, udp: true}
+  - {name: 🇺🇸 美国1线-1D, server: meiguo.tkvip.xyz, port: 443, type: hysteria2, password: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, auth: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, sni: meiguo.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1F, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: dabaa428-9d01-408b-8798-22a10d25b0c7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 新加坡公益-03-1C, server: free77-sg3.node2.top, port: 443, type: vless, uuid: 04450088-e3af-4a66-a43f-5e5d97839c69, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇺🇸 美国公益-01-1B, server: free73-us1.node2.top, port: 443, type: vless, uuid: ec149343-37cb-4a62-9584-a4deb65aed73, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1F, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: dabaa428-9d01-408b-8798-22a10d25b0c7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 新加坡公益-03-1D, server: free77-sg3.node2.top, port: 443, type: vless, uuid: e0773bf1-f3fb-4aae-9648-4139390c0bc8, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇭🇰 香港公益-01-1D, server: free723-hk1.node2.top, port: 443, type: vless, uuid: e0773bf1-f3fb-4aae-9648-4139390c0bc8, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇺🇸 美国1线-1G, server: meiguo.tkvip.xyz, port: 443, type: hysteria2, password: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, auth: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, sni: meiguo.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国1线-1B, server: meiguo.tkvip.xyz, port: 443, type: hysteria2, password: efd08d72-5bb1-40d8-b8f8-3277b088d899, auth: efd08d72-5bb1-40d8-b8f8-3277b088d899, sni: meiguo.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国公益-01-1E, server: free73-us1.node2.top, port: 443, type: vless, uuid: 444bb474-1b35-437c-b89c-2bcdf9762546, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇺🇸 美国1线-1C, server: meiguo.tkvip.xyz, port: 443, type: hysteria2, password: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, auth: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, sni: meiguo.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国-洛杉矶-PRO, server: 5.253.38.67, port: 40444, type: vless, uuid: 4f2f38c0-eb42-425e-bf92-83cfdd971112, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZZK_Oo5-iDDgoWzxIURTLWoKPbC8NFto3Mk7OvAZgRU, short-id: "b3f2a1c9" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US-ATT-JK-1I, server: us-attjk.tkvip.xyz, port: 443, type: hysteria2, password: 65dc18ce-98b5-4d7f-bcd2-ef3be1cc38f3, auth: 65dc18ce-98b5-4d7f-bcd2-ef3be1cc38f3, sni: us-attjk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 JP-JK-1F, server: riben-jk.tkvip.xyz, port: 443, type: hysteria2, password: 992eae7f-2478-4abc-803e-fbf0326939f9, auth: 992eae7f-2478-4abc-803e-fbf0326939f9, sni: riben-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US-ATT-JK-2-1F, server: us-att-1.tkvip.xyz, port: 4433, type: hysteria2, password: 992eae7f-2478-4abc-803e-fbf0326939f9, auth: 992eae7f-2478-4abc-803e-fbf0326939f9, sni: us-att-1.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡公益-01-1E, server: free77-sg1.node2.top, port: 443, type: vless, uuid: 444bb474-1b35-437c-b89c-2bcdf9762546, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇯🇵 日本-1G, server: ri-ben-nube.tkvip.xyz, port: 4433, type: hysteria2, password: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, auth: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, sni: ri-ben-nube.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 洛杉矶-直连, server: ace.fffo.cc, port: 16412, type: hysteria2, password: 995bf707-77d6-4cfd-82b6-fe14976e7f38, auth: 995bf707-77d6-4cfd-82b6-fe14976e7f38, sni: caltech.edu, skip-cert-verify: true, obfs: salamander, obfs-password: Ml0mynbAAQFLiEHW, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1A, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 38e5ecf2-96db-4d65-bd9f-e1817f60cb10, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 HY-04 | US, server: usflare1.cloudaddy.top, port: 30005, type: hysteria2, password: f8b1df33-bd75-47cc-bf79-2f1e753e3278, auth: f8b1df33-bd75-47cc-bf79-2f1e753e3278, sni: www.iq.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡公益-02-1C, server: free77-sg2.node2.top, port: 443, type: vless, uuid: 04450088-e3af-4a66-a43f-5e5d97839c69, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇨🇦 加拿大-1A, server: jianada-jk.tkvip.xyz, port: 4433, type: hysteria2, password: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, auth: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, sni: jianada-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇫🇷 法国-1G, server: faguo.tkvip.xyz, port: 443, type: hysteria2, password: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, auth: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, sni: faguo.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: FV2026-7-7-1E, server: fv2026.node2.top, port: 21001, type: vless, uuid: 444bb474-1b35-437c-b89c-2bcdf9762546, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 JP-JK-1A, server: riben-jk.tkvip.xyz, port: 443, type: hysteria2, password: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, auth: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, sni: riben-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 JP-JK-1G, server: riben-jk.tkvip.xyz, port: 443, type: hysteria2, password: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, auth: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, sni: riben-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US-ATT-JK-2-1I, server: us-att-1.tkvip.xyz, port: 4433, type: hysteria2, password: 65dc18ce-98b5-4d7f-bcd2-ef3be1cc38f3, auth: 65dc18ce-98b5-4d7f-bcd2-ef3be1cc38f3, sni: us-att-1.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇫🇷 法国-1A, server: faguo.tkvip.xyz, port: 443, type: hysteria2, password: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, auth: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, sni: faguo.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇰🇷 韩国节点-B, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: ccbc4c03-f56e-467b-ad00-d106c767876a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: ios, network: tcp, udp: true}
+  - {name: 🇭🇰 香港家宽-中转1区2.0x, server: ace.fffo.cc, port: 13549, type: hysteria2, password: 995bf707-77d6-4cfd-82b6-fe14976e7f38, auth: 995bf707-77d6-4cfd-82b6-fe14976e7f38, sni: hkust.edu.hk, skip-cert-verify: true, obfs: salamander, obfs-password: OyYHU5mMwuiDYsAH, udp: true}
+  - {name: 🇯🇵 日本-1B, server: ri-ben-nube.tkvip.xyz, port: 4433, type: hysteria2, password: efd08d72-5bb1-40d8-b8f8-3277b088d899, auth: efd08d72-5bb1-40d8-b8f8-3277b088d899, sni: ri-ben-nube.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本-1D, server: ri-ben-nube.tkvip.xyz, port: 4433, type: hysteria2, password: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, auth: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, sni: ri-ben-nube.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡公益-02-1D, server: free77-sg2.node2.top, port: 443, type: vless, uuid: e0773bf1-f3fb-4aae-9648-4139390c0bc8, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1H, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 3567d9fb-58c7-4bbd-9c28-7703e6158d42, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 洛杉矶-中转1区, server: ace.fffo.cc, port: 18908, type: vless, uuid: 995bf707-77d6-4cfd-82b6-fe14976e7f38, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: kjewPfL0X7EIlyGmly1ehwxC5v68aP0OD6w5AJOF5y4}, servername: aws.amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 新加坡公益-03-1E, server: free77-sg3.node2.top, port: 443, type: vless, uuid: 444bb474-1b35-437c-b89c-2bcdf9762546, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇺🇸 US-ATT-JK-1F, server: us-attjk.tkvip.xyz, port: 443, type: hysteria2, password: 992eae7f-2478-4abc-803e-fbf0326939f9, auth: 992eae7f-2478-4abc-803e-fbf0326939f9, sni: us-attjk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1H, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 3567d9fb-58c7-4bbd-9c28-7703e6158d42, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: FV2026-7-7-1B, server: fv2026.node2.top, port: 21001, type: vless, uuid: ec149343-37cb-4a62-9584-a4deb65aed73, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇹🇭 泰国-中转1区, server: ace.fffo.cc, port: 58978, type: hysteria2, password: 995bf707-77d6-4cfd-82b6-fe14976e7f38, auth: 995bf707-77d6-4cfd-82b6-fe14976e7f38, sni: chula.ac.th, skip-cert-verify: true, obfs: salamander, obfs-password: hZyUD1BY0JOe4Gdz, udp: true}
+  - {name: 🇯🇵 日本-1C, server: ri-ben-nube.tkvip.xyz, port: 4433, type: hysteria2, password: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, auth: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, sni: ri-ben-nube.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡公益-03-1B, server: free77-sg3.node2.top, port: 443, type: vless, uuid: ec149343-37cb-4a62-9584-a4deb65aed73, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1B, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 1d5918c7-647d-42e0-b924-8ace9e82828c, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇫🇷 法国-1F, server: faguo.tkvip.xyz, port: 443, type: hysteria2, password: 992eae7f-2478-4abc-803e-fbf0326939f9, auth: 992eae7f-2478-4abc-803e-fbf0326939f9, sni: faguo.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: FV2026-7-7-1A, server: fv2026.node2.top, port: 21001, type: vless, uuid: beaf1f15-d042-4dd6-a111-fe26529b9155, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇫🇷 法国-1H, server: faguo.tkvip.xyz, port: 443, type: hysteria2, password: 1171f7bd-1c11-499d-ab92-501f303163a7, auth: 1171f7bd-1c11-499d-ab92-501f303163a7, sni: faguo.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 JP-JK-1C, server: riben-jk.tkvip.xyz, port: 443, type: hysteria2, password: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, auth: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, sni: riben-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国公益-02-1C, server: free73-us2.node2.top, port: 443, type: vless, uuid: 04450088-e3af-4a66-a43f-5e5d97839c69, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇨🇦 加拿大-1G, server: jianada-jk.tkvip.xyz, port: 4433, type: hysteria2, password: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, auth: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, sni: jianada-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1D, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: d4e2ba5c-9d94-4ece-bd29-fc1e017259bb, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国公益-02-1B, server: free73-us2.node2.top, port: 443, type: vless, uuid: ec149343-37cb-4a62-9584-a4deb65aed73, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇦🇺 悉尼-中转3区2x, server: jpgcp.fffo.cc, port: 33506, type: vless, uuid: 995bf707-77d6-4cfd-82b6-fe14976e7f38, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: NhEo8hJZ1e8gbuVEmufRIhxKvViWhEIjIH_N4WUo5nw}, servername: www.cloudflare.com, client-fingerprint: qq, network: tcp, udp: true}
   - {name: 🇺🇸 美国公益-02-1D, server: free73-us2.node2.top, port: 443, type: vless, uuid: e0773bf1-f3fb-4aae-9648-4139390c0bc8, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1B, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 38e5ecf2-96db-4d65-bd9f-e1817f60cb10, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 HY-04 | US, server: usflare1.cloudaddy.top, port: 30005, type: hysteria2, password: 104f1c6e-dc0e-4d9e-88df-636ebcd67960, auth: 104f1c6e-dc0e-4d9e-88df-636ebcd67960, sni: www.iq.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本-1G, server: ri-ben-nube.tkvip.xyz, port: 4433, type: hysteria2, password: 1171f7bd-1c11-499d-ab92-501f303163a7, auth: 1171f7bd-1c11-499d-ab92-501f303163a7, sni: ri-ben-nube.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇫🇷 法国-1C, server: faguo.tkvip.xyz, port: 443, type: hysteria2, password: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, auth: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, sni: faguo.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国1线-1G, server: meiguo.tkvip.xyz, port: 443, type: hysteria2, password: 1171f7bd-1c11-499d-ab92-501f303163a7, auth: 1171f7bd-1c11-499d-ab92-501f303163a7, sni: meiguo.tkvip.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇹🇼 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: 32f40b24-cd36-4f62-92ca-a48175aecd18, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1F, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: d40e7e2b-69c3-400f-bf9d-16703a1be0f2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇯🇵 JP-JK-1D, server: riben-jk.tkvip.xyz, port: 443, type: hysteria2, password: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, auth: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, sni: riben-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇹🇼 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: f61e108c-ca89-4e23-8f7d-daeb1b2476fc, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇼 台湾-中转1区, server: ace.fffo.cc, port: 34904, type: vless, uuid: 995bf707-77d6-4cfd-82b6-fe14976e7f38, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: MBWlhBFPeKpuWPVee20IK_3KHqz6vVhdct04h3SIthM}, servername: www.amazon.com, client-fingerprint: edge, network: tcp, udp: true}
+  - {name: IL-EAM, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 04450088-e3af-4a66-a43f-5e5d97839c69, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 美国公益-01-1C, server: free73-us1.node2.top, port: 443, type: vless, uuid: 04450088-e3af-4a66-a43f-5e5d97839c69, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇹🇼 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: f61e108c-ca89-4e23-8f7d-daeb1b2476fc, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-ATT-JK-2-1B, server: us-att-1.tkvip.xyz, port: 4433, type: hysteria2, password: efd08d72-5bb1-40d8-b8f8-3277b088d899, auth: efd08d72-5bb1-40d8-b8f8-3277b088d899, sni: us-att-1.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国1线-1F, server: meiguo.tkvip.xyz, port: 443, type: hysteria2, password: 992eae7f-2478-4abc-803e-fbf0326939f9, auth: 992eae7f-2478-4abc-803e-fbf0326939f9, sni: meiguo.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1C, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: d40e7e2b-69c3-400f-bf9d-16703a1be0f2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇨🇦 加拿大-1C, server: jianada-jk.tkvip.xyz, port: 4433, type: hysteria2, password: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, auth: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, sni: jianada-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 HY-03 | US, server: usflare1.cloudaddy.top, port: 30004, type: hysteria2, password: f8b1df33-bd75-47cc-bf79-2f1e753e3278, auth: f8b1df33-bd75-47cc-bf79-2f1e753e3278, sni: us1.cloudsegl1.ccwu.cc, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本-VLESS-WS-CF, server: 162.159.25.160, port: 443, type: vless, uuid: c915dec6-d5b3-435f-9daf-0be1ca83ed82, tls: true, servername: jpnew.jjz126ab.top, network: ws, ws-opts: {path: /vless-jp1, headers: {Host: jpnew.jjz126ab.top}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1E, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: c8acf231-e766-4b3c-ae15-666d7e7b16a2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: FV2026-7-7-1C, server: fv2026.node2.top, port: 21001, type: vless, uuid: 04450088-e3af-4a66-a43f-5e5d97839c69, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 美国1线-1E, server: meiguo.tkvip.xyz, port: 443, type: hysteria2, password: 12ec6470-2812-494b-83f3-b82b4e5aabcd, auth: 12ec6470-2812-494b-83f3-b82b4e5aabcd, sni: meiguo.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡-中转2区, server: sg.dickaws.top, port: 34520, type: hysteria2, password: 995bf707-77d6-4cfd-82b6-fe14976e7f38, auth: 995bf707-77d6-4cfd-82b6-fe14976e7f38, sni: sg.xinjiapo.fifafa.vip, skip-cert-verify: false, obfs: salamander, obfs-password: SUkzQojZTehSMtgv, udp: true}
+  - {name: 🇯🇵 日本-1A, server: ri-ben-nube.tkvip.xyz, port: 4433, type: hysteria2, password: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, auth: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, sni: ri-ben-nube.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇦 加拿大-1D, server: jianada-jk.tkvip.xyz, port: 4433, type: hysteria2, password: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, auth: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, sni: jianada-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US-ATT-JK-2-1D, server: us-att-1.tkvip.xyz, port: 4433, type: hysteria2, password: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, auth: a403e87b-a2cd-46fe-8f0e-df2e0eb4e849, sni: us-att-1.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡公益-03-1A, server: free77-sg3.node2.top, port: 443, type: vless, uuid: beaf1f15-d042-4dd6-a111-fe26529b9155, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇯🇵 日本-中转3区2.5x, server: jpgcp.fffo.cc, port: 33512, type: vless, uuid: 995bf707-77d6-4cfd-82b6-fe14976e7f38, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: abSSR5xwDoaqrynZOOa_2zo8PKTbygThIWhEb5DiNSA}, servername: aws.amazon.com, client-fingerprint: qq, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1A, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 38e5ecf2-96db-4d65-bd9f-e1817f60cb10, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇹🇭 泰国-中转2区, server: sg.dickaws.top, port: 34511, type: vless, uuid: 995bf707-77d6-4cfd-82b6-fe14976e7f38, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: eM_KnpK3_i02Yhfa5R7ChtBtUSsSVLJDzTjRTt94NUg}, servername: www.chula.ac.th, client-fingerprint: qq, network: tcp, udp: true}
+  - {name: 🇺🇸 US-ATT-JK-2-1C, server: us-att-1.tkvip.xyz, port: 4433, type: hysteria2, password: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, auth: dfaf13d2-dcc0-4796-a669-f6e3a64eaa30, sni: us-att-1.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1B, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 1d5918c7-647d-42e0-b924-8ace9e82828c, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1G, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 9f1a366c-8868-4b33-9ffc-cac7545211f1, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国1线-1A, server: meiguo.tkvip.xyz, port: 443, type: hysteria2, password: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, auth: 7b87551e-e2e8-4453-b063-5b52b1f54b4b, sni: meiguo.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇦 加拿大-1F, server: jianada-jk.tkvip.xyz, port: 4433, type: hysteria2, password: 992eae7f-2478-4abc-803e-fbf0326939f9, auth: 992eae7f-2478-4abc-803e-fbf0326939f9, sni: jianada-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇹🇼 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: f61e108c-ca89-4e23-8f7d-daeb1b2476fc, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本-1H, server: ri-ben-nube.tkvip.xyz, port: 4433, type: hysteria2, password: 1171f7bd-1c11-499d-ab92-501f303163a7, auth: 1171f7bd-1c11-499d-ab92-501f303163a7, sni: ri-ben-nube.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港公益-01-1C, server: free723-hk1.node2.top, port: 443, type: vless, uuid: 04450088-e3af-4a66-a43f-5e5d97839c69, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇭🇰 香港公益-01-1E, server: free723-hk1.node2.top, port: 443, type: vless, uuid: 444bb474-1b35-437c-b89c-2bcdf9762546, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇺🇸 US-ATT-JK-2-1G, server: us-att-1.tkvip.xyz, port: 4433, type: hysteria2, password: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, auth: 5551ca9b-fd15-411e-8b04-e0e71b29e6d1, sni: us-att-1.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡公益-01-1C, server: free77-sg1.node2.top, port: 443, type: vless, uuid: 04450088-e3af-4a66-a43f-5e5d97839c69, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1C, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: d40e7e2b-69c3-400f-bf9d-16703a1be0f2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇯🇵 日本-中转1区, server: ace.fffo.cc, port: 10000, type: hysteria2, password: 995bf707-77d6-4cfd-82b6-fe14976e7f38, auth: 995bf707-77d6-4cfd-82b6-fe14976e7f38, sni: waseda.jp, skip-cert-verify: true, obfs: salamander, obfs-password: jeYOv5JGpoD18RDV, udp: true}
+  - {name: 🇯🇵 日本-1I, server: ri-ben-nube.tkvip.xyz, port: 4433, type: hysteria2, password: 65dc18ce-98b5-4d7f-bcd2-ef3be1cc38f3, auth: 65dc18ce-98b5-4d7f-bcd2-ef3be1cc38f3, sni: ri-ben-nube.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡公益-01-1A, server: free77-sg1.node2.top, port: 443, type: vless, uuid: beaf1f15-d042-4dd6-a111-fe26529b9155, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇺🇸 美国1线-1H, server: meiguo.tkvip.xyz, port: 443, type: hysteria2, password: 1171f7bd-1c11-499d-ab92-501f303163a7, auth: 1171f7bd-1c11-499d-ab92-501f303163a7, sni: meiguo.tkvip.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇦 加拿大-1H, server: jianada-jk.tkvip.xyz, port: 4433, type: hysteria2, password: 1171f7bd-1c11-499d-ab92-501f303163a7, auth: 1171f7bd-1c11-499d-ab92-501f303163a7, sni: jianada-jk.tkvip.xyz, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇫🇷 法国-1D
-      - 🇸🇬 新加坡公益-01-1C
-      - 🇩🇪 德国-法兰克福-004-1A
       - 🇨🇳 中国联通节点1
-      - 🇨🇦 加拿大-1A
-      - 🇸🇬 新加坡公益-01-1A
-      - 🇺🇸 美国公益-01-1B
-      - 🇺🇸 美国高速节点1
-      - 🇺🇸 US-ATT-JK-2-1B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇫🇷 法国-1G
-      - 🇭🇰 香港公益-01-1D
-      - 🇺🇸 美国1线-1H
-      - 🇺🇸 美国1线-1C
-      - 🇸🇬 新加坡公益-01-1B
-      - 🇺🇸 HY-02 | US
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇹🇼 台湾高速节点2
-      - G I C A B N H T H N
-      - 🇨🇦 加拿大-1H
-      - 🇺🇸 US-ATT-JK-1H
-      - 🇯🇵 日本-1F
-      - 🇨🇦 加拿大-1G
-      - 🇯🇵 JP-JK-1G
-      - 🇰🇷 韩国节点-B
-      - 🇸🇬 新加坡公益-02-1D
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇺🇸 US-ATT-JK-2-1E
-      - 🇹🇼 台湾高速节点
-      - 🇺🇸 HY-05| US
-      - 🇺🇸 US-ATT-JK-2-1G
-      - 🇫🇷 法国-1F
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 美国1线-1E
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇫🇷 法国-1B
-      - 🇨🇦 加拿大-1B
-      - 🇺🇸 美国1线-1D
-      - FV2026-7-7-1B
-      - 🇺🇸 US-ATT-JK-1B
-      - 🇯🇵 日本-1C
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇫🇷 法国-1E
-      - 🇺🇸 美国1线-1A
-      - 🇺🇸 美国公益-02-1B
-      - 🇺🇸 美国公益-02-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇸🇬 新加坡公益-03-1B
-      - MI-MVE
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇯🇵 日本-1A
-      - 🇺🇸 美国1线-1F
-      - A0-ICP
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇭🇰 HK-A
-      - WF-PSC
-      - 🇫🇷 法国-1H
-      - 🇸🇬 新加坡公益-02-1A
-      - 🇺🇸 US-ATT-JK-1G
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇭🇰 香港公益-01-1A
-      - 🇯🇵 日本-VLESS-WS-CF
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇯🇵 日本-HY2
-      - FV2026-7-7-1A
+      - 🇯🇵 JP-JK-1D
       - 🇩🇪 德国-法兰克福-003-1F
-      - 🇸🇬 新加坡公益-03-1A
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇺🇸 美国公益-02-1C
+      - 🇫🇷 法国-1D
+      - 🇺🇸 US-ATT-JK-2-1E
+      - 🇭🇰 香港-中转1区
+      - 🇺🇸 HY-05| US
+      - 🇺🇸 洛杉矶-中转3区2.5x
+      - 🇫🇷 法国-1B
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国公益-01-1A
+      - 🇺🇸 US-ATT-JK-1G
       - 🇺🇸 US-ATT-JK-1E
-      - 🇸🇬 新加坡公益-02-1B
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇺🇸 美国1线-1I
+      - FV2026-7-7-1D
+      - 🇸🇬 新加坡公益-01-1B
+      - 🇫🇷 法国-1I
+      - 🇺🇸 HY-02 | US
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-002-1A
       - 🇯🇵 JP-JK-1E
-      - 🇯🇵 日本-1H
-      - 🇺🇸 US-ATT-JK-2-1A
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇭🇰 香港公益-01-1C
-      - 🇩🇪 德国-法兰克福-003-1D
-      - FI-GUJ
-      - 🇺🇸 US-ATT-JK-1F
-      - 🇺🇸 US-ATT-JK-1D
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇯🇵 JP-JK-1F
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇺🇸 US-ATT-JK-2-1C
-      - 4C-TBL
-      - 🇩🇪 德国-法兰克福-004-1F
+      - G I C A B N H T H N
+      - 🇫🇷 法国-1E
+      - 🇩🇪 德国-法兰克福-001-1E
+      - NH-MRK
+      - 🇩🇪 德国-中转1区1.5x
+      - 🇸🇬 新加坡公益-02-1A
+      - 🇸🇬 新加坡公益-02-1E
       - 🇩🇪 德国-法兰克福-002-1C
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇨🇦 加拿大-1E
-      - 🇯🇵 日本-1E
-      - 🇭🇰 HONG KONG 01-1A
+      - 🇩🇪 德国-法兰克福-001-1H
       - 🇺🇸 US-ATT-JK-2-1H
-      - 🇨🇦 加拿大-1C
-      - 🇺🇸 US-ATT-JK-2-1D
-      - 🇸🇬 新加坡公益-03-1C
-      - 🇯🇵 日本-1B
+      - 🇭🇰 香港公益-01-1B
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇺🇸 美国高速节点1
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇺🇸 US-ATT-JK-1C
+      - 🇫🇷 法国-1C
+      - 🇲🇾 马来家宽-中转1区2x
+      - A2-FGL
+      - 🇯🇵 日本-直连AI丨流媒体
+      - 🇯🇵 日本-1E
+      - 🇺🇸 US-ATT-JK-1A
+      - 🇭🇰 香港公益-01-1A
+      - 🇺🇸 美国公益-02-1A
+      - 🇺🇸 美国公益-02-1E
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇺🇸 US-ATT-JK-1D
+      - 🇨🇦 加拿大-1E
+      - 🇺🇸 US-ATT-JK-1B
+      - 🇯🇵 JP-JK-1I
+      - 🇯🇵 日本-HY2
+      - 🇻🇳 越南-中转2区
+      - 🇺🇸 US-ATT-JK-1H
+      - TF-KRZ
+      - 🇯🇵 JP-JK-1H
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇨🇦 加拿大-1I
+      - 🇯🇵 日本-1F
+      - 🇸🇬 新加坡公益-02-1B
       - 🇺🇸 美国公益-01-1D
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-001-1A
       - 🇸🇬 新加坡公益-01-1D
-      - 🇨🇦 加拿大-1D
+      - 🇺🇸 US-ATT-JK-2-1A
+      - 🇯🇵 JP-JK-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - MI-MPH
+      - BP-YZL
+      - 🇨🇦 加拿大-1B
+      - 🇸🇬 新加坡-HY2
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇭🇰 HK-A
+      - 🇺🇸 美国1线-1D
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇸🇬 新加坡公益-03-1C
+      - 🇺🇸 美国公益-01-1B
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇸🇬 新加坡公益-03-1D
+      - 🇭🇰 香港公益-01-1D
+      - 🇺🇸 美国1线-1G
+      - 🇺🇸 美国1线-1B
+      - 🇺🇸 美国公益-01-1E
+      - 🇺🇸 美国1线-1C
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇺🇸 US-ATT-JK-1I
+      - 🇯🇵 JP-JK-1F
+      - 🇺🇸 US-ATT-JK-2-1F
+      - 🇸🇬 新加坡公益-01-1E
+      - 🇯🇵 日本-1G
+      - 🇺🇸 洛杉矶-直连
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇺🇸 HY-04 | US
+      - 🇸🇬 新加坡公益-02-1C
+      - 🇨🇦 加拿大-1A
+      - 🇫🇷 法国-1G
+      - FV2026-7-7-1E
+      - 🇯🇵 JP-JK-1A
+      - 🇯🇵 JP-JK-1G
+      - 🇺🇸 US-ATT-JK-2-1I
+      - 🇫🇷 法国-1A
+      - 🇰🇷 韩国节点-B
+      - 🇭🇰 香港家宽-中转1区2.0x
+      - 🇯🇵 日本-1B
+      - 🇯🇵 日本-1D
+      - 🇸🇬 新加坡公益-02-1D
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇺🇸 洛杉矶-中转1区
+      - 🇸🇬 新加坡公益-03-1E
+      - 🇺🇸 US-ATT-JK-1F
+      - 🇩🇪 德国-法兰克福-002-1H
+      - FV2026-7-7-1B
+      - 🇹🇭 泰国-中转1区
+      - 🇯🇵 日本-1C
+      - 🇸🇬 新加坡公益-03-1B
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇫🇷 法国-1F
+      - FV2026-7-7-1A
+      - 🇫🇷 法国-1H
+      - 🇯🇵 JP-JK-1C
+      - 🇺🇸 美国公益-02-1C
+      - 🇨🇦 加拿大-1G
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇺🇸 美国公益-02-1B
+      - 🇦🇺 悉尼-中转3区2x
+      - 🇺🇸 美国公益-02-1D
+      - 🇹🇼 台湾高速节点
+      - 🇹🇼 台湾-中转1区
+      - IL-EAM
+      - 🇺🇸 美国公益-01-1C
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇸 US-ATT-JK-2-1B
+      - 🇺🇸 美国1线-1F
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇨🇦 加拿大-1C
+      - 🇺🇸 HY-03 | US
+      - 🇯🇵 日本-VLESS-WS-CF
       - 🇩🇪 德国-法兰克福-004-1E
       - FV2026-7-7-1C
-      - 🇺🇸 HY-03 | US
-      - 🇺🇸 美国公益-01-1A
-      - 🇺🇸 US-ATT-JK-1C
-      - 🇺🇸 US-ATT-JK-2-1F
-      - 🇸🇬 新加坡公益-02-1C
-      - 🇭🇰 香港公益-01-1B
-      - FV2026-7-7-1D
-      - 🇺🇸 美国1线-1B
-      - 🇯🇵 JP-JK-1B
-      - 🇯🇵 日本-1D
-      - 🇫🇷 法国-1A
-      - 🇸🇬 新加坡-HY2
-      - 🇸🇬 新加坡公益-03-1D
-      - 🇯🇵 JP-JK-1A
-      - 🇺🇸 美国公益-01-1C
-      - 🇯🇵 JP-JK-1C
-      - 🇯🇵 JP-JK-1H
-      - 🇨🇦 加拿大-1F
-      - 🇺🇸 US-ATT-JK-1A
-      - 🇺🇸 美国公益-02-1D
+      - 🇺🇸 美国1线-1E
+      - 🇸🇬 新加坡-中转2区
+      - 🇯🇵 日本-1A
+      - 🇨🇦 加拿大-1D
+      - 🇺🇸 US-ATT-JK-2-1D
+      - 🇸🇬 新加坡公益-03-1A
+      - 🇯🇵 日本-中转3区2.5x
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇹🇭 泰国-中转2区
+      - 🇺🇸 US-ATT-JK-2-1C
       - 🇩🇪 德国-法兰克福-004-1B
-      - 🇺🇸 HY-04 | US
-      - 🇯🇵 日本-1G
-      - 🇫🇷 法国-1C
-      - 🇺🇸 美国1线-1G
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇯🇵 JP-JK-1D
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇺🇸 美国1线-1A
+      - 🇨🇦 加拿大-1F
+      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 日本-1H
+      - 🇭🇰 香港公益-01-1C
+      - 🇭🇰 香港公益-01-1E
+      - 🇺🇸 US-ATT-JK-2-1G
+      - 🇸🇬 新加坡公益-01-1C
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇯🇵 日本-中转1区
+      - 🇯🇵 日本-1I
+      - 🇸🇬 新加坡公益-01-1A
+      - 🇺🇸 美国1线-1H
+      - 🇨🇦 加拿大-1H
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇫🇷 法国-1D
-      - 🇸🇬 新加坡公益-01-1C
-      - 🇩🇪 德国-法兰克福-004-1A
       - 🇨🇳 中国联通节点1
-      - 🇨🇦 加拿大-1A
-      - 🇸🇬 新加坡公益-01-1A
-      - 🇺🇸 美国公益-01-1B
-      - 🇺🇸 美国高速节点1
-      - 🇺🇸 US-ATT-JK-2-1B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇫🇷 法国-1G
-      - 🇭🇰 香港公益-01-1D
-      - 🇺🇸 美国1线-1H
-      - 🇺🇸 美国1线-1C
-      - 🇸🇬 新加坡公益-01-1B
-      - 🇺🇸 HY-02 | US
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇹🇼 台湾高速节点2
-      - G I C A B N H T H N
-      - 🇨🇦 加拿大-1H
-      - 🇺🇸 US-ATT-JK-1H
-      - 🇯🇵 日本-1F
-      - 🇨🇦 加拿大-1G
-      - 🇯🇵 JP-JK-1G
-      - 🇰🇷 韩国节点-B
-      - 🇸🇬 新加坡公益-02-1D
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇺🇸 US-ATT-JK-2-1E
-      - 🇹🇼 台湾高速节点
-      - 🇺🇸 HY-05| US
-      - 🇺🇸 US-ATT-JK-2-1G
-      - 🇫🇷 法国-1F
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 美国1线-1E
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇫🇷 法国-1B
-      - 🇨🇦 加拿大-1B
-      - 🇺🇸 美国1线-1D
-      - FV2026-7-7-1B
-      - 🇺🇸 US-ATT-JK-1B
-      - 🇯🇵 日本-1C
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇫🇷 法国-1E
-      - 🇺🇸 美国1线-1A
-      - 🇺🇸 美国公益-02-1B
-      - 🇺🇸 美国公益-02-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇸🇬 新加坡公益-03-1B
-      - MI-MVE
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇯🇵 日本-1A
-      - 🇺🇸 美国1线-1F
-      - A0-ICP
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇭🇰 HK-A
-      - WF-PSC
-      - 🇫🇷 法国-1H
-      - 🇸🇬 新加坡公益-02-1A
-      - 🇺🇸 US-ATT-JK-1G
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇭🇰 香港公益-01-1A
-      - 🇯🇵 日本-VLESS-WS-CF
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇯🇵 日本-HY2
-      - FV2026-7-7-1A
+      - 🇯🇵 JP-JK-1D
       - 🇩🇪 德国-法兰克福-003-1F
-      - 🇸🇬 新加坡公益-03-1A
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇺🇸 美国公益-02-1C
+      - 🇫🇷 法国-1D
+      - 🇺🇸 US-ATT-JK-2-1E
+      - 🇭🇰 香港-中转1区
+      - 🇺🇸 HY-05| US
+      - 🇺🇸 洛杉矶-中转3区2.5x
+      - 🇫🇷 法国-1B
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国公益-01-1A
+      - 🇺🇸 US-ATT-JK-1G
       - 🇺🇸 US-ATT-JK-1E
-      - 🇸🇬 新加坡公益-02-1B
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇺🇸 美国1线-1I
+      - FV2026-7-7-1D
+      - 🇸🇬 新加坡公益-01-1B
+      - 🇫🇷 法国-1I
+      - 🇺🇸 HY-02 | US
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-002-1A
       - 🇯🇵 JP-JK-1E
-      - 🇯🇵 日本-1H
-      - 🇺🇸 US-ATT-JK-2-1A
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇭🇰 香港公益-01-1C
-      - 🇩🇪 德国-法兰克福-003-1D
-      - FI-GUJ
-      - 🇺🇸 US-ATT-JK-1F
-      - 🇺🇸 US-ATT-JK-1D
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇯🇵 JP-JK-1F
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇺🇸 US-ATT-JK-2-1C
-      - 4C-TBL
-      - 🇩🇪 德国-法兰克福-004-1F
+      - G I C A B N H T H N
+      - 🇫🇷 法国-1E
+      - 🇩🇪 德国-法兰克福-001-1E
+      - NH-MRK
+      - 🇩🇪 德国-中转1区1.5x
+      - 🇸🇬 新加坡公益-02-1A
+      - 🇸🇬 新加坡公益-02-1E
       - 🇩🇪 德国-法兰克福-002-1C
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇨🇦 加拿大-1E
-      - 🇯🇵 日本-1E
-      - 🇭🇰 HONG KONG 01-1A
+      - 🇩🇪 德国-法兰克福-001-1H
       - 🇺🇸 US-ATT-JK-2-1H
-      - 🇨🇦 加拿大-1C
-      - 🇺🇸 US-ATT-JK-2-1D
-      - 🇸🇬 新加坡公益-03-1C
-      - 🇯🇵 日本-1B
+      - 🇭🇰 香港公益-01-1B
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇺🇸 美国高速节点1
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇺🇸 US-ATT-JK-1C
+      - 🇫🇷 法国-1C
+      - 🇲🇾 马来家宽-中转1区2x
+      - A2-FGL
+      - 🇯🇵 日本-直连AI丨流媒体
+      - 🇯🇵 日本-1E
+      - 🇺🇸 US-ATT-JK-1A
+      - 🇭🇰 香港公益-01-1A
+      - 🇺🇸 美国公益-02-1A
+      - 🇺🇸 美国公益-02-1E
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇺🇸 US-ATT-JK-1D
+      - 🇨🇦 加拿大-1E
+      - 🇺🇸 US-ATT-JK-1B
+      - 🇯🇵 JP-JK-1I
+      - 🇯🇵 日本-HY2
+      - 🇻🇳 越南-中转2区
+      - 🇺🇸 US-ATT-JK-1H
+      - TF-KRZ
+      - 🇯🇵 JP-JK-1H
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇨🇦 加拿大-1I
+      - 🇯🇵 日本-1F
+      - 🇸🇬 新加坡公益-02-1B
       - 🇺🇸 美国公益-01-1D
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-001-1A
       - 🇸🇬 新加坡公益-01-1D
-      - 🇨🇦 加拿大-1D
+      - 🇺🇸 US-ATT-JK-2-1A
+      - 🇯🇵 JP-JK-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - MI-MPH
+      - BP-YZL
+      - 🇨🇦 加拿大-1B
+      - 🇸🇬 新加坡-HY2
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇭🇰 HK-A
+      - 🇺🇸 美国1线-1D
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇸🇬 新加坡公益-03-1C
+      - 🇺🇸 美国公益-01-1B
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇸🇬 新加坡公益-03-1D
+      - 🇭🇰 香港公益-01-1D
+      - 🇺🇸 美国1线-1G
+      - 🇺🇸 美国1线-1B
+      - 🇺🇸 美国公益-01-1E
+      - 🇺🇸 美国1线-1C
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇺🇸 US-ATT-JK-1I
+      - 🇯🇵 JP-JK-1F
+      - 🇺🇸 US-ATT-JK-2-1F
+      - 🇸🇬 新加坡公益-01-1E
+      - 🇯🇵 日本-1G
+      - 🇺🇸 洛杉矶-直连
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇺🇸 HY-04 | US
+      - 🇸🇬 新加坡公益-02-1C
+      - 🇨🇦 加拿大-1A
+      - 🇫🇷 法国-1G
+      - FV2026-7-7-1E
+      - 🇯🇵 JP-JK-1A
+      - 🇯🇵 JP-JK-1G
+      - 🇺🇸 US-ATT-JK-2-1I
+      - 🇫🇷 法国-1A
+      - 🇰🇷 韩国节点-B
+      - 🇭🇰 香港家宽-中转1区2.0x
+      - 🇯🇵 日本-1B
+      - 🇯🇵 日本-1D
+      - 🇸🇬 新加坡公益-02-1D
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇺🇸 洛杉矶-中转1区
+      - 🇸🇬 新加坡公益-03-1E
+      - 🇺🇸 US-ATT-JK-1F
+      - 🇩🇪 德国-法兰克福-002-1H
+      - FV2026-7-7-1B
+      - 🇹🇭 泰国-中转1区
+      - 🇯🇵 日本-1C
+      - 🇸🇬 新加坡公益-03-1B
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇫🇷 法国-1F
+      - FV2026-7-7-1A
+      - 🇫🇷 法国-1H
+      - 🇯🇵 JP-JK-1C
+      - 🇺🇸 美国公益-02-1C
+      - 🇨🇦 加拿大-1G
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇺🇸 美国公益-02-1B
+      - 🇦🇺 悉尼-中转3区2x
+      - 🇺🇸 美国公益-02-1D
+      - 🇹🇼 台湾高速节点
+      - 🇹🇼 台湾-中转1区
+      - IL-EAM
+      - 🇺🇸 美国公益-01-1C
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇸 US-ATT-JK-2-1B
+      - 🇺🇸 美国1线-1F
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇨🇦 加拿大-1C
+      - 🇺🇸 HY-03 | US
+      - 🇯🇵 日本-VLESS-WS-CF
       - 🇩🇪 德国-法兰克福-004-1E
       - FV2026-7-7-1C
-      - 🇺🇸 HY-03 | US
-      - 🇺🇸 美国公益-01-1A
-      - 🇺🇸 US-ATT-JK-1C
-      - 🇺🇸 US-ATT-JK-2-1F
-      - 🇸🇬 新加坡公益-02-1C
-      - 🇭🇰 香港公益-01-1B
-      - FV2026-7-7-1D
-      - 🇺🇸 美国1线-1B
-      - 🇯🇵 JP-JK-1B
-      - 🇯🇵 日本-1D
-      - 🇫🇷 法国-1A
-      - 🇸🇬 新加坡-HY2
-      - 🇸🇬 新加坡公益-03-1D
-      - 🇯🇵 JP-JK-1A
-      - 🇺🇸 美国公益-01-1C
-      - 🇯🇵 JP-JK-1C
-      - 🇯🇵 JP-JK-1H
-      - 🇨🇦 加拿大-1F
-      - 🇺🇸 US-ATT-JK-1A
-      - 🇺🇸 美国公益-02-1D
+      - 🇺🇸 美国1线-1E
+      - 🇸🇬 新加坡-中转2区
+      - 🇯🇵 日本-1A
+      - 🇨🇦 加拿大-1D
+      - 🇺🇸 US-ATT-JK-2-1D
+      - 🇸🇬 新加坡公益-03-1A
+      - 🇯🇵 日本-中转3区2.5x
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇹🇭 泰国-中转2区
+      - 🇺🇸 US-ATT-JK-2-1C
       - 🇩🇪 德国-法兰克福-004-1B
-      - 🇺🇸 HY-04 | US
-      - 🇯🇵 日本-1G
-      - 🇫🇷 法国-1C
-      - 🇺🇸 美国1线-1G
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇯🇵 JP-JK-1D
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇺🇸 美国1线-1A
+      - 🇨🇦 加拿大-1F
+      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 日本-1H
+      - 🇭🇰 香港公益-01-1C
+      - 🇭🇰 香港公益-01-1E
+      - 🇺🇸 US-ATT-JK-2-1G
+      - 🇸🇬 新加坡公益-01-1C
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇯🇵 日本-中转1区
+      - 🇯🇵 日本-1I
+      - 🇸🇬 新加坡公益-01-1A
+      - 🇺🇸 美国1线-1H
+      - 🇨🇦 加拿大-1H
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇫🇷 法国-1D
-      - 🇸🇬 新加坡公益-01-1C
-      - 🇩🇪 德国-法兰克福-004-1A
       - 🇨🇳 中国联通节点1
-      - 🇨🇦 加拿大-1A
-      - 🇸🇬 新加坡公益-01-1A
-      - 🇺🇸 美国公益-01-1B
-      - 🇺🇸 美国高速节点1
-      - 🇺🇸 US-ATT-JK-2-1B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇫🇷 法国-1G
-      - 🇭🇰 香港公益-01-1D
-      - 🇺🇸 美国1线-1H
-      - 🇺🇸 美国1线-1C
-      - 🇸🇬 新加坡公益-01-1B
-      - 🇺🇸 HY-02 | US
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇹🇼 台湾高速节点2
-      - G I C A B N H T H N
-      - 🇨🇦 加拿大-1H
-      - 🇺🇸 US-ATT-JK-1H
-      - 🇯🇵 日本-1F
-      - 🇨🇦 加拿大-1G
-      - 🇯🇵 JP-JK-1G
-      - 🇰🇷 韩国节点-B
-      - 🇸🇬 新加坡公益-02-1D
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇺🇸 US-ATT-JK-2-1E
-      - 🇹🇼 台湾高速节点
-      - 🇺🇸 HY-05| US
-      - 🇺🇸 US-ATT-JK-2-1G
-      - 🇫🇷 法国-1F
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 美国1线-1E
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇫🇷 法国-1B
-      - 🇨🇦 加拿大-1B
-      - 🇺🇸 美国1线-1D
-      - FV2026-7-7-1B
-      - 🇺🇸 US-ATT-JK-1B
-      - 🇯🇵 日本-1C
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇫🇷 法国-1E
-      - 🇺🇸 美国1线-1A
-      - 🇺🇸 美国公益-02-1B
-      - 🇺🇸 美国公益-02-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇸🇬 新加坡公益-03-1B
-      - MI-MVE
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇯🇵 日本-1A
-      - 🇺🇸 美国1线-1F
-      - A0-ICP
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇭🇰 HK-A
-      - WF-PSC
-      - 🇫🇷 法国-1H
-      - 🇸🇬 新加坡公益-02-1A
-      - 🇺🇸 US-ATT-JK-1G
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇭🇰 香港公益-01-1A
-      - 🇯🇵 日本-VLESS-WS-CF
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇯🇵 日本-HY2
-      - FV2026-7-7-1A
+      - 🇯🇵 JP-JK-1D
       - 🇩🇪 德国-法兰克福-003-1F
-      - 🇸🇬 新加坡公益-03-1A
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇺🇸 美国公益-02-1C
+      - 🇫🇷 法国-1D
+      - 🇺🇸 US-ATT-JK-2-1E
+      - 🇭🇰 香港-中转1区
+      - 🇺🇸 HY-05| US
+      - 🇺🇸 洛杉矶-中转3区2.5x
+      - 🇫🇷 法国-1B
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国公益-01-1A
+      - 🇺🇸 US-ATT-JK-1G
       - 🇺🇸 US-ATT-JK-1E
-      - 🇸🇬 新加坡公益-02-1B
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇺🇸 美国1线-1I
+      - FV2026-7-7-1D
+      - 🇸🇬 新加坡公益-01-1B
+      - 🇫🇷 法国-1I
+      - 🇺🇸 HY-02 | US
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-002-1A
       - 🇯🇵 JP-JK-1E
-      - 🇯🇵 日本-1H
-      - 🇺🇸 US-ATT-JK-2-1A
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇭🇰 香港公益-01-1C
-      - 🇩🇪 德国-法兰克福-003-1D
-      - FI-GUJ
-      - 🇺🇸 US-ATT-JK-1F
-      - 🇺🇸 US-ATT-JK-1D
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇯🇵 JP-JK-1F
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇺🇸 US-ATT-JK-2-1C
-      - 4C-TBL
-      - 🇩🇪 德国-法兰克福-004-1F
+      - G I C A B N H T H N
+      - 🇫🇷 法国-1E
+      - 🇩🇪 德国-法兰克福-001-1E
+      - NH-MRK
+      - 🇩🇪 德国-中转1区1.5x
+      - 🇸🇬 新加坡公益-02-1A
+      - 🇸🇬 新加坡公益-02-1E
       - 🇩🇪 德国-法兰克福-002-1C
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇨🇦 加拿大-1E
-      - 🇯🇵 日本-1E
-      - 🇭🇰 HONG KONG 01-1A
+      - 🇩🇪 德国-法兰克福-001-1H
       - 🇺🇸 US-ATT-JK-2-1H
-      - 🇨🇦 加拿大-1C
-      - 🇺🇸 US-ATT-JK-2-1D
-      - 🇸🇬 新加坡公益-03-1C
-      - 🇯🇵 日本-1B
+      - 🇭🇰 香港公益-01-1B
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇺🇸 美国高速节点1
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇺🇸 US-ATT-JK-1C
+      - 🇫🇷 法国-1C
+      - 🇲🇾 马来家宽-中转1区2x
+      - A2-FGL
+      - 🇯🇵 日本-直连AI丨流媒体
+      - 🇯🇵 日本-1E
+      - 🇺🇸 US-ATT-JK-1A
+      - 🇭🇰 香港公益-01-1A
+      - 🇺🇸 美国公益-02-1A
+      - 🇺🇸 美国公益-02-1E
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇺🇸 US-ATT-JK-1D
+      - 🇨🇦 加拿大-1E
+      - 🇺🇸 US-ATT-JK-1B
+      - 🇯🇵 JP-JK-1I
+      - 🇯🇵 日本-HY2
+      - 🇻🇳 越南-中转2区
+      - 🇺🇸 US-ATT-JK-1H
+      - TF-KRZ
+      - 🇯🇵 JP-JK-1H
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇨🇦 加拿大-1I
+      - 🇯🇵 日本-1F
+      - 🇸🇬 新加坡公益-02-1B
       - 🇺🇸 美国公益-01-1D
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-001-1A
       - 🇸🇬 新加坡公益-01-1D
-      - 🇨🇦 加拿大-1D
+      - 🇺🇸 US-ATT-JK-2-1A
+      - 🇯🇵 JP-JK-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - MI-MPH
+      - BP-YZL
+      - 🇨🇦 加拿大-1B
+      - 🇸🇬 新加坡-HY2
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇭🇰 HK-A
+      - 🇺🇸 美国1线-1D
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇸🇬 新加坡公益-03-1C
+      - 🇺🇸 美国公益-01-1B
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇸🇬 新加坡公益-03-1D
+      - 🇭🇰 香港公益-01-1D
+      - 🇺🇸 美国1线-1G
+      - 🇺🇸 美国1线-1B
+      - 🇺🇸 美国公益-01-1E
+      - 🇺🇸 美国1线-1C
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇺🇸 US-ATT-JK-1I
+      - 🇯🇵 JP-JK-1F
+      - 🇺🇸 US-ATT-JK-2-1F
+      - 🇸🇬 新加坡公益-01-1E
+      - 🇯🇵 日本-1G
+      - 🇺🇸 洛杉矶-直连
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇺🇸 HY-04 | US
+      - 🇸🇬 新加坡公益-02-1C
+      - 🇨🇦 加拿大-1A
+      - 🇫🇷 法国-1G
+      - FV2026-7-7-1E
+      - 🇯🇵 JP-JK-1A
+      - 🇯🇵 JP-JK-1G
+      - 🇺🇸 US-ATT-JK-2-1I
+      - 🇫🇷 法国-1A
+      - 🇰🇷 韩国节点-B
+      - 🇭🇰 香港家宽-中转1区2.0x
+      - 🇯🇵 日本-1B
+      - 🇯🇵 日本-1D
+      - 🇸🇬 新加坡公益-02-1D
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇺🇸 洛杉矶-中转1区
+      - 🇸🇬 新加坡公益-03-1E
+      - 🇺🇸 US-ATT-JK-1F
+      - 🇩🇪 德国-法兰克福-002-1H
+      - FV2026-7-7-1B
+      - 🇹🇭 泰国-中转1区
+      - 🇯🇵 日本-1C
+      - 🇸🇬 新加坡公益-03-1B
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇫🇷 法国-1F
+      - FV2026-7-7-1A
+      - 🇫🇷 法国-1H
+      - 🇯🇵 JP-JK-1C
+      - 🇺🇸 美国公益-02-1C
+      - 🇨🇦 加拿大-1G
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇺🇸 美国公益-02-1B
+      - 🇦🇺 悉尼-中转3区2x
+      - 🇺🇸 美国公益-02-1D
+      - 🇹🇼 台湾高速节点
+      - 🇹🇼 台湾-中转1区
+      - IL-EAM
+      - 🇺🇸 美国公益-01-1C
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇸 US-ATT-JK-2-1B
+      - 🇺🇸 美国1线-1F
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇨🇦 加拿大-1C
+      - 🇺🇸 HY-03 | US
+      - 🇯🇵 日本-VLESS-WS-CF
       - 🇩🇪 德国-法兰克福-004-1E
       - FV2026-7-7-1C
-      - 🇺🇸 HY-03 | US
-      - 🇺🇸 美国公益-01-1A
-      - 🇺🇸 US-ATT-JK-1C
-      - 🇺🇸 US-ATT-JK-2-1F
-      - 🇸🇬 新加坡公益-02-1C
-      - 🇭🇰 香港公益-01-1B
-      - FV2026-7-7-1D
-      - 🇺🇸 美国1线-1B
-      - 🇯🇵 JP-JK-1B
-      - 🇯🇵 日本-1D
-      - 🇫🇷 法国-1A
-      - 🇸🇬 新加坡-HY2
-      - 🇸🇬 新加坡公益-03-1D
-      - 🇯🇵 JP-JK-1A
-      - 🇺🇸 美国公益-01-1C
-      - 🇯🇵 JP-JK-1C
-      - 🇯🇵 JP-JK-1H
-      - 🇨🇦 加拿大-1F
-      - 🇺🇸 US-ATT-JK-1A
-      - 🇺🇸 美国公益-02-1D
+      - 🇺🇸 美国1线-1E
+      - 🇸🇬 新加坡-中转2区
+      - 🇯🇵 日本-1A
+      - 🇨🇦 加拿大-1D
+      - 🇺🇸 US-ATT-JK-2-1D
+      - 🇸🇬 新加坡公益-03-1A
+      - 🇯🇵 日本-中转3区2.5x
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇹🇭 泰国-中转2区
+      - 🇺🇸 US-ATT-JK-2-1C
       - 🇩🇪 德国-法兰克福-004-1B
-      - 🇺🇸 HY-04 | US
-      - 🇯🇵 日本-1G
-      - 🇫🇷 法国-1C
-      - 🇺🇸 美国1线-1G
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇯🇵 JP-JK-1D
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇺🇸 美国1线-1A
+      - 🇨🇦 加拿大-1F
+      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 日本-1H
+      - 🇭🇰 香港公益-01-1C
+      - 🇭🇰 香港公益-01-1E
+      - 🇺🇸 US-ATT-JK-2-1G
+      - 🇸🇬 新加坡公益-01-1C
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇯🇵 日本-中转1区
+      - 🇯🇵 日本-1I
+      - 🇸🇬 新加坡公益-01-1A
+      - 🇺🇸 美国1线-1H
+      - 🇨🇦 加拿大-1H
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -568,562 +712,710 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇫🇷 法国-1D
-      - 🇸🇬 新加坡公益-01-1C
-      - 🇩🇪 德国-法兰克福-004-1A
       - 🇨🇳 中国联通节点1
-      - 🇨🇦 加拿大-1A
-      - 🇸🇬 新加坡公益-01-1A
-      - 🇺🇸 美国公益-01-1B
-      - 🇺🇸 美国高速节点1
-      - 🇺🇸 US-ATT-JK-2-1B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇫🇷 法国-1G
-      - 🇭🇰 香港公益-01-1D
-      - 🇺🇸 美国1线-1H
-      - 🇺🇸 美国1线-1C
-      - 🇸🇬 新加坡公益-01-1B
-      - 🇺🇸 HY-02 | US
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇹🇼 台湾高速节点2
-      - G I C A B N H T H N
-      - 🇨🇦 加拿大-1H
-      - 🇺🇸 US-ATT-JK-1H
-      - 🇯🇵 日本-1F
-      - 🇨🇦 加拿大-1G
-      - 🇯🇵 JP-JK-1G
-      - 🇰🇷 韩国节点-B
-      - 🇸🇬 新加坡公益-02-1D
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇺🇸 US-ATT-JK-2-1E
-      - 🇹🇼 台湾高速节点
-      - 🇺🇸 HY-05| US
-      - 🇺🇸 US-ATT-JK-2-1G
-      - 🇫🇷 法国-1F
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 美国1线-1E
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇫🇷 法国-1B
-      - 🇨🇦 加拿大-1B
-      - 🇺🇸 美国1线-1D
-      - FV2026-7-7-1B
-      - 🇺🇸 US-ATT-JK-1B
-      - 🇯🇵 日本-1C
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇫🇷 法国-1E
-      - 🇺🇸 美国1线-1A
-      - 🇺🇸 美国公益-02-1B
-      - 🇺🇸 美国公益-02-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇸🇬 新加坡公益-03-1B
-      - MI-MVE
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇯🇵 日本-1A
-      - 🇺🇸 美国1线-1F
-      - A0-ICP
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇭🇰 HK-A
-      - WF-PSC
-      - 🇫🇷 法国-1H
-      - 🇸🇬 新加坡公益-02-1A
-      - 🇺🇸 US-ATT-JK-1G
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇭🇰 香港公益-01-1A
-      - 🇯🇵 日本-VLESS-WS-CF
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇯🇵 日本-HY2
-      - FV2026-7-7-1A
+      - 🇯🇵 JP-JK-1D
       - 🇩🇪 德国-法兰克福-003-1F
-      - 🇸🇬 新加坡公益-03-1A
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇺🇸 美国公益-02-1C
+      - 🇫🇷 法国-1D
+      - 🇺🇸 US-ATT-JK-2-1E
+      - 🇭🇰 香港-中转1区
+      - 🇺🇸 HY-05| US
+      - 🇺🇸 洛杉矶-中转3区2.5x
+      - 🇫🇷 法国-1B
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国公益-01-1A
+      - 🇺🇸 US-ATT-JK-1G
       - 🇺🇸 US-ATT-JK-1E
-      - 🇸🇬 新加坡公益-02-1B
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇺🇸 美国1线-1I
+      - FV2026-7-7-1D
+      - 🇸🇬 新加坡公益-01-1B
+      - 🇫🇷 法国-1I
+      - 🇺🇸 HY-02 | US
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-002-1A
       - 🇯🇵 JP-JK-1E
-      - 🇯🇵 日本-1H
-      - 🇺🇸 US-ATT-JK-2-1A
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇭🇰 香港公益-01-1C
-      - 🇩🇪 德国-法兰克福-003-1D
-      - FI-GUJ
-      - 🇺🇸 US-ATT-JK-1F
-      - 🇺🇸 US-ATT-JK-1D
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇯🇵 JP-JK-1F
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇺🇸 US-ATT-JK-2-1C
-      - 4C-TBL
-      - 🇩🇪 德国-法兰克福-004-1F
+      - G I C A B N H T H N
+      - 🇫🇷 法国-1E
+      - 🇩🇪 德国-法兰克福-001-1E
+      - NH-MRK
+      - 🇩🇪 德国-中转1区1.5x
+      - 🇸🇬 新加坡公益-02-1A
+      - 🇸🇬 新加坡公益-02-1E
       - 🇩🇪 德国-法兰克福-002-1C
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇨🇦 加拿大-1E
-      - 🇯🇵 日本-1E
-      - 🇭🇰 HONG KONG 01-1A
+      - 🇩🇪 德国-法兰克福-001-1H
       - 🇺🇸 US-ATT-JK-2-1H
-      - 🇨🇦 加拿大-1C
-      - 🇺🇸 US-ATT-JK-2-1D
-      - 🇸🇬 新加坡公益-03-1C
-      - 🇯🇵 日本-1B
+      - 🇭🇰 香港公益-01-1B
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇺🇸 美国高速节点1
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇺🇸 US-ATT-JK-1C
+      - 🇫🇷 法国-1C
+      - 🇲🇾 马来家宽-中转1区2x
+      - A2-FGL
+      - 🇯🇵 日本-直连AI丨流媒体
+      - 🇯🇵 日本-1E
+      - 🇺🇸 US-ATT-JK-1A
+      - 🇭🇰 香港公益-01-1A
+      - 🇺🇸 美国公益-02-1A
+      - 🇺🇸 美国公益-02-1E
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇺🇸 US-ATT-JK-1D
+      - 🇨🇦 加拿大-1E
+      - 🇺🇸 US-ATT-JK-1B
+      - 🇯🇵 JP-JK-1I
+      - 🇯🇵 日本-HY2
+      - 🇻🇳 越南-中转2区
+      - 🇺🇸 US-ATT-JK-1H
+      - TF-KRZ
+      - 🇯🇵 JP-JK-1H
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇨🇦 加拿大-1I
+      - 🇯🇵 日本-1F
+      - 🇸🇬 新加坡公益-02-1B
       - 🇺🇸 美国公益-01-1D
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-001-1A
       - 🇸🇬 新加坡公益-01-1D
-      - 🇨🇦 加拿大-1D
+      - 🇺🇸 US-ATT-JK-2-1A
+      - 🇯🇵 JP-JK-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - MI-MPH
+      - BP-YZL
+      - 🇨🇦 加拿大-1B
+      - 🇸🇬 新加坡-HY2
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇭🇰 HK-A
+      - 🇺🇸 美国1线-1D
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇸🇬 新加坡公益-03-1C
+      - 🇺🇸 美国公益-01-1B
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇸🇬 新加坡公益-03-1D
+      - 🇭🇰 香港公益-01-1D
+      - 🇺🇸 美国1线-1G
+      - 🇺🇸 美国1线-1B
+      - 🇺🇸 美国公益-01-1E
+      - 🇺🇸 美国1线-1C
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇺🇸 US-ATT-JK-1I
+      - 🇯🇵 JP-JK-1F
+      - 🇺🇸 US-ATT-JK-2-1F
+      - 🇸🇬 新加坡公益-01-1E
+      - 🇯🇵 日本-1G
+      - 🇺🇸 洛杉矶-直连
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇺🇸 HY-04 | US
+      - 🇸🇬 新加坡公益-02-1C
+      - 🇨🇦 加拿大-1A
+      - 🇫🇷 法国-1G
+      - FV2026-7-7-1E
+      - 🇯🇵 JP-JK-1A
+      - 🇯🇵 JP-JK-1G
+      - 🇺🇸 US-ATT-JK-2-1I
+      - 🇫🇷 法国-1A
+      - 🇰🇷 韩国节点-B
+      - 🇭🇰 香港家宽-中转1区2.0x
+      - 🇯🇵 日本-1B
+      - 🇯🇵 日本-1D
+      - 🇸🇬 新加坡公益-02-1D
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇺🇸 洛杉矶-中转1区
+      - 🇸🇬 新加坡公益-03-1E
+      - 🇺🇸 US-ATT-JK-1F
+      - 🇩🇪 德国-法兰克福-002-1H
+      - FV2026-7-7-1B
+      - 🇹🇭 泰国-中转1区
+      - 🇯🇵 日本-1C
+      - 🇸🇬 新加坡公益-03-1B
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇫🇷 法国-1F
+      - FV2026-7-7-1A
+      - 🇫🇷 法国-1H
+      - 🇯🇵 JP-JK-1C
+      - 🇺🇸 美国公益-02-1C
+      - 🇨🇦 加拿大-1G
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇺🇸 美国公益-02-1B
+      - 🇦🇺 悉尼-中转3区2x
+      - 🇺🇸 美国公益-02-1D
+      - 🇹🇼 台湾高速节点
+      - 🇹🇼 台湾-中转1区
+      - IL-EAM
+      - 🇺🇸 美国公益-01-1C
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇸 US-ATT-JK-2-1B
+      - 🇺🇸 美国1线-1F
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇨🇦 加拿大-1C
+      - 🇺🇸 HY-03 | US
+      - 🇯🇵 日本-VLESS-WS-CF
       - 🇩🇪 德国-法兰克福-004-1E
       - FV2026-7-7-1C
-      - 🇺🇸 HY-03 | US
-      - 🇺🇸 美国公益-01-1A
-      - 🇺🇸 US-ATT-JK-1C
-      - 🇺🇸 US-ATT-JK-2-1F
-      - 🇸🇬 新加坡公益-02-1C
-      - 🇭🇰 香港公益-01-1B
-      - FV2026-7-7-1D
-      - 🇺🇸 美国1线-1B
-      - 🇯🇵 JP-JK-1B
-      - 🇯🇵 日本-1D
-      - 🇫🇷 法国-1A
-      - 🇸🇬 新加坡-HY2
-      - 🇸🇬 新加坡公益-03-1D
-      - 🇯🇵 JP-JK-1A
-      - 🇺🇸 美国公益-01-1C
-      - 🇯🇵 JP-JK-1C
-      - 🇯🇵 JP-JK-1H
-      - 🇨🇦 加拿大-1F
-      - 🇺🇸 US-ATT-JK-1A
-      - 🇺🇸 美国公益-02-1D
+      - 🇺🇸 美国1线-1E
+      - 🇸🇬 新加坡-中转2区
+      - 🇯🇵 日本-1A
+      - 🇨🇦 加拿大-1D
+      - 🇺🇸 US-ATT-JK-2-1D
+      - 🇸🇬 新加坡公益-03-1A
+      - 🇯🇵 日本-中转3区2.5x
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇹🇭 泰国-中转2区
+      - 🇺🇸 US-ATT-JK-2-1C
       - 🇩🇪 德国-法兰克福-004-1B
-      - 🇺🇸 HY-04 | US
-      - 🇯🇵 日本-1G
-      - 🇫🇷 法国-1C
-      - 🇺🇸 美国1线-1G
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇯🇵 JP-JK-1D
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇺🇸 美国1线-1A
+      - 🇨🇦 加拿大-1F
+      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 日本-1H
+      - 🇭🇰 香港公益-01-1C
+      - 🇭🇰 香港公益-01-1E
+      - 🇺🇸 US-ATT-JK-2-1G
+      - 🇸🇬 新加坡公益-01-1C
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇯🇵 日本-中转1区
+      - 🇯🇵 日本-1I
+      - 🇸🇬 新加坡公益-01-1A
+      - 🇺🇸 美国1线-1H
+      - 🇨🇦 加拿大-1H
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港公益-01-1D
-      - 🇹🇼 台湾高速节点2
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 香港公益-01-1A
-      - 🇭🇰 香港公益-01-1C
+      - 🇭🇰 香港-中转1区
       - 🇭🇰 香港公益-01-1B
+      - 🇭🇰 香港公益-01-1A
+      - 🇭🇰 香港公益-01-1D
+      - 🇭🇰 香港家宽-中转1区2.0x
+      - 🇹🇼 台湾高速节点
+      - 🇹🇼 台湾-中转1区
       - 🇹🇼 台湾高速节点3
+      - 🇹🇼 台湾高速节点2
+      - 🇭🇰 香港公益-01-1C
+      - 🇭🇰 香港公益-01-1E
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇫🇷 法国-1D
-      - 🇸🇬 新加坡公益-01-1C
-      - 🇩🇪 德国-法兰克福-004-1A
       - 🇨🇳 中国联通节点1
-      - 🇨🇦 加拿大-1A
-      - 🇸🇬 新加坡公益-01-1A
-      - 🇺🇸 美国公益-01-1B
-      - 🇺🇸 美国高速节点1
-      - 🇺🇸 US-ATT-JK-2-1B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇫🇷 法国-1G
-      - 🇭🇰 香港公益-01-1D
-      - 🇺🇸 美国1线-1H
-      - 🇺🇸 美国1线-1C
-      - 🇸🇬 新加坡公益-01-1B
-      - 🇺🇸 HY-02 | US
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇹🇼 台湾高速节点2
-      - G I C A B N H T H N
-      - 🇨🇦 加拿大-1H
-      - 🇺🇸 US-ATT-JK-1H
-      - 🇯🇵 日本-1F
-      - 🇨🇦 加拿大-1G
-      - 🇯🇵 JP-JK-1G
-      - 🇰🇷 韩国节点-B
-      - 🇸🇬 新加坡公益-02-1D
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇺🇸 US-ATT-JK-2-1E
-      - 🇹🇼 台湾高速节点
-      - 🇺🇸 HY-05| US
-      - 🇺🇸 US-ATT-JK-2-1G
-      - 🇫🇷 法国-1F
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 美国1线-1E
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇫🇷 法国-1B
-      - 🇨🇦 加拿大-1B
-      - 🇺🇸 美国1线-1D
-      - FV2026-7-7-1B
-      - 🇺🇸 US-ATT-JK-1B
-      - 🇯🇵 日本-1C
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇫🇷 法国-1E
-      - 🇺🇸 美国1线-1A
-      - 🇺🇸 美国公益-02-1B
-      - 🇺🇸 美国公益-02-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇸🇬 新加坡公益-03-1B
-      - MI-MVE
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇯🇵 日本-1A
-      - 🇺🇸 美国1线-1F
-      - A0-ICP
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇭🇰 HK-A
-      - WF-PSC
-      - 🇫🇷 法国-1H
-      - 🇸🇬 新加坡公益-02-1A
-      - 🇺🇸 US-ATT-JK-1G
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇭🇰 香港公益-01-1A
-      - 🇯🇵 日本-VLESS-WS-CF
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇯🇵 日本-HY2
-      - FV2026-7-7-1A
+      - 🇯🇵 JP-JK-1D
       - 🇩🇪 德国-法兰克福-003-1F
-      - 🇸🇬 新加坡公益-03-1A
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇺🇸 美国公益-02-1C
+      - 🇫🇷 法国-1D
+      - 🇺🇸 US-ATT-JK-2-1E
+      - 🇭🇰 香港-中转1区
+      - 🇺🇸 HY-05| US
+      - 🇺🇸 洛杉矶-中转3区2.5x
+      - 🇫🇷 法国-1B
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国公益-01-1A
+      - 🇺🇸 US-ATT-JK-1G
       - 🇺🇸 US-ATT-JK-1E
-      - 🇸🇬 新加坡公益-02-1B
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇺🇸 美国1线-1I
+      - FV2026-7-7-1D
+      - 🇸🇬 新加坡公益-01-1B
+      - 🇫🇷 法国-1I
+      - 🇺🇸 HY-02 | US
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-002-1A
       - 🇯🇵 JP-JK-1E
-      - 🇯🇵 日本-1H
-      - 🇺🇸 US-ATT-JK-2-1A
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇭🇰 香港公益-01-1C
-      - 🇩🇪 德国-法兰克福-003-1D
-      - FI-GUJ
-      - 🇺🇸 US-ATT-JK-1F
-      - 🇺🇸 US-ATT-JK-1D
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇯🇵 JP-JK-1F
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇺🇸 US-ATT-JK-2-1C
-      - 4C-TBL
-      - 🇩🇪 德国-法兰克福-004-1F
+      - G I C A B N H T H N
+      - 🇫🇷 法国-1E
+      - 🇩🇪 德国-法兰克福-001-1E
+      - NH-MRK
+      - 🇩🇪 德国-中转1区1.5x
+      - 🇸🇬 新加坡公益-02-1A
+      - 🇸🇬 新加坡公益-02-1E
       - 🇩🇪 德国-法兰克福-002-1C
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇨🇦 加拿大-1E
-      - 🇯🇵 日本-1E
-      - 🇭🇰 HONG KONG 01-1A
+      - 🇩🇪 德国-法兰克福-001-1H
       - 🇺🇸 US-ATT-JK-2-1H
-      - 🇨🇦 加拿大-1C
-      - 🇺🇸 US-ATT-JK-2-1D
-      - 🇸🇬 新加坡公益-03-1C
-      - 🇯🇵 日本-1B
+      - 🇭🇰 香港公益-01-1B
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇺🇸 美国高速节点1
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇺🇸 US-ATT-JK-1C
+      - 🇫🇷 法国-1C
+      - 🇲🇾 马来家宽-中转1区2x
+      - A2-FGL
+      - 🇯🇵 日本-直连AI丨流媒体
+      - 🇯🇵 日本-1E
+      - 🇺🇸 US-ATT-JK-1A
+      - 🇭🇰 香港公益-01-1A
+      - 🇺🇸 美国公益-02-1A
+      - 🇺🇸 美国公益-02-1E
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇺🇸 US-ATT-JK-1D
+      - 🇨🇦 加拿大-1E
+      - 🇺🇸 US-ATT-JK-1B
+      - 🇯🇵 JP-JK-1I
+      - 🇯🇵 日本-HY2
+      - 🇻🇳 越南-中转2区
+      - 🇺🇸 US-ATT-JK-1H
+      - TF-KRZ
+      - 🇯🇵 JP-JK-1H
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇨🇦 加拿大-1I
+      - 🇯🇵 日本-1F
+      - 🇸🇬 新加坡公益-02-1B
       - 🇺🇸 美国公益-01-1D
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-001-1A
       - 🇸🇬 新加坡公益-01-1D
-      - 🇨🇦 加拿大-1D
+      - 🇺🇸 US-ATT-JK-2-1A
+      - 🇯🇵 JP-JK-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - MI-MPH
+      - BP-YZL
+      - 🇨🇦 加拿大-1B
+      - 🇸🇬 新加坡-HY2
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇭🇰 HK-A
+      - 🇺🇸 美国1线-1D
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇸🇬 新加坡公益-03-1C
+      - 🇺🇸 美国公益-01-1B
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇸🇬 新加坡公益-03-1D
+      - 🇭🇰 香港公益-01-1D
+      - 🇺🇸 美国1线-1G
+      - 🇺🇸 美国1线-1B
+      - 🇺🇸 美国公益-01-1E
+      - 🇺🇸 美国1线-1C
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇺🇸 US-ATT-JK-1I
+      - 🇯🇵 JP-JK-1F
+      - 🇺🇸 US-ATT-JK-2-1F
+      - 🇸🇬 新加坡公益-01-1E
+      - 🇯🇵 日本-1G
+      - 🇺🇸 洛杉矶-直连
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇺🇸 HY-04 | US
+      - 🇸🇬 新加坡公益-02-1C
+      - 🇨🇦 加拿大-1A
+      - 🇫🇷 法国-1G
+      - FV2026-7-7-1E
+      - 🇯🇵 JP-JK-1A
+      - 🇯🇵 JP-JK-1G
+      - 🇺🇸 US-ATT-JK-2-1I
+      - 🇫🇷 法国-1A
+      - 🇰🇷 韩国节点-B
+      - 🇭🇰 香港家宽-中转1区2.0x
+      - 🇯🇵 日本-1B
+      - 🇯🇵 日本-1D
+      - 🇸🇬 新加坡公益-02-1D
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇺🇸 洛杉矶-中转1区
+      - 🇸🇬 新加坡公益-03-1E
+      - 🇺🇸 US-ATT-JK-1F
+      - 🇩🇪 德国-法兰克福-002-1H
+      - FV2026-7-7-1B
+      - 🇹🇭 泰国-中转1区
+      - 🇯🇵 日本-1C
+      - 🇸🇬 新加坡公益-03-1B
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇫🇷 法国-1F
+      - FV2026-7-7-1A
+      - 🇫🇷 法国-1H
+      - 🇯🇵 JP-JK-1C
+      - 🇺🇸 美国公益-02-1C
+      - 🇨🇦 加拿大-1G
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇺🇸 美国公益-02-1B
+      - 🇦🇺 悉尼-中转3区2x
+      - 🇺🇸 美国公益-02-1D
+      - 🇹🇼 台湾高速节点
+      - 🇹🇼 台湾-中转1区
+      - IL-EAM
+      - 🇺🇸 美国公益-01-1C
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇸 US-ATT-JK-2-1B
+      - 🇺🇸 美国1线-1F
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇨🇦 加拿大-1C
+      - 🇺🇸 HY-03 | US
+      - 🇯🇵 日本-VLESS-WS-CF
       - 🇩🇪 德国-法兰克福-004-1E
       - FV2026-7-7-1C
-      - 🇺🇸 HY-03 | US
-      - 🇺🇸 美国公益-01-1A
-      - 🇺🇸 US-ATT-JK-1C
-      - 🇺🇸 US-ATT-JK-2-1F
-      - 🇸🇬 新加坡公益-02-1C
-      - 🇭🇰 香港公益-01-1B
-      - FV2026-7-7-1D
-      - 🇺🇸 美国1线-1B
-      - 🇯🇵 JP-JK-1B
-      - 🇯🇵 日本-1D
-      - 🇫🇷 法国-1A
-      - 🇸🇬 新加坡-HY2
-      - 🇸🇬 新加坡公益-03-1D
-      - 🇯🇵 JP-JK-1A
-      - 🇺🇸 美国公益-01-1C
-      - 🇯🇵 JP-JK-1C
-      - 🇯🇵 JP-JK-1H
-      - 🇨🇦 加拿大-1F
-      - 🇺🇸 US-ATT-JK-1A
-      - 🇺🇸 美国公益-02-1D
+      - 🇺🇸 美国1线-1E
+      - 🇸🇬 新加坡-中转2区
+      - 🇯🇵 日本-1A
+      - 🇨🇦 加拿大-1D
+      - 🇺🇸 US-ATT-JK-2-1D
+      - 🇸🇬 新加坡公益-03-1A
+      - 🇯🇵 日本-中转3区2.5x
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇹🇭 泰国-中转2区
+      - 🇺🇸 US-ATT-JK-2-1C
       - 🇩🇪 德国-法兰克福-004-1B
-      - 🇺🇸 HY-04 | US
-      - 🇯🇵 日本-1G
-      - 🇫🇷 法国-1C
-      - 🇺🇸 美国1线-1G
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇯🇵 JP-JK-1D
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇺🇸 美国1线-1A
+      - 🇨🇦 加拿大-1F
+      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 日本-1H
+      - 🇭🇰 香港公益-01-1C
+      - 🇭🇰 香港公益-01-1E
+      - 🇺🇸 US-ATT-JK-2-1G
+      - 🇸🇬 新加坡公益-01-1C
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇯🇵 日本-中转1区
+      - 🇯🇵 日本-1I
+      - 🇸🇬 新加坡公益-01-1A
+      - 🇺🇸 美国1线-1H
+      - 🇨🇦 加拿大-1H
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇫🇷 法国-1D
-      - 🇸🇬 新加坡公益-01-1C
-      - 🇩🇪 德国-法兰克福-004-1A
       - 🇨🇳 中国联通节点1
-      - 🇨🇦 加拿大-1A
-      - 🇸🇬 新加坡公益-01-1A
-      - 🇺🇸 美国公益-01-1B
-      - 🇺🇸 美国高速节点1
-      - 🇺🇸 US-ATT-JK-2-1B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇫🇷 法国-1G
-      - 🇭🇰 香港公益-01-1D
-      - 🇺🇸 美国1线-1H
-      - 🇺🇸 美国1线-1C
-      - 🇸🇬 新加坡公益-01-1B
-      - 🇺🇸 HY-02 | US
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇹🇼 台湾高速节点2
-      - G I C A B N H T H N
-      - 🇨🇦 加拿大-1H
-      - 🇺🇸 US-ATT-JK-1H
-      - 🇯🇵 日本-1F
-      - 🇨🇦 加拿大-1G
-      - 🇯🇵 JP-JK-1G
-      - 🇰🇷 韩国节点-B
-      - 🇸🇬 新加坡公益-02-1D
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇺🇸 US-ATT-JK-2-1E
-      - 🇹🇼 台湾高速节点
-      - 🇺🇸 HY-05| US
-      - 🇺🇸 US-ATT-JK-2-1G
-      - 🇫🇷 法国-1F
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 美国1线-1E
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇫🇷 法国-1B
-      - 🇨🇦 加拿大-1B
-      - 🇺🇸 美国1线-1D
-      - FV2026-7-7-1B
-      - 🇺🇸 US-ATT-JK-1B
-      - 🇯🇵 日本-1C
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇫🇷 法国-1E
-      - 🇺🇸 美国1线-1A
-      - 🇺🇸 美国公益-02-1B
-      - 🇺🇸 美国公益-02-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇸🇬 新加坡公益-03-1B
-      - MI-MVE
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇯🇵 日本-1A
-      - 🇺🇸 美国1线-1F
-      - A0-ICP
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇭🇰 HK-A
-      - WF-PSC
-      - 🇫🇷 法国-1H
-      - 🇸🇬 新加坡公益-02-1A
-      - 🇺🇸 US-ATT-JK-1G
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇭🇰 香港公益-01-1A
-      - 🇯🇵 日本-VLESS-WS-CF
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇯🇵 日本-HY2
-      - FV2026-7-7-1A
+      - 🇯🇵 JP-JK-1D
       - 🇩🇪 德国-法兰克福-003-1F
-      - 🇸🇬 新加坡公益-03-1A
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇺🇸 美国公益-02-1C
+      - 🇫🇷 法国-1D
+      - 🇺🇸 US-ATT-JK-2-1E
+      - 🇭🇰 香港-中转1区
+      - 🇺🇸 HY-05| US
+      - 🇺🇸 洛杉矶-中转3区2.5x
+      - 🇫🇷 法国-1B
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国公益-01-1A
+      - 🇺🇸 US-ATT-JK-1G
       - 🇺🇸 US-ATT-JK-1E
-      - 🇸🇬 新加坡公益-02-1B
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇺🇸 美国1线-1I
+      - FV2026-7-7-1D
+      - 🇸🇬 新加坡公益-01-1B
+      - 🇫🇷 法国-1I
+      - 🇺🇸 HY-02 | US
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-002-1A
       - 🇯🇵 JP-JK-1E
-      - 🇯🇵 日本-1H
-      - 🇺🇸 US-ATT-JK-2-1A
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇭🇰 香港公益-01-1C
-      - 🇩🇪 德国-法兰克福-003-1D
-      - FI-GUJ
-      - 🇺🇸 US-ATT-JK-1F
-      - 🇺🇸 US-ATT-JK-1D
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇯🇵 JP-JK-1F
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇺🇸 US-ATT-JK-2-1C
-      - 4C-TBL
-      - 🇩🇪 德国-法兰克福-004-1F
+      - G I C A B N H T H N
+      - 🇫🇷 法国-1E
+      - 🇩🇪 德国-法兰克福-001-1E
+      - NH-MRK
+      - 🇩🇪 德国-中转1区1.5x
+      - 🇸🇬 新加坡公益-02-1A
+      - 🇸🇬 新加坡公益-02-1E
       - 🇩🇪 德国-法兰克福-002-1C
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇨🇦 加拿大-1E
-      - 🇯🇵 日本-1E
-      - 🇭🇰 HONG KONG 01-1A
+      - 🇩🇪 德国-法兰克福-001-1H
       - 🇺🇸 US-ATT-JK-2-1H
-      - 🇨🇦 加拿大-1C
-      - 🇺🇸 US-ATT-JK-2-1D
-      - 🇸🇬 新加坡公益-03-1C
-      - 🇯🇵 日本-1B
+      - 🇭🇰 香港公益-01-1B
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇺🇸 美国高速节点1
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇺🇸 US-ATT-JK-1C
+      - 🇫🇷 法国-1C
+      - 🇲🇾 马来家宽-中转1区2x
+      - A2-FGL
+      - 🇯🇵 日本-直连AI丨流媒体
+      - 🇯🇵 日本-1E
+      - 🇺🇸 US-ATT-JK-1A
+      - 🇭🇰 香港公益-01-1A
+      - 🇺🇸 美国公益-02-1A
+      - 🇺🇸 美国公益-02-1E
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇺🇸 US-ATT-JK-1D
+      - 🇨🇦 加拿大-1E
+      - 🇺🇸 US-ATT-JK-1B
+      - 🇯🇵 JP-JK-1I
+      - 🇯🇵 日本-HY2
+      - 🇻🇳 越南-中转2区
+      - 🇺🇸 US-ATT-JK-1H
+      - TF-KRZ
+      - 🇯🇵 JP-JK-1H
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇨🇦 加拿大-1I
+      - 🇯🇵 日本-1F
+      - 🇸🇬 新加坡公益-02-1B
       - 🇺🇸 美国公益-01-1D
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-001-1A
       - 🇸🇬 新加坡公益-01-1D
-      - 🇨🇦 加拿大-1D
+      - 🇺🇸 US-ATT-JK-2-1A
+      - 🇯🇵 JP-JK-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - MI-MPH
+      - BP-YZL
+      - 🇨🇦 加拿大-1B
+      - 🇸🇬 新加坡-HY2
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇭🇰 HK-A
+      - 🇺🇸 美国1线-1D
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇸🇬 新加坡公益-03-1C
+      - 🇺🇸 美国公益-01-1B
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇸🇬 新加坡公益-03-1D
+      - 🇭🇰 香港公益-01-1D
+      - 🇺🇸 美国1线-1G
+      - 🇺🇸 美国1线-1B
+      - 🇺🇸 美国公益-01-1E
+      - 🇺🇸 美国1线-1C
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇺🇸 US-ATT-JK-1I
+      - 🇯🇵 JP-JK-1F
+      - 🇺🇸 US-ATT-JK-2-1F
+      - 🇸🇬 新加坡公益-01-1E
+      - 🇯🇵 日本-1G
+      - 🇺🇸 洛杉矶-直连
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇺🇸 HY-04 | US
+      - 🇸🇬 新加坡公益-02-1C
+      - 🇨🇦 加拿大-1A
+      - 🇫🇷 法国-1G
+      - FV2026-7-7-1E
+      - 🇯🇵 JP-JK-1A
+      - 🇯🇵 JP-JK-1G
+      - 🇺🇸 US-ATT-JK-2-1I
+      - 🇫🇷 法国-1A
+      - 🇰🇷 韩国节点-B
+      - 🇭🇰 香港家宽-中转1区2.0x
+      - 🇯🇵 日本-1B
+      - 🇯🇵 日本-1D
+      - 🇸🇬 新加坡公益-02-1D
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇺🇸 洛杉矶-中转1区
+      - 🇸🇬 新加坡公益-03-1E
+      - 🇺🇸 US-ATT-JK-1F
+      - 🇩🇪 德国-法兰克福-002-1H
+      - FV2026-7-7-1B
+      - 🇹🇭 泰国-中转1区
+      - 🇯🇵 日本-1C
+      - 🇸🇬 新加坡公益-03-1B
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇫🇷 法国-1F
+      - FV2026-7-7-1A
+      - 🇫🇷 法国-1H
+      - 🇯🇵 JP-JK-1C
+      - 🇺🇸 美国公益-02-1C
+      - 🇨🇦 加拿大-1G
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇺🇸 美国公益-02-1B
+      - 🇦🇺 悉尼-中转3区2x
+      - 🇺🇸 美国公益-02-1D
+      - 🇹🇼 台湾高速节点
+      - 🇹🇼 台湾-中转1区
+      - IL-EAM
+      - 🇺🇸 美国公益-01-1C
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇸 US-ATT-JK-2-1B
+      - 🇺🇸 美国1线-1F
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇨🇦 加拿大-1C
+      - 🇺🇸 HY-03 | US
+      - 🇯🇵 日本-VLESS-WS-CF
       - 🇩🇪 德国-法兰克福-004-1E
       - FV2026-7-7-1C
-      - 🇺🇸 HY-03 | US
-      - 🇺🇸 美国公益-01-1A
-      - 🇺🇸 US-ATT-JK-1C
-      - 🇺🇸 US-ATT-JK-2-1F
-      - 🇸🇬 新加坡公益-02-1C
-      - 🇭🇰 香港公益-01-1B
-      - FV2026-7-7-1D
-      - 🇺🇸 美国1线-1B
-      - 🇯🇵 JP-JK-1B
-      - 🇯🇵 日本-1D
-      - 🇫🇷 法国-1A
-      - 🇸🇬 新加坡-HY2
-      - 🇸🇬 新加坡公益-03-1D
-      - 🇯🇵 JP-JK-1A
-      - 🇺🇸 美国公益-01-1C
-      - 🇯🇵 JP-JK-1C
-      - 🇯🇵 JP-JK-1H
-      - 🇨🇦 加拿大-1F
-      - 🇺🇸 US-ATT-JK-1A
-      - 🇺🇸 美国公益-02-1D
+      - 🇺🇸 美国1线-1E
+      - 🇸🇬 新加坡-中转2区
+      - 🇯🇵 日本-1A
+      - 🇨🇦 加拿大-1D
+      - 🇺🇸 US-ATT-JK-2-1D
+      - 🇸🇬 新加坡公益-03-1A
+      - 🇯🇵 日本-中转3区2.5x
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇹🇭 泰国-中转2区
+      - 🇺🇸 US-ATT-JK-2-1C
       - 🇩🇪 德国-法兰克福-004-1B
-      - 🇺🇸 HY-04 | US
-      - 🇯🇵 日本-1G
-      - 🇫🇷 法国-1C
-      - 🇺🇸 美国1线-1G
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇯🇵 JP-JK-1D
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇺🇸 美国1线-1A
+      - 🇨🇦 加拿大-1F
+      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 日本-1H
+      - 🇭🇰 香港公益-01-1C
+      - 🇭🇰 香港公益-01-1E
+      - 🇺🇸 US-ATT-JK-2-1G
+      - 🇸🇬 新加坡公益-01-1C
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇯🇵 日本-中转1区
+      - 🇯🇵 日本-1I
+      - 🇸🇬 新加坡公益-01-1A
+      - 🇺🇸 美国1线-1H
+      - 🇨🇦 加拿大-1H
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇫🇷 法国-1D
-      - 🇸🇬 新加坡公益-01-1C
-      - 🇩🇪 德国-法兰克福-004-1A
       - 🇨🇳 中国联通节点1
-      - 🇨🇦 加拿大-1A
-      - 🇸🇬 新加坡公益-01-1A
-      - 🇺🇸 美国公益-01-1B
-      - 🇺🇸 美国高速节点1
-      - 🇺🇸 US-ATT-JK-2-1B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇫🇷 法国-1G
-      - 🇭🇰 香港公益-01-1D
-      - 🇺🇸 美国1线-1H
-      - 🇺🇸 美国1线-1C
-      - 🇸🇬 新加坡公益-01-1B
-      - 🇺🇸 HY-02 | US
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇹🇼 台湾高速节点2
-      - G I C A B N H T H N
-      - 🇨🇦 加拿大-1H
-      - 🇺🇸 US-ATT-JK-1H
-      - 🇯🇵 日本-1F
-      - 🇨🇦 加拿大-1G
-      - 🇯🇵 JP-JK-1G
-      - 🇰🇷 韩国节点-B
-      - 🇸🇬 新加坡公益-02-1D
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇺🇸 US-ATT-JK-2-1E
-      - 🇹🇼 台湾高速节点
-      - 🇺🇸 HY-05| US
-      - 🇺🇸 US-ATT-JK-2-1G
-      - 🇫🇷 法国-1F
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 美国1线-1E
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇫🇷 法国-1B
-      - 🇨🇦 加拿大-1B
-      - 🇺🇸 美国1线-1D
-      - FV2026-7-7-1B
-      - 🇺🇸 US-ATT-JK-1B
-      - 🇯🇵 日本-1C
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇫🇷 法国-1E
-      - 🇺🇸 美国1线-1A
-      - 🇺🇸 美国公益-02-1B
-      - 🇺🇸 美国公益-02-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇸🇬 新加坡公益-03-1B
-      - MI-MVE
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇯🇵 日本-1A
-      - 🇺🇸 美国1线-1F
-      - A0-ICP
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇭🇰 HK-A
-      - WF-PSC
-      - 🇫🇷 法国-1H
-      - 🇸🇬 新加坡公益-02-1A
-      - 🇺🇸 US-ATT-JK-1G
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇭🇰 香港公益-01-1A
-      - 🇯🇵 日本-VLESS-WS-CF
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇯🇵 日本-HY2
-      - FV2026-7-7-1A
+      - 🇯🇵 JP-JK-1D
       - 🇩🇪 德国-法兰克福-003-1F
-      - 🇸🇬 新加坡公益-03-1A
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇺🇸 美国公益-02-1C
+      - 🇫🇷 法国-1D
+      - 🇺🇸 US-ATT-JK-2-1E
+      - 🇭🇰 香港-中转1区
+      - 🇺🇸 HY-05| US
+      - 🇺🇸 洛杉矶-中转3区2.5x
+      - 🇫🇷 法国-1B
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国公益-01-1A
+      - 🇺🇸 US-ATT-JK-1G
       - 🇺🇸 US-ATT-JK-1E
-      - 🇸🇬 新加坡公益-02-1B
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇺🇸 美国1线-1I
+      - FV2026-7-7-1D
+      - 🇸🇬 新加坡公益-01-1B
+      - 🇫🇷 法国-1I
+      - 🇺🇸 HY-02 | US
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-002-1A
       - 🇯🇵 JP-JK-1E
-      - 🇯🇵 日本-1H
-      - 🇺🇸 US-ATT-JK-2-1A
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇭🇰 香港公益-01-1C
-      - 🇩🇪 德国-法兰克福-003-1D
-      - FI-GUJ
-      - 🇺🇸 US-ATT-JK-1F
-      - 🇺🇸 US-ATT-JK-1D
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇯🇵 JP-JK-1F
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇺🇸 US-ATT-JK-2-1C
-      - 4C-TBL
-      - 🇩🇪 德国-法兰克福-004-1F
+      - G I C A B N H T H N
+      - 🇫🇷 法国-1E
+      - 🇩🇪 德国-法兰克福-001-1E
+      - NH-MRK
+      - 🇩🇪 德国-中转1区1.5x
+      - 🇸🇬 新加坡公益-02-1A
+      - 🇸🇬 新加坡公益-02-1E
       - 🇩🇪 德国-法兰克福-002-1C
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇨🇦 加拿大-1E
-      - 🇯🇵 日本-1E
-      - 🇭🇰 HONG KONG 01-1A
+      - 🇩🇪 德国-法兰克福-001-1H
       - 🇺🇸 US-ATT-JK-2-1H
-      - 🇨🇦 加拿大-1C
-      - 🇺🇸 US-ATT-JK-2-1D
-      - 🇸🇬 新加坡公益-03-1C
-      - 🇯🇵 日本-1B
+      - 🇭🇰 香港公益-01-1B
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇺🇸 美国高速节点1
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇺🇸 US-ATT-JK-1C
+      - 🇫🇷 法国-1C
+      - 🇲🇾 马来家宽-中转1区2x
+      - A2-FGL
+      - 🇯🇵 日本-直连AI丨流媒体
+      - 🇯🇵 日本-1E
+      - 🇺🇸 US-ATT-JK-1A
+      - 🇭🇰 香港公益-01-1A
+      - 🇺🇸 美国公益-02-1A
+      - 🇺🇸 美国公益-02-1E
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇺🇸 US-ATT-JK-1D
+      - 🇨🇦 加拿大-1E
+      - 🇺🇸 US-ATT-JK-1B
+      - 🇯🇵 JP-JK-1I
+      - 🇯🇵 日本-HY2
+      - 🇻🇳 越南-中转2区
+      - 🇺🇸 US-ATT-JK-1H
+      - TF-KRZ
+      - 🇯🇵 JP-JK-1H
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇨🇦 加拿大-1I
+      - 🇯🇵 日本-1F
+      - 🇸🇬 新加坡公益-02-1B
       - 🇺🇸 美国公益-01-1D
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-001-1A
       - 🇸🇬 新加坡公益-01-1D
-      - 🇨🇦 加拿大-1D
+      - 🇺🇸 US-ATT-JK-2-1A
+      - 🇯🇵 JP-JK-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - MI-MPH
+      - BP-YZL
+      - 🇨🇦 加拿大-1B
+      - 🇸🇬 新加坡-HY2
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇭🇰 HK-A
+      - 🇺🇸 美国1线-1D
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇸🇬 新加坡公益-03-1C
+      - 🇺🇸 美国公益-01-1B
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇸🇬 新加坡公益-03-1D
+      - 🇭🇰 香港公益-01-1D
+      - 🇺🇸 美国1线-1G
+      - 🇺🇸 美国1线-1B
+      - 🇺🇸 美国公益-01-1E
+      - 🇺🇸 美国1线-1C
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇺🇸 US-ATT-JK-1I
+      - 🇯🇵 JP-JK-1F
+      - 🇺🇸 US-ATT-JK-2-1F
+      - 🇸🇬 新加坡公益-01-1E
+      - 🇯🇵 日本-1G
+      - 🇺🇸 洛杉矶-直连
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇺🇸 HY-04 | US
+      - 🇸🇬 新加坡公益-02-1C
+      - 🇨🇦 加拿大-1A
+      - 🇫🇷 法国-1G
+      - FV2026-7-7-1E
+      - 🇯🇵 JP-JK-1A
+      - 🇯🇵 JP-JK-1G
+      - 🇺🇸 US-ATT-JK-2-1I
+      - 🇫🇷 法国-1A
+      - 🇰🇷 韩国节点-B
+      - 🇭🇰 香港家宽-中转1区2.0x
+      - 🇯🇵 日本-1B
+      - 🇯🇵 日本-1D
+      - 🇸🇬 新加坡公益-02-1D
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇺🇸 洛杉矶-中转1区
+      - 🇸🇬 新加坡公益-03-1E
+      - 🇺🇸 US-ATT-JK-1F
+      - 🇩🇪 德国-法兰克福-002-1H
+      - FV2026-7-7-1B
+      - 🇹🇭 泰国-中转1区
+      - 🇯🇵 日本-1C
+      - 🇸🇬 新加坡公益-03-1B
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇫🇷 法国-1F
+      - FV2026-7-7-1A
+      - 🇫🇷 法国-1H
+      - 🇯🇵 JP-JK-1C
+      - 🇺🇸 美国公益-02-1C
+      - 🇨🇦 加拿大-1G
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇺🇸 美国公益-02-1B
+      - 🇦🇺 悉尼-中转3区2x
+      - 🇺🇸 美国公益-02-1D
+      - 🇹🇼 台湾高速节点
+      - 🇹🇼 台湾-中转1区
+      - IL-EAM
+      - 🇺🇸 美国公益-01-1C
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇸 US-ATT-JK-2-1B
+      - 🇺🇸 美国1线-1F
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇨🇦 加拿大-1C
+      - 🇺🇸 HY-03 | US
+      - 🇯🇵 日本-VLESS-WS-CF
       - 🇩🇪 德国-法兰克福-004-1E
       - FV2026-7-7-1C
-      - 🇺🇸 HY-03 | US
-      - 🇺🇸 美国公益-01-1A
-      - 🇺🇸 US-ATT-JK-1C
-      - 🇺🇸 US-ATT-JK-2-1F
-      - 🇸🇬 新加坡公益-02-1C
-      - 🇭🇰 香港公益-01-1B
-      - FV2026-7-7-1D
-      - 🇺🇸 美国1线-1B
-      - 🇯🇵 JP-JK-1B
-      - 🇯🇵 日本-1D
-      - 🇫🇷 法国-1A
-      - 🇸🇬 新加坡-HY2
-      - 🇸🇬 新加坡公益-03-1D
-      - 🇯🇵 JP-JK-1A
-      - 🇺🇸 美国公益-01-1C
-      - 🇯🇵 JP-JK-1C
-      - 🇯🇵 JP-JK-1H
-      - 🇨🇦 加拿大-1F
-      - 🇺🇸 US-ATT-JK-1A
-      - 🇺🇸 美国公益-02-1D
+      - 🇺🇸 美国1线-1E
+      - 🇸🇬 新加坡-中转2区
+      - 🇯🇵 日本-1A
+      - 🇨🇦 加拿大-1D
+      - 🇺🇸 US-ATT-JK-2-1D
+      - 🇸🇬 新加坡公益-03-1A
+      - 🇯🇵 日本-中转3区2.5x
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇹🇭 泰国-中转2区
+      - 🇺🇸 US-ATT-JK-2-1C
       - 🇩🇪 德国-法兰克福-004-1B
-      - 🇺🇸 HY-04 | US
-      - 🇯🇵 日本-1G
-      - 🇫🇷 法国-1C
-      - 🇺🇸 美国1线-1G
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇯🇵 JP-JK-1D
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇺🇸 美国1线-1A
+      - 🇨🇦 加拿大-1F
+      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 日本-1H
+      - 🇭🇰 香港公益-01-1C
+      - 🇭🇰 香港公益-01-1E
+      - 🇺🇸 US-ATT-JK-2-1G
+      - 🇸🇬 新加坡公益-01-1C
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇯🇵 日本-中转1区
+      - 🇯🇵 日本-1I
+      - 🇸🇬 新加坡公益-01-1A
+      - 🇺🇸 美国1线-1H
+      - 🇨🇦 加拿大-1H
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1139,138 +1431,174 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇫🇷 法国-1D
-      - 🇸🇬 新加坡公益-01-1C
-      - 🇩🇪 德国-法兰克福-004-1A
       - 🇨🇳 中国联通节点1
-      - 🇨🇦 加拿大-1A
-      - 🇸🇬 新加坡公益-01-1A
-      - 🇺🇸 美国公益-01-1B
-      - 🇺🇸 美国高速节点1
-      - 🇺🇸 US-ATT-JK-2-1B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇫🇷 法国-1G
-      - 🇭🇰 香港公益-01-1D
-      - 🇺🇸 美国1线-1H
-      - 🇺🇸 美国1线-1C
-      - 🇸🇬 新加坡公益-01-1B
-      - 🇺🇸 HY-02 | US
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇹🇼 台湾高速节点2
-      - G I C A B N H T H N
-      - 🇨🇦 加拿大-1H
-      - 🇺🇸 US-ATT-JK-1H
-      - 🇯🇵 日本-1F
-      - 🇨🇦 加拿大-1G
-      - 🇯🇵 JP-JK-1G
-      - 🇰🇷 韩国节点-B
-      - 🇸🇬 新加坡公益-02-1D
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇺🇸 US-ATT-JK-2-1E
-      - 🇹🇼 台湾高速节点
-      - 🇺🇸 HY-05| US
-      - 🇺🇸 US-ATT-JK-2-1G
-      - 🇫🇷 法国-1F
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 美国1线-1E
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇫🇷 法国-1B
-      - 🇨🇦 加拿大-1B
-      - 🇺🇸 美国1线-1D
-      - FV2026-7-7-1B
-      - 🇺🇸 US-ATT-JK-1B
-      - 🇯🇵 日本-1C
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇫🇷 法国-1E
-      - 🇺🇸 美国1线-1A
-      - 🇺🇸 美国公益-02-1B
-      - 🇺🇸 美国公益-02-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇸🇬 新加坡公益-03-1B
-      - MI-MVE
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇯🇵 日本-1A
-      - 🇺🇸 美国1线-1F
-      - A0-ICP
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇭🇰 HK-A
-      - WF-PSC
-      - 🇫🇷 法国-1H
-      - 🇸🇬 新加坡公益-02-1A
-      - 🇺🇸 US-ATT-JK-1G
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇭🇰 香港公益-01-1A
-      - 🇯🇵 日本-VLESS-WS-CF
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇯🇵 日本-HY2
-      - FV2026-7-7-1A
+      - 🇯🇵 JP-JK-1D
       - 🇩🇪 德国-法兰克福-003-1F
-      - 🇸🇬 新加坡公益-03-1A
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇺🇸 美国公益-02-1C
+      - 🇫🇷 法国-1D
+      - 🇺🇸 US-ATT-JK-2-1E
+      - 🇭🇰 香港-中转1区
+      - 🇺🇸 HY-05| US
+      - 🇺🇸 洛杉矶-中转3区2.5x
+      - 🇫🇷 法国-1B
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国公益-01-1A
+      - 🇺🇸 US-ATT-JK-1G
       - 🇺🇸 US-ATT-JK-1E
-      - 🇸🇬 新加坡公益-02-1B
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇺🇸 美国1线-1I
+      - FV2026-7-7-1D
+      - 🇸🇬 新加坡公益-01-1B
+      - 🇫🇷 法国-1I
+      - 🇺🇸 HY-02 | US
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-002-1A
       - 🇯🇵 JP-JK-1E
-      - 🇯🇵 日本-1H
-      - 🇺🇸 US-ATT-JK-2-1A
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇭🇰 香港公益-01-1C
-      - 🇩🇪 德国-法兰克福-003-1D
-      - FI-GUJ
-      - 🇺🇸 US-ATT-JK-1F
-      - 🇺🇸 US-ATT-JK-1D
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇯🇵 JP-JK-1F
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇺🇸 US-ATT-JK-2-1C
-      - 4C-TBL
-      - 🇩🇪 德国-法兰克福-004-1F
+      - G I C A B N H T H N
+      - 🇫🇷 法国-1E
+      - 🇩🇪 德国-法兰克福-001-1E
+      - NH-MRK
+      - 🇩🇪 德国-中转1区1.5x
+      - 🇸🇬 新加坡公益-02-1A
+      - 🇸🇬 新加坡公益-02-1E
       - 🇩🇪 德国-法兰克福-002-1C
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇨🇦 加拿大-1E
-      - 🇯🇵 日本-1E
-      - 🇭🇰 HONG KONG 01-1A
+      - 🇩🇪 德国-法兰克福-001-1H
       - 🇺🇸 US-ATT-JK-2-1H
-      - 🇨🇦 加拿大-1C
-      - 🇺🇸 US-ATT-JK-2-1D
-      - 🇸🇬 新加坡公益-03-1C
-      - 🇯🇵 日本-1B
+      - 🇭🇰 香港公益-01-1B
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇺🇸 美国高速节点1
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇺🇸 US-ATT-JK-1C
+      - 🇫🇷 法国-1C
+      - 🇲🇾 马来家宽-中转1区2x
+      - A2-FGL
+      - 🇯🇵 日本-直连AI丨流媒体
+      - 🇯🇵 日本-1E
+      - 🇺🇸 US-ATT-JK-1A
+      - 🇭🇰 香港公益-01-1A
+      - 🇺🇸 美国公益-02-1A
+      - 🇺🇸 美国公益-02-1E
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇺🇸 US-ATT-JK-1D
+      - 🇨🇦 加拿大-1E
+      - 🇺🇸 US-ATT-JK-1B
+      - 🇯🇵 JP-JK-1I
+      - 🇯🇵 日本-HY2
+      - 🇻🇳 越南-中转2区
+      - 🇺🇸 US-ATT-JK-1H
+      - TF-KRZ
+      - 🇯🇵 JP-JK-1H
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇨🇦 加拿大-1I
+      - 🇯🇵 日本-1F
+      - 🇸🇬 新加坡公益-02-1B
       - 🇺🇸 美国公益-01-1D
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-001-1A
       - 🇸🇬 新加坡公益-01-1D
-      - 🇨🇦 加拿大-1D
+      - 🇺🇸 US-ATT-JK-2-1A
+      - 🇯🇵 JP-JK-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - MI-MPH
+      - BP-YZL
+      - 🇨🇦 加拿大-1B
+      - 🇸🇬 新加坡-HY2
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇭🇰 HK-A
+      - 🇺🇸 美国1线-1D
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇸🇬 新加坡公益-03-1C
+      - 🇺🇸 美国公益-01-1B
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇸🇬 新加坡公益-03-1D
+      - 🇭🇰 香港公益-01-1D
+      - 🇺🇸 美国1线-1G
+      - 🇺🇸 美国1线-1B
+      - 🇺🇸 美国公益-01-1E
+      - 🇺🇸 美国1线-1C
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇺🇸 US-ATT-JK-1I
+      - 🇯🇵 JP-JK-1F
+      - 🇺🇸 US-ATT-JK-2-1F
+      - 🇸🇬 新加坡公益-01-1E
+      - 🇯🇵 日本-1G
+      - 🇺🇸 洛杉矶-直连
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇺🇸 HY-04 | US
+      - 🇸🇬 新加坡公益-02-1C
+      - 🇨🇦 加拿大-1A
+      - 🇫🇷 法国-1G
+      - FV2026-7-7-1E
+      - 🇯🇵 JP-JK-1A
+      - 🇯🇵 JP-JK-1G
+      - 🇺🇸 US-ATT-JK-2-1I
+      - 🇫🇷 法国-1A
+      - 🇰🇷 韩国节点-B
+      - 🇭🇰 香港家宽-中转1区2.0x
+      - 🇯🇵 日本-1B
+      - 🇯🇵 日本-1D
+      - 🇸🇬 新加坡公益-02-1D
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇺🇸 洛杉矶-中转1区
+      - 🇸🇬 新加坡公益-03-1E
+      - 🇺🇸 US-ATT-JK-1F
+      - 🇩🇪 德国-法兰克福-002-1H
+      - FV2026-7-7-1B
+      - 🇹🇭 泰国-中转1区
+      - 🇯🇵 日本-1C
+      - 🇸🇬 新加坡公益-03-1B
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇫🇷 法国-1F
+      - FV2026-7-7-1A
+      - 🇫🇷 法国-1H
+      - 🇯🇵 JP-JK-1C
+      - 🇺🇸 美国公益-02-1C
+      - 🇨🇦 加拿大-1G
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇺🇸 美国公益-02-1B
+      - 🇦🇺 悉尼-中转3区2x
+      - 🇺🇸 美国公益-02-1D
+      - 🇹🇼 台湾高速节点
+      - 🇹🇼 台湾-中转1区
+      - IL-EAM
+      - 🇺🇸 美国公益-01-1C
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇸 US-ATT-JK-2-1B
+      - 🇺🇸 美国1线-1F
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇨🇦 加拿大-1C
+      - 🇺🇸 HY-03 | US
+      - 🇯🇵 日本-VLESS-WS-CF
       - 🇩🇪 德国-法兰克福-004-1E
       - FV2026-7-7-1C
-      - 🇺🇸 HY-03 | US
-      - 🇺🇸 美国公益-01-1A
-      - 🇺🇸 US-ATT-JK-1C
-      - 🇺🇸 US-ATT-JK-2-1F
-      - 🇸🇬 新加坡公益-02-1C
-      - 🇭🇰 香港公益-01-1B
-      - FV2026-7-7-1D
-      - 🇺🇸 美国1线-1B
-      - 🇯🇵 JP-JK-1B
-      - 🇯🇵 日本-1D
-      - 🇫🇷 法国-1A
-      - 🇸🇬 新加坡-HY2
-      - 🇸🇬 新加坡公益-03-1D
-      - 🇯🇵 JP-JK-1A
-      - 🇺🇸 美国公益-01-1C
-      - 🇯🇵 JP-JK-1C
-      - 🇯🇵 JP-JK-1H
-      - 🇨🇦 加拿大-1F
-      - 🇺🇸 US-ATT-JK-1A
-      - 🇺🇸 美国公益-02-1D
+      - 🇺🇸 美国1线-1E
+      - 🇸🇬 新加坡-中转2区
+      - 🇯🇵 日本-1A
+      - 🇨🇦 加拿大-1D
+      - 🇺🇸 US-ATT-JK-2-1D
+      - 🇸🇬 新加坡公益-03-1A
+      - 🇯🇵 日本-中转3区2.5x
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇹🇭 泰国-中转2区
+      - 🇺🇸 US-ATT-JK-2-1C
       - 🇩🇪 德国-法兰克福-004-1B
-      - 🇺🇸 HY-04 | US
-      - 🇯🇵 日本-1G
-      - 🇫🇷 法国-1C
-      - 🇺🇸 美国1线-1G
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇯🇵 JP-JK-1D
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇺🇸 美国1线-1A
+      - 🇨🇦 加拿大-1F
+      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 日本-1H
+      - 🇭🇰 香港公益-01-1C
+      - 🇭🇰 香港公益-01-1E
+      - 🇺🇸 US-ATT-JK-2-1G
+      - 🇸🇬 新加坡公益-01-1C
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇯🇵 日本-中转1区
+      - 🇯🇵 日本-1I
+      - 🇸🇬 新加坡公益-01-1A
+      - 🇺🇸 美国1线-1H
+      - 🇨🇦 加拿大-1H
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
